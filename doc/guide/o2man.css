@@ -1,0 +1,57 @@
+body {color: #555555; background-color: #FEFEFE; font: normal medium Arial,sans-serif; text-align: justify; margin-left: 10px; margin-right: 20px;}
+
+/* Document navigator */
+#nav {background-color: #E6E6DF; border-collapse: collapse; padding: 0 0 0 0;}
+#nav_top {border: none; font: bold small Arial,sans-serif; text-align: center; padding: 5px 10px 2px 10px;}
+#nav_prev {border: none; font: bold small Arial,sans-serif; text-align: left; padding: 2px 10px 5px 10px;}
+#nav_next {border: none; font: bold small Arial,sans-serif; text-align: right; padding: 2px 10px 5px 10px;}
+#nav_frame {border: none; padding: 0 0 0 0; margin: 0 0 0 0;}
+
+/* Titles */
+h1 {font-size: 24px; font-weight: bold;}
+h2 {font-size: 20px; font-weight: bold;}
+h3 {font-size: 18px; font-weight: bold;}
+h4 {font-size: 16px; font-weight: bold;}
+h5 {font: large "Times New Roman", serif; font-weight: bold;}
+h6 {font-size: large; font-weight: bold;}
+
+/* Hyperlink */
+a {text-decoration: none; color: #990000;}
+a:hover {background-color: #990000; color: #FEFEFE;}
+a:focus {background-color: #990000;	color: #FEFEFE;}
+
+/* Tables */
+table {border-collapse: collapse; margin-top: 10px; margin-bottom: 20px;}
+th {background-color: #E6E6DF; border: 1px solid #E6E6DF; font: bold medium Arial,sans-serif; text-align: center; padding: 3px 10px 3px 10px;}
+td {border: 1px solid #E6E6DF; font: normal medium Arial,sans-serif; text-align: justify; padding: 3px 10px 3px 10px;}
+
+/* Paragraph */
+p { margin-top: 10px; margin-bottom: 20px;}
+
+/* Images */
+img { margin-top: 10px; margin-bottom: 20px;}
+
+/* ________________________ Coded types ___________________________*/
+/* Keyboard keys */
+kbd {font: bold medium "Times New Roman", serif; font-variant: small-caps;}
+/* Text from interface */
+i {font-family: "Times New Roman", serif; font-size: medium;}
+/* Values "___" */
+/* URL & path */
+var {font-family: Terminal, sans-erif;}
+/* Scripting code (PHP, SQL, JavaScript, ...) */
+code {font-family: "Courier New", monospace;}
+/* Generic emphasis */
+em {font-family: "Times New Roman", serif; font-size: medium;}
+
+dt {
+	font-size: medium;
+	font-weight: bold;
+	margin-top: 10px;
+	}
+
+dfn {
+	font-family: "Times New Roman", serif;
+	font-size: medium;
+	}
+

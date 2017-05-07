@@ -1,0 +1,3140 @@
+<html>
+ <head>
+  <title>Fondamenti di o2Architecture</title>
+  <link rel='stylesheet' type='text/css' href='o2man.css'>
+ </head>
+<body>
+<center>
+<br /><br />
+<font size="6">Fondamenti di o2Architecture</font>
+<br /><br />
+<br /><br />
+<img src="img/o2logo.gif" />
+<br /><br />
+<br /><br />
+<br /><br />
+</center><br />
+<h2>0.1<a name='node_6'> &nbsp; </a>Introduzione al corso</h2><br><blockquote>
+<p>Il corso “Fondamenti della programmazione con o2Architecture” ha
+l’obiettivo di fornire al programmatore i concetti base della programmazione
+in ambiente o2Architecture e tutto il necessario per iniziare a programmare
+con l'interfaccia di sviluppo o2Architect.</p><br /><h4>Obiettivi</h4>
+<ul>
+<li>Conoscere i principi fondamentali di o2Architecture e come ottenerne il
+       miglior risultato</li>
+<li>Capire la filosofia di o2Architecture.</li>
+<li>Comprendere a fondo gli standard di o2Architecture.</li>
+<li>Creare un’ applicazione con o2Architect che:</li>
+       <ul>
+       <li>Ha una completa interfaccia GUI.</li>
+       <li>Lavora con database SQL.</li>
+       <li>Espone relazione tra tabelle di tipo <em>uno-a-uno</em> e <em>
+              uno-a-molti</em>.</li>
+       <li>Produce dei report.</li>
+       <li>Lavora su Web ed è compatibile con tutti i browser.</li>
+       </ul>
+</ul>
+<br />
+<h3>0.1.1<a name='node_2'> &nbsp; </a>Struttura del corso</h3><br><blockquote><p>Questo corso si sviluppa in 3 giornate e intende insegnare i concetti base e
+la tecnica di programmazione in o2Architecture.</p>
+<p>L’obiettivo principale è abilitare il programmatore a produrre una semplice
+applicazione o2. Una volta terminato il corso, il programmatore avrà realizzato
+un’applicazione pensata specificatamente per il corso. Durante questo processo
+di scrittura il programmatore impara come o2Runtime lavora e come
+programmare con o2Architect.</p>
+</blockquote><br />
+<h3>0.1.2<a name='node_3'> &nbsp; </a>Prerequisiti fondamentali per seguire il corso</h3><br><blockquote>
+<b>Prima di proseguire sei pregato di verificare di avere i seguenti requisiti.</b>
+<br />
+<h4>Ambiente</h4>
+<ol>
+<li>Minima conoscenza inglese tecnico</li>
+<li>Conoscenza delle operazione base sui sistemi operativi Win2000/XP</li>
+       <ul>
+       <li>Navigare utilizzando Explorer / Risorse del computer</li>
+              <ul>
+              <li>Cercare file e directory</li>
+              <li>Copiare, muovere ed eliminare file</li>
+              </ul>
+       <li>Aprire e muoversi in un file di testo</li>
+       <li>Usare e configurare le stampanti</li>
+       <li>Usare il mouse</li>
+       <li>Installare e disinstallare applicazioni</li>
+       </ul>
+<li>Un computer con sistema operativo Win2000/XP su cui installare
+       l’applicazione</li>
+</ol>
+
+<h4>Programmazione</h4>
+<ol>
+<li>Saper lavorare con i flow charts</li>
+<li>Saper risolvere problemi logici con i <em>flow charts</em></li>
+<li>Sapere cos’è una <em>procedura</em></li>
+<li>Sapere cos’è una <em>funzione</em></li>
+<li>Sapere cos’è un <em>evento</em></li>
+<li>Sapere cos’è un <em>ciclo (loop)</em></li>
+<li>Sapere cos’è una <em>condizione &quot;IF - THEN - ELSE&quot;</em></li>
+<li>Sapere cos’è una <em>form</em></li>
+<li>Sapere cos’è un <em>I/O file</em></li>
+<li>Sapere cos’è una <em>variabile</em></li>
+<li>Sapere cos’è un <em>report</em></li>
+<li>Sapere cos’è una <em>view di un recordset</em></li>
+<li>Aver maturato anche una minima esperienza con uno o più tra i comuni
+       linguaggi di programmazione</li>
+</ol>
+
+<h4>Database</h4>
+<ol>
+<li>Conoscere il significato dei seguenti termini:</li>
+       <ul>
+       <li>Database</li>
+       <li>Table</li>
+       <li>Row / Record</li>
+       <li>Field</li>
+       <li>Index</li>
+       <li>Segment</li>
+       </ul>
+<li>Sapere che relazione esiste tra i suddetti oggetti</li>
+<li>Conoscere il significato delle seguenti operazioni:</li>
+       <ul>
+       <li>Creare una tabella</li>
+       <li>Modificare la struttura di una tabella</li>
+       <li>Eliminare una tabella</li>
+       <li>Create un nuovo record in una tabella</li>
+       <li>Modificare un record in una tabella</li>
+       <li>Eliminare un record in una tabella</li>
+       </ul>
+<li>Conoscere il significato dei seguenti termini:</li>
+       <ul>
+       <li>Sort (ordinamento)</li>
+       <li>Locate (posizionamento)</li>
+       <li>Range (filtro)</li>
+       </ul>
+</ol>
+
+<h4>Tecnologia web</h4>
+<ol>
+<li>Sapere che cos’è un browser web</li>
+<li>Saper navigare utilizzando un browser web</li>
+<li>Avere una conoscenza anche basilare dei seguenti termini:</li>
+       <ul>
+       <li>Web server</li>
+       <li>Sito web</li>
+       <li>Indirizzo URL</li>
+       <li>HTML</li>
+       <li>HTML tag</li>
+       <li>JavaScript</li>
+       <li>Protocollo TCP/IP</li>
+       <li>Hyperlink</li>
+       <li>Alias</li>
+       </ul>
+</ol></blockquote></blockquote><br />
+<h2>0.2<a name='node_4'> &nbsp; </a>o2Runtime - Utilizzare l'applicazione "demo"</h2><br><blockquote><fieldset>BARRA DEI MENU, BARRA DEL TITOLO, MODO LINE, MODO SCREEN, SDI, STATO DELLA VIEW, STATUS BAR</fieldset>
+<p>Questo modulo introduce il modulo o2Runtime e tutte le utility dell’interfaccia
+o2.</p><br /><h4>Obiettivi</h4>
+<ul>
+<li>Eseguire una applicazione o2.</li>
+<li>Eseguire un programma tramite il menù dell’applicazione.</li>
+<li>Saper distinguere un’ interfaccia in modalità <em>screen</em> da una in
+modalità <em>line</em></li>
+<li>Navigare sui dati utilizzando i controlli o2 (tabella, combobox, pulsanti,
+ecc.)</li>
+<li>Utilizzare il menù “root” per amministrare un’installazione
+dell’applicazione.</li>
+</ul><br /><h4>Introduzione</h4>
+
+<p>Ci sono due modalità di accesso all’applicazione a runtime:</p>
+<ol>
+<li>Da developer (sviluppatore)</li>
+<li>Da utente finale</li>
+</ol>
+<p>Effettuando in login con il campo “Developer” valorizzato si indica ad
+o2runtime che vogliamo attivare anche i servizi di debugging dell’applicazione
+e soprattutto si fornisce il nome del programmatore.</p>
+
+<p>Il nome del programmatore viene utilizzato da o2runtime per eseguire i
+programmi modificati da parte del programmatore ma non ancora confermati
+per tutti.</p>
+<p>Questo comportamento è decisamente interessante per testare le modifiche
+in un ambiente di sviluppo in team sul progetto, e di confermarle solo dopo averle
+verificate.</p>
+<img src="img/image003.gif" />
+<p>Premere il pulsante <i>Enter</i> per accedere</p></blockquote><br />
+<h2>0.3<a name='node_9'> &nbsp; </a>"Il mio Negozio online" -  L’applicazione di studio</h2><br><blockquote><p>Questo capitolo presenta in dettaglio l’applicazione di studio “Il mio negozio
+online” che tu stesso andrai a sviluppare in modo autonomo andando avanti nel
+corso.</p>
+<p>Il fine dell’applicazione e della sua struttura sarà spiegato in questo
+capitolo in modo che sia chiaro al programmatore il significato delle tabelle e
+delle funzioni che l’applicazione dovrà avere: devi sempre sapere cosa dovrà fare
+la tua applicazione prima di iniziare a svilupparla!</p><br />
+<h3>0.3.1<a name='node_10'> &nbsp; </a>Descrizione dell’applicazione</h3><br><blockquote>
+<p>L’applicazione consiste in un sistema per la gestione elettronica degli
+ordini dei propri clienti.</p>
+<h4>&quot;Il mio negozio online&quot; - Diagramma relazione tra tabelle</h4>
+<img src="img/image004.gif" /></blockquote><br />
+<h3>0.3.2<a name='node_11'> &nbsp; </a>Funzionalità</h3><br><blockquote><p>Lo scopo dell’applicazione sta nel memorizzare e manutenere tutte le
+informazioni relative ai clienti, ai prodotti e agli ordini.</p>
+<p>L’utente dovrà essere in grado di aggiungere, modificare o eliminare le
+informazioni dalle tabelle: “Customers”, “Customers_type”, “Items”, “Orders”,
+“Rows_order”.</p>
+<p>Inoltre l’utente dovrà essere in grado di stampare una conferma d’ordine
+e di produrre un report mensile dei quantitativi totali ordinati per
+cliente/articolo.</p></blockquote></blockquote><br />
+<h2>0.4<a name='node_21'> &nbsp; </a>o2architect - paradigma di sviluppo</h2><br><blockquote><br /><h4>Introduzione</h4>
+<p>Questo modulo pone le basi per lo sviluppo di applicazioni in o2Architect.
+</p><br /><h4>Obiettivi</h4>
+<p>Al termine di questo modulo sarai in grado di:</p>
+<ul>
+<li>Spiegare le 4 fasi del processo di sviluppo di una applicazione</li>
+<li>Descrivere la relazione esistente tra modelli, tabelle, programmi, e
+       menu.</li>
+<li>Spiegare il sistema gerarchico degli oggetti che compongono
+       l’applicazione</li>
+</ul>
+
+<br />
+<h3>0.4.1<a name='node_15'> &nbsp; </a>Le 4 fasi per scrivere un’applicazione o2</h3><br><blockquote>
+<p>Ogni applicazione o2 è tipicamente formata da 4 fasi:</p>
+<ol>
+<li>Models - Definizione dei <em>tipi dato</em> dell’applicazione per
+       l’utilizzo in tabelle e programmi</li>
+<li>Tables – Definizione di tabelle di database ove l’applicazione memorizzerà
+       i dati</li>
+<li>Programs – Creare la logica per l’interazione tra l’utente finale e le tabelle
+       del database (le funzionalità dell’applicazione)</li>
+<li>Menus – Creare i menu che abilitano l’utente finale ad utilizzare i programmi
+       dell’applicazione</li>
+</ol>
+<p>E’ altamente raccomandato lavorare rispettando queste fasi quando si
+sviluppa una applicazione con o2Architect.</p>
+<img src="img/image007.gif" />
+<p>Il diagramma a piramide è molto importante per capire le fasi dello sviluppo
+dell’applicazione. Capire il diagramma renderà più semplice scrivere
+l’applicazione.</p>
+<p>Ogni fase della stesura dell’applicazione è locicamente collegata alla fase
+successiva.</p>
+<p>Il risultato di ogni fase viene memorizzato in un repository (contenitore) -
+un <i>model repository</i>, un <i>table repository</i>, un <i>program
+repository</i>, e un <i>menu repository</i>.
+<br />
+<h3>0.4.1.1<a name='node_16'> &nbsp; </a>Definire i <i>models - datatypes</i></h3><br><blockquote><p>Un modello è un insieme di proprietà per un certo campo (field)</p>
+<p>Ogni volta che si decide di realizzare un’applicazione o2 si inizia con la
+definizione di questi modelli. E’ molto meglio definire da subito i modelli con
+dei nomi significativi per poi trovarsi bene successivamente.</p>
+
+<h4>Proprietà di un Data-type</h4>
+<p>Ogni oggetto dell’applicazione ha delle proprietà. Un modello data-type è
+composto da un insieme di proprietà che vengono ereditate dagli oggetti di più
+alto livello nella piramide dell’applicazione (tables, programs...).</p>
+<ul>
+<li><i>Id</i></li>
+<li><i>Type</i> ("Alpha", "Number", "Logical", ecc.)</li>
+<li><i>Mask</i> (Maschera di presentazione del dato)</li>
+</ul>
+
+</blockquote><br />
+<h3>0.4.1.2<a name='node_17'> &nbsp; </a>Definire le <i>tables</i></h3><br><blockquote><p>La seconda fase dello sviluppo di una applicazione consiste nel definire
+le tabelle per l’applicazione. Le colonne di ogni tabella ereditano il loro
+contenuto dai modelli che il programmatore ha definito precedentemente
+nel <i>model repository</i>.</p>
+<p>Una tabella è un set di record che hanno la stessa struttura sotto lo
+stesso nome.</p>
+<p>Un indice è un criterio di ordinamento dei dati di una tabella.</p>
+<p>Una tabella può avere uno o più indici e gli indici devono essere tutti
+univoci.</p>
+
+</blockquote><br />
+<h3>0.4.1.3<a name='node_18'> &nbsp; </a>Creare i <i>programs</i></h3><br><blockquote><p>La terza fase consiste nella creazione dei programmi che eseguano la
+logica dell’applicazione e fungano da interfaccia tra l’utente finale e le tabelle
+del database.</p>
+<p>I programmi sono gli strumenti con cui l’utente finale può manipolare i dati.
+E’ il programmatore che decide quali dati e che tipo di manipolazione su essi
+sia necessaria.</p>
+<p>In o2architecture non esiste una differenza netta tra programmi
+<em>online</em>, cioè programmi con un’interfaccia utente, e programmi
+cosiddetti <em>batch</em>, cioè procedure con un predefinito flow esecutivo
+e nessuna interfaccia interattiva.</p>
+<p>Infatti un singolo programma in o2architect può mutare aspetto a seconda
+delle situazioni senza che il programmatore debba definirlo in differenti
+modi.</p>
+</blockquote><br />
+<h3>0.4.1.4<a name='node_19'> &nbsp; </a>Creare i <i>menus</i></h3><br><blockquote><p>I menu sono lo strumento principale che permette all’utente finale di
+navigare all’interno dell’applicazione.</p>
+<p>Il programmatore specifica i menù e le relative proprietà per
+l’applicazione.</p>
+<p>Il quarto ed ultimo step consiste nell’associare i programmi alle voci
+dei menù in modo da permettere all’utente finale di navigare attraverso
+l’applicazione.</p>
+</blockquote></blockquote><br />
+<h3>0.4.2<a name='node_20'> &nbsp; </a>Il meccanismo della <em>ereditarietà</em></h3><br><blockquote><p>Il diagramma a piramide mostra anche il meccanismo di ereditarietà che
+esiste tra i repository dei modelli, delle tabelle, e dei programmi:</p>
+<img src='img/image009.gif'>
+<p>Gli oggetti nelle tabelle e nei programmi ereditano le proprietà definite
+nei modelli su cui sono basati.</p>
+<p>Tale meccanismo offre i seguenti benefici al programmatore:</p>
+<ol>
+<li>Riduzione dei tempi di sviluppo dell’applicazione. Una volta creato un modello,
+       il programmatore non deve ogni volta definire le proprietà sugli oggetti del
+       suo tipo.</li>
+<li>Manutenzione dell’applicazione semplificata. Una volta associati gli oggetti ai
+       loro modelli, ogni modifica alle proprietà dei modelli è automaticamente
+       ereditata dagli oggetti associati.</li>
+</ol>
+
+<h4>Esempio:</h4>
+<p>Definendo un modello per il campo "codice_cliente" come alfanumerico
+lungo 5 caratteri, lo si può utilizzare come campo di tabella o come di variabile
+di programma. Se durante lo sviluppo diventasse necessario variare il modello
+e portarlo a 6 caratteri, si dovrà solamente variare il modello e il meccanismo di
+ereditarietà garantirà che tali modifiche abbiano effetto su tutti gli oggetti
+dell’applicazione basati su tale modello.</p></blockquote></blockquote><br />
+<h2>0.5<a name='node_22'> &nbsp; </a>Il repository dei <i>datatypes</i></h2><br><blockquote><fieldset>DATATYPE, MASK, MODEL REPOSITORY</fieldset>
+<p>Questo modulo spiega come si opera all’interno del repository dei <i>datatypes</i></p><br /><h4>Obiettivi</h4>
+<p>Al termine di questo capitolo il programmatore sarà in grado di:</p>
+<ul>
+<li>Definire un nuovo datatype nel repository</li>
+<li>Definire l’attributo del campo</li>
+<li>Define la formattazione (<i>mask</i>) del campo</li>
+</ul>
+
+<br /><h4>Introduzione</h4>
+<p>E’ arrivato il momento di iniziare a sviluppare la tua applicazione "Il mio negozio online”.</p>
+<p>Come abbiamo visto nei precedenti moduli, ci sono 4 frasi nella definizione di una applicazione:
+nel rispetto di quello che è stato dichiarato il percorso corretto di sviluppo dell’applicazione,
+analizzeremo in questo capitolo i modelli di dato di cui avremo bisogno nel corso dell’applicazione.</p>
+<br />
+<h3>0.5.1<a name='node_25'> &nbsp; </a>Creare un nuovo progetto in o2Architect</h3><br><blockquote><img src='img/image011.gif'></blockquote><br />
+<h3>0.5.2<a name='node_26'> &nbsp; </a>Definire un modello di dato nel <i>models repository</i></h3><br><blockquote><p>Selezioniamo <i>models - datatypes</i> dal <i>navigator menu</i>, e apriamo
+quindi il repository dei modelli.</p>
+<img src='img/image014.gif'>
+<p>Dopo aver preso l’oggetto in check-out (team development) sarà possibile
+aggiungere nuove voci all’elenco base procedendo come descritto sotto:</p>
+<ol>
+<li>premere  il tasto funzione <kbd>F4</kbd> (create line) o posizionarsi
+       sull’ultima riga della tabella e premere <kbd>FrecciaGiù</kbd></li>
+<li>digitare il nome del modello nella colonna <i>Id</i></li>
+<li>selezionare la tipologia tramite il tasto funzione <kbd>F5</kbd> (zoom)
+       dalla colonna <i>type</i></li>
+      <img src='img/image016.gif'>
+<li>indicare la formattazione del campo dalla colonna <i>Mask</i>; di seguito
+       alcuni esempi di utilizzo di <i>mask</i>:</li>
+
+      <table>
+      <tr><th>Tipo</th><th>Mask</th><th>Significato</th></tr>
+      <tr><td>ALPHA</td><td>C50</td><td>Campo alfanumerico lungo 50 che
+                      accetta sia maiuscole che minuscole</td></tr>
+      <tr><td>ALPHA</td><td>U30</td><td>Campo alfanumerico lungo 30 che
+                      trasforma sempre il dato inserito in caratteri maiuscoli</td></tr>
+      <tr><td>ALPHA</td><td>L30</td><td>Campo alfanumerico lungo 30 che
+                      trasforma sempre il dato inserito in caratteri minuscoli</td></tr>
+      <tr><td>NUMBER</td><td>6</td><td>Intero lungo 6</td></tr>
+      <tr><td>NUMBER</td><td>$ 8.2</td><td>Valore numerico composto da
+                      indicazione valuta, 8 interi e 2 decimali separati da punto</td></tr>
+      <tr><td>LOGICAL</td><td>&nbsp;</td><td>Valore booleano (true/false):
+                      non ha <i>mask</i></td></tr>
+      <tr><td>DATE</td><td>-</td><td>Esprime le date nella forma
+                      dd-mm-yyyy</td></tr>
+      <tr><td>DATE</td><td>/</td><td>Esprime le date nella forma
+                      dd/mm/yyyy</td></tr>
+      <tr><td>ALPHA</td><td>U1[Si|No|Forse]</td><td>Campo alfanumerico
+                      lungo 1 carattere maiuscolo che può assumere solo 3 valori: S, N, F.
+                      Le descrizioni estese esposte tra parentesi verranno automaticamente
+                      visualizzate all’interno del controllo combobox/listbox</td></tr>
+      <tr><td>TIME</td><td>:</td><td>Esprime i time nella forma
+                      hh:mm:ss</td></tr>
+      </table>
+
+<li>per eliminare una voce dall’elenco utilizzare il tasto funzione <kbd>F3</kbd>
+       (delete line) dopo essersi posizionato sulla riga da eliminare.</li>
+</ol>
+</blockquote><br />
+<h3>0.5.3<a name='node_27'> &nbsp; </a>Repository completo di tutti i modelli necessari alla realizzazione del progetto</h3><br><blockquote><img src='img/image018.gif'></blockquote></blockquote><br />
+<h2>0.6<a name='node_28'> &nbsp; </a>Il repository delle tabelle</h2><br><blockquote><fieldset>COLUMN, INDEX, INDEX SEGMENT, TABLE REPOSITORY, UNIQUE INDEX</fieldset>
+<p>Questo capitolo espone la definizione e l’uso del repository delle tabelle.</p><br /><h4>Obiettivi</h4>
+<p>Al termine di questo capitolo il programmatore sarà in grado di:</p>
+<ul>
+<li>Definire tabelle nel <i>table repository</i>.</li>
+<li>Definire colonne nella tabella utilizzando i modelli.</li>
+<li>Definire indici nella tabella.</li>
+</ul>
+
+<br /><h4>Introduzione</h4>
+<p>Questo capitolo passa oltre la prima fase dello sviluppo dell’applicazione (definizione dei
+modelli), illustrando la definizione delle tabelle nel <i>table repository</i>.</p>
+<p>Per definire una Tabella nel repository devi specificare i seguenti parametri:</p>
+<ul>
+<li>Nome logico della tabella</li>
+<li>Nome fisico della tabella nel database</li>
+<li>Nome del database in cui la tabella è contenuta</li>
+<li>Campi della tabella (columns)</li>
+<li>Indici della tabella (indexes)</li>
+<li>Segmenti di ogni indice</li>
+<li>Indice principale della tabella (primary key)</li>
+</ul>
+<p>In riferimento al diagramma del database relativo all’applicazione “Il mio negozio online”  precedentemente visto, il  programmatore al termine di questo modulo avrà creato tutte le
+tabelle richieste dall’applicazione.</p>
+<br />
+<h3>0.6.1<a name='node_31'> &nbsp; </a>Definizione delle tabelle nel repository</h3><br><blockquote><p>Il repository delle tabelle consiste in una lista di definizioni di tabella.</p>
+<p>La definizione di una tabella in o2architect è molto simile a quella nel database,
+ma non necessariamente identica.</p>
+<p>Il <i>table repository</i> in o2architect è usato per definire la struttura delle tabelle,
+e non per crearle nel database. Sarà o2runtime, nel momento in cui un programma viene eseguito
+ed utilizza tabelle che non esistono ancora nel database, in base alla struttura definita, a creare la
+tabella nel database.</p>
+<p>Ogni tabella è definita in modo completo per le sue colonne, per i suoi indici, e per tutte le proprietà
+della tabella stessa (nome, database, indice primario).</p>
+<img src='img/image020.gif'>
+<ol>
+<li>Checkout dell’oggetto <i>tables</i> (<kbd>F11</kbd>)<li>
+<li>Creare una nuova riga nel <i>table repository</i> (<kbd>F4</kbd>).</li>
+<li>Digitare il nome logico della tabella nella colonna <i>Table</i> (stringa senza spazi)</li>
+<li>Digitare il nome fisico della tabella nella colonna <i>Physical name</i> (stringa senza spazi)</li>
+<li>Nella colonna <i>Database</i> premere <kbd>F5</kbd> (<i>zoom</i>) e selezionare il
+       database dal repository dei database</li>
+</ol>
+<p>Questa è la situazione in cui ti dovrai trovare prima di accedere alla definzione delle colonne:</p>
+<img src='img/image022.gif'>
+</blockquote><br />
+<h3>0.6.2<a name='node_32'> &nbsp; </a>Definizione dei campi della tabella</h3><br><blockquote><p>Adesso dobbiamo definire i campi della tabella accedendo all’area destra del repository:</p>
+<img src='img/image024.gif'>
+<ol>
+<li>Creare una nuova riga del <i>columns repository</i> (<kbd>F4</kbd>).</li>
+<li>Digitare il nome del campo nella colonna <i>Field</i> (stringa senza spazi).</li>
+<li>Digitare il nome del campo nel database nella colonna <i>Physical name</i> (stringa
+       senza spazi).</li>
+<li><kbd>F5</kbd> (<i>zoom</i>) e selezionare il modello dalla colonna <i>Model</i>.</li>
+</ol>
+<p>Ripetere queste operazioni per tutti i campi della tabella.</p>
+<p>A lavoro completato il <i>columns repository</i> per la tabella "Customers" dovrebbe
+presentarsi così:</p>
+<img src='img/image026.gif'>
+</blockquote><br />
+<h3>0.6.3<a name='node_33'> &nbsp; </a>Definizione degli indici della tabella</h3><br><blockquote><p>Gli indici sono chiavi che il programmatore dichiara per definire i possibili ordinamenti dei
+record all’interno della tabella, in modo da presentare i valori secondo un certo orinamento e
+per favorire le ricerche su tabelle con molti record.</p>
+<p>Definire gli indici come univoci (unique), rende più affidabile l’integrità dei dati. In o2architect
+ogni tabella deve avere almeno un indice e tutti gli indici dichiarati devono essere  univoci. Questo
+è facilmente ottenibile aggiungendo i segmenti della chiave primaria anche agli indici che per
+definizione non sarebbero univoci.</p>
+<h4>Vantaggi nell’uso degli indici</h4>
+<p>Ricerche veloci:  utilizzando un indice sarà più veloce la ricerca di dati tramite query basata
+sui segmenti dell’indice.</p>
+<p>Ordinamento dei dati: utilizzare un indice significa altresì ordinare i dati in base ai segmenti
+dell’indice, quindi il programmatore tramite l’uso di questi indici potrà riordinare i dati a seconda
+delle situazioni che gli si presentano.</p>
+
+<p>Adesso dobbiamo definire gli indici della tabella accedendo all’area sottostante del
+repository:</p>
+<img src='img/image028.gif'>
+<p>Questo elenco contiene le informazione di tutti gli indici della tabella selezionata.</p>
+<p>Nella parte sinistra la lista degli indici contenente il nome fisico dell’indice. Nella parte destra
+invece abbiamo i segmenti dell’indice selezionato, quindi i campi della tabella che determinano
+l’ordinamento.</p>
+<p>Per creare un nuovo indice per la tabella seleziona procedere come segue:</p>
+<ol>
+<li>Creare una nuova riga (<kbd>F4</kbd>).</li>
+<li>Digitare il nome dell’indice (stringa senza spazi).</li>
+<li>Accedere all’area destra (<i>segments</i>).</li>
+<li>Creare una nuova riga (<kbd>F4</kbd>).</li>
+<li><kbd>F5</kbd> (<i>zoom</i>) per selezionare il campo della tabella dalla colonna
+       <i>Index segment</i>.</li>
+<li>Definire il tipo di ordinamento (<i>Ascending</i> o <i>Descending</i>).<li>
+<li>Ripetere i punti 4-5-6 per tutti i segmenti dell’indice selezionato</li>
+</ol>
+</blockquote><br />
+<h3>0.6.4<a name='node_34'> &nbsp; </a>Utility per la conversione delle tabelle</h3><br><blockquote><p>Qualora il programmatore modifichi la struttura di una tabella, sia aggiungendo campi o indici,
+che modificando la tipologia dei campi o i segmenti di un indice, potrebbe essere necessario un
+intervento anche alla struttura della tabella fisica nel database (se la tabella è già stata creata).</p>
+<p>Accedendo all’applicazione a runtime come utente "root" (amministratore di runtime) si avrà
+disponibile il menu "Administrator": tramite la pressione del tasto dx del mmouse al centro della finestra del browser; scegliendo la voce di menu "tables" si avvia una utility di manutenzione delle
+tabelle.</p>
+<img src='img/image032.gif'>
+<br />
+<h3>0.6.4.1<a name='node_35'> &nbsp; </a>Controllo (check) di tutte le tabelle</h3><br><blockquote><p>Al fine di verificare che la struttura delle tabelle definita in o2architect sia compatibile con
+la struttura fisica nel database, procedere premendo il pulsante <i>Check all tables</i>.</p>
+<p>Dopo l’analisi comparirà l’esito nell’area di <i>log</i>:</p>
+<img src='img/image036.gif'>
+<p>La procedura avverte il programmatore che la tabella "items" presenta colonne nuove in
+o2architect che non esistono fisicamente nel database.</p>
+<p>Adesso sarà opportuno procedere con la verifica ed il rebuild della singola tabella "items".</p>
+
+</blockquote><br />
+<h3>0.6.4.2<a name='node_36'> &nbsp; </a>Controllo (check) e Rebuild della singola tabella</h3><br><blockquote><p>Una volta verificato che alcune tabelle presentano delle differenze tra la definizione o2 e
+la definizione fisica nel database è necessario procedere con il check della singola tabella e il successivo rebuild.</p>
+<p>Selezionare la tabella da analizzare tramite il listbox in alto a sinistra;
+nel log comparirà il risultato del check della singola tabella selezionata.
+<p>Al termine dell’analisi o2runtime produce l’elenco delle differenze come segue:</p>
+<img src='img/image040.gif'>
+<p>Per riallineare la struttura fisica della tabella procedere premendo il pulsante
+<i>Rebuild table structure</i>.
+
+</blockquote><br />
+<h3>0.6.4.3<a name='node_37'> &nbsp; </a>Azioni disponibili sulla tabella</h3><br><blockquote><p>A seguito dell’analisi prodotta da o2runtime circa la compatibilità tra la
+struttura delle tabelle definita in o2architect e quella definita fisicamente nel
+database in uso, il programmatore ha tutti gli strumenti per decidere quale
+azione compiere.</p>
+<ol>
+<li><i>Browse</i> della tabella</li>
+<li><i>Create</i> della tabella</li>
+<li><i>Import data</i> della tabella</li>
+<li><i>Export data</i> della tabella</li>
+<li><i>Drop</i> della tabella</li>
+<li><i>Rebuild</i> della tabella</li>
+<li><i>Logging</i> della tabella</li>
+</ol>
+
+<h4><i>Browse</i> della tabella</h4>
+<p>Semplice interfaccia per la modifica dei dati dell tabella<p>
+
+<h4><i>Create</i> della tabella</h4>
+<p>E' abilitato solo se la tabella non esiste ed esegue lo statement SQL oppurtuno per la sua creazione<p>
+
+<h4><i>Import data</i> della tabella</h4>
+<p>Utility per l'importazione dei dati da file di testo formattato secondo uno schema XML interno: sono importabili file generati tramite la funzione di <i>export</i><p>
+
+<h4><i>Export</i> della tabella</h4>
+<p>Utility per l'esportazione dei dati della tabella su file di testo secondo uno schema di formattazione XML interno. Questi files saranno importabili tramite la funzione <i>Import data</i><p>
+
+<h4><i>Drop</i> della tabella</h4>
+<p>Il programmatore premendo il pulsante <i>Drop</i> elimina la tabella dal
+database.  In questo modo un successivo accesso ad una funzione dell’applicazione
+da parte dell’utente finale che richieda l’utilizzo di questa tabella provocherà una
+creazione automatica della tabella, sulla base della struttura definita in 2architect.
+</p>
+<p>E’ evidente che così facendo le eventuali differenze sparirebbero, però utilizzare
+questa opzione con cautela e solamente se non esistono record nella tabella, oppure
+se ritenete che i dati in essa contenuti non siano importanti.</p>
+
+<h4><i>Rebuild</i> della tabella</h4>
+<p>Premendo il pulsante <i>Rebuild</i> o2runtime modifica la struttura fisica della
+tabella, rendendola compatibile con quella o2 e mantenendo integri i dati in essa
+contenuti.</p>
+
+<h4><i>Logging</i> dei record della tabella</h4>
+<p>Il sistema permette di attivare a Runtime il log di tutte le modifiche sulla tabella. Attivando il <i>log</i> su una tabella viene creata una tabella identica all'originale con in più i campi <i>Date - Time - Microtime - Action - User</i>, ed ad ogni inserimento, modifica, cancellazione  o2Runtime aggiornerà il log in modo automatico.
+</p>
+
+<img src='img/image042.gif'>
+</blockquote></blockquote><br /><h4>Esercitazione</h4>
+<fieldset><p>E’ arrivato il momento di creare le tabelle di cui avremo bisogno per completare
+l’applicazione “Il mio negozio online” (usa il diagramma precedentemente illustrato).</p>
+</fieldset><br /><h4>Riepilogo</h4>
+<p>Questo capitolo ha conferito al programmatore gli strumenti necessari per completare
+la seconda fase dello sviluppo di un’applicazione o2: definire tabelle nel <i>tables repository
+</i>.</p>
+<p>Il <i>tables repository</i> elenca tutte le tabelle dell’applicazione, i rispettivi campi e i
+rispettivi indici.</p>
+<p>E’ importante dare un nome significativo alle tabelle e ai campi anche in contraddizione
+con il nome fisico dell’oggetto.</p>
+<p>Dopo aver definito i campi procedere con la definizione degli indici.</p>
+<p>Definire indici permette rapide ricerche di dati e il riordino degli stessi.</p>
+<p>Un indice deve avere uno o più segmenti.</p>
+<p>Dopo aver definito gli indici indicare quale è indice primario per la tabella.</p>
+</blockquote><br />
+<h2>0.7<a name='node_40'> &nbsp; </a>Un programma di interazione con i dati di una tabella</h2><br><blockquote><fieldset>FORM, MAIN TABLE, SELECT OPERATION, SYNTAX CHECK, VIEW</fieldset>
+<p>Questo capitolo mostra come creare un semplice programma di browsing su una
+tabella.</p>
+<br /><h4>Obiettivi</h4>
+<p>Al termine di questo capitolo il programmatore sarà in grado di:</p>
+<ul>
+<li>Creare un programma di <em>browsing</em></li>
+<li>Navigare all’interno della definizione di una <i>view</i></li>
+<li>Impostare la tabella principale (<i>main table</i>) di una <i>view</i></li>
+<li>Definire i campi richiesti</li>
+<li>Disegnare un’interfaccia di base per navigare sui dati</li>
+<li>Controllare la sintassi del programma ed eseguirlo</li>
+</ul>
+
+<br /><h4>Introduzione</h4>
+<p>Arrivati a questo punto abbiamo definito i modelli e le tabelle per l’applicazione.</p>
+<p>In questo capitolo andremo a creare un semplice programma di <em>browsing</em>,
+nel caso specifico un programma per la consultazione, la modifica e l’inserimento dei dati
+nella tabella "Customers_type" e lo faremo ponendo l’attenzione soprattutto su come il
+programma è suddiviso, tralasciando per il momento alcuni dettagli che saranno approfonditi
+nei successivi capitoli.</p>
+<p>Il processo si divide in quattro fasi:</p>
+<ol>
+<li>Definizione della <i>view</i> (vista sul database)</li>
+<li>Definizione delle operazioni per l’esecuzione delle azioni di insert, delete, update </li>
+<li>Creazione della <i>Form</i> (interfaccia)</li>
+<li>Inserimento del programma a menu</li>
+</ol>
+
+<br />
+<h3>0.7.1<a name='node_43'> &nbsp; </a>I programmi</h3><br><blockquote><p>Per creare un nuovo programma, selezionare <i>Programs</i> dal menu
+<i>Navigator</i>.</p>
+<img src='img/image044.gif'>
+<ol>
+<li>Posizionarsi su <i>Programs</i> e premere <kbd>F4</kbd></li>
+<li>Digitare il nome del programma (stringa senza spazi) e confermare</li>
+</ol>
+<p>Per selezionare un programma, sia quello appena creato che qualsiasi altro già
+presente nel repository dei programmi:</p>
+<ol>
+<li>Esplodere il menu <i>Programs</i> dal <i>Navigator</i></li>
+<li>Selezionare il programma da modificare</li>
+<li>Premere <kbd>INVIO</kbd></li>
+</ol>
+<img src='img/image046.gif'>
+<p>Come si può vedere il programma è suddiviso logicamente in 9 aree:</p>
+<ol>
+<li><i>Program properties</i></li>
+<li><i>Parameters</i></li>
+<li><i>Variables</i></li>
+<li><i>Views</i></li>
+<li><i>Forms</i></li>
+<li><i>I/O Files</i></li>
+<li><i>Protocols</i></li>
+<li><i>Actions</i></li>
+<li><i>Expressions</i></li>
+</ol>
+<p>Ogni area a sua volta potrà contenere altre sottoaree che analizzeremo
+approfonditamente andando avanti nel corso. In questa fase ci limiteremo a creare lo
+stretto necessario per raggiungere il nostro obiettivo:</p>
+<p>creare un semplice programma di interfaccia con una singola tabella, i
+"Customer_types".</p>
+
+</blockquote><br />
+<h3>0.7.2<a name='node_44'> &nbsp; </a>Le view</h3><br><blockquote><p>Per creare una nuova view:</p>
+<ol>
+<li>Selezionare l’area <i>View</i> dal <i>Navigator</i> e premere <kbd>F4</kbd></li>
+<li>Digitare il nome della view (stringa senza spazi) e confermare</li>
+</ol>
+<p>Per accedere ad una view, sia a quella appena creata che ad eventuali altre view del
+programma, esplodere la voce <i>View</i> dal <i>Navigator</i> e dopo aver selezionato la
+view interessata premere <kbd>INVIO</kbd> per accedere alla sua definizione.</p>
+<img src='img/image048.gif'>
+
+<br />
+<h3>Tabelle della view</h3><br><p>Dopo aver creato una nuova view andiamo nell’area <i>Tables in view</i> per dichiarare
+quali tabelle prenderanno parte nella query.</p>
+<p>Nel caso specifico aggiungiamo un’unica tabella ("Customer_types") e la dichiariamo
+<i>Main table</i> della view.</p>
+<blockquote><p>In questo momento il programmatore non si preoccupi più del dovuto se non
+comprende il significato delle altre voci all’interno del repository, saranno abbondantemente
+riprese nei successivi capitoli.</p></blockquote>
+<img src='img/image050.gif'>
+<br />
+<h3>Campi <i>select</i> e campi <i>calculated</i></h3><br><p>Una volta dichiarato la tabella principale della view possiamo accedere nell’area sottostante
+<i>Select and calculated fields</i> per definire quali campi della tabella vogliamo utilizzare
+all’interno di questo programma.</p>
+<p>Per aggiungere un nuova riga a questa lista procedere come segue per tutti i campi da
+selezionare:</p>
+<ol>
+<li>Creare una nuova riga <kbd>F4</kbd></li>
+<li><kbd>F5</kbd> (<i>zoom</i>) dalla colonna <i>Type</i> e selezionare il tipo
+       "Select"</li>
+<li><kbd>F5</kbd> (<i>zoom</i>) dalla colonna <i>From table</i> e selezionare
+       "Customer_types"</li>
+<li><kbd>F5</kbd> (<i>zoom</i>) dalla colonna <i>Field</i> e selezionare il campo della
+       tabella</li>
+<li>Confermare la riga (<kbd>FrecciaGiù</kbd>) in modo da attribuire il valore alla colonna
+       <i>Alias</i></li>
+<li>Ripetere i punti 2-3-4-5 per tutti i campi della tabella, ottenendo un elenco come
+       questo:</li>
+</ol>
+<img src='img/image052.gif'>
+
+<br />
+<h3>Proprietà della view</h3><br><p>Ogni view ha un’area, dove definire eventuali proprietà avanzate, a cui si accede
+selezionando dal <i>Navigator</i> l’elemento <i>View Properties</i> sotto la view
+interessata.</p>
+<p>Nel nostro caso dobbiamo modificare la proprietà <i>Number of requested
+records</i> ed impostarla ad "1".</p>
+<p>Questa proprietà identifica il numero di record che saranno richiesti di volta in volta
+al server di database e, nel caso di interfacce di tipo <em>screen</em>, dove viene
+letto un record alla volta, deve essere impostato ad "1" (<i>default</i> = "10").</p>
+<blockquote><p>Questi argomenti saranno trattati a fondo nei capitoli successivi</p>
+</blockquote>
+<img src='img/image054.gif'>
+</blockquote><br />
+<h3>0.7.3<a name='node_48'> &nbsp; </a>Definizione di azioni e operazioni di modifica dei dati</h3><br><blockquote><p>Le action (azioni) sono in sostanza tutta la componente esecutiva di un programma
+o2.</p>
+<p>Ogni action è composta da una serie di operations (operazioni) che vengono eseguite
+da o2runtime nell’ordine in cui sono state definite.</p>
+<blockquote><p>In questo momento il programmatore non si preoccupi più del dovuto se non
+comprende il significato delle altre voci all’interno del repository: saranno
+abbondantemente riprese nei successivi capitoli.</p></blockquote>
+<p>Per creare una nuova <i>action</i>:</p>
+<ol>
+<li>Selezionare l’area <i>Actions</i> dal <i>Navigator</i> e premere <kbd>INVIO
+       </kbd></li>
+<li>Digitare il nome della action (stringa senza spazi) e confermare</li>
+</ol>
+<p>Per accedere ad una action, sia a quella appena creata che ad eventuali altre action
+del programma, esplodere la voce <i>Actions</i> dal <i>Navigator</i> e, dopo aver
+selezionato la action interessata, premere <kbd>INVIO</kbd> per accedere alla sua
+definizione.</p>
+<img src='img/image056.gif'>
+<p>Per creare una nuova operazione:</p>
+<ol>
+<li>Creare una nuova riga nella tabella <i>Operations</i> (<kbd>F4</kbd>)</li>
+<li>Selezionare dal combobox l’operatore opportuno (nel nostro caso <i>Recordset</i>)
+       </li>
+<img src='img/image058.gif'>
+<li><kbd>F5</kbd> (<i>zoom</i>) dalla colonna <i>Object</i> per aprire l'interfaccia di
+definizione specifica per l’operatore scelto<br>
+<img src='img/image060.gif'>
+<br>Nel nostro caso, visto che stiamo definendo l’azione "new_customer_type" sceglieremo
+l’opzione "Prepare insert" (prepara il recordset per l’inserimento di un nuovo record)</li>
+<li>Conferma della riga (<kbd>FrecciaGiù</kbd>)</li>
+</ol>
+
+
+
+<br /><h4>Esercitazione</h4>
+<fieldset><p>Adesso il programmatore prosegua creando le altre due action necessarie per la
+manutenzione della tabella "Customer_types" ("update_customer_type" e
+"delete_customer_type") ripetendo i passi sopra visti, in modo da ottenere questo
+risultato:</p>
+
+<h4>Operazioni di "update_customer_type"</h4>
+<img src='img/image062.gif'>
+<h4>Operazioni di "delete_customer_type"</h4>
+<img src='img/image064.gif'>
+<h4>Riepilogo delle action del programma</h4>
+<img src='img/image066.gif'>
+
+
+
+</fieldset></blockquote><br />
+<h3>0.7.4<a name='node_50'> &nbsp; </a>Creazione della form (interfaccia utente)</h3><br><blockquote><p>In questa fase andremo a creare la rappresentazione visuale del programma generato
+nelle fasi precedenti.</p>
+<p>Per fare questo, il programmatore genererà una form in o2architect che produrrà
+l’interfaccia per l’utente finale.</p>
+<blockquote><p>In questo momento il programmatore non si preoccupi più del dovuto se
+non comprende il significato delle altre voci all’interno del repository, saranno
+abbondantemente riprese nei successivi capitoli.</p></blockquote>
+<p>Per creare una nuova form:</p>
+<ol>
+<li>Selezionare l’area <i>Forms</i> dal <i>Navigator</i> e premere <kbd>INVIO</kbd></li>
+<li>Accedere alla tabella delle form</li>
+<li>Creare una nuova riga <kbd>F4</kbd></li>
+<li>Digitare il titolo nella colonna <i>Title</i></li>
+<li>Premere il pulsante <i>Design</i> per accedere all’editor visuale delle form</li>
+</ol>
+<img src='img/image068.gif'>
+<p>Il programmatore si trova di fronte una finestra denominata <i>Design form</i> che
+rappresenta lo spazio totale disponibile (la finestra del browser).</p>
+<p>Al suo interno:</p>
+<ul>
+<li>la form "Customer_types" che sarà la form del nostro programma</li>
+<li>la palette dei controlli o2</li>
+<li>l’<i>Object inspector</i> strumento con il quale si attribuiscono le proprietà ai
+       controlli</li>
+</ul>
+<p>Il programma che stiamo facendo deve consentire la completa manutenzione della tabella
+"Customer_types", per cui devono essere definiti i controlli che accolgano i valori dei campi della
+tabella. Scegliamo dei semplici controlli <i>Edit text</i>.</p>
+<br />
+<h3>Aggiungere controlli ad una form</h3><br><p>Per procedere con l’inserimento dei controlli sulla form procedere come
+segue:</p>
+<ol>
+<li>Selezionare il controllo dalla palette (nel nostro caso il controllo <i>Edit</i>)
+       <br /><img src='img/image070.gif'></li>
+<li>Posizionare il controllo sulla form "Customer_types" semplicemente cliccando
+       sul punto voluto
+       <br /><img src='img/image072.gif'></li>
+<li>Utilizzare adesso l’<i>Object inspector</i> per definire la proprietà <i>Field</i>
+       (campo associato al controllo) e selezionare il campo “id” dalla view
+       “customer_types”
+       <br /><img src='img/image074.gif'></li>
+<li>Ripetere i punti 1-2-3 anche per il campo “description” in modo da ottenere
+       questo risultato:
+       <br /><img src='img/image074.gif'></li>
+</ol>
+
+
+
+
+<br />
+<h3>Aggiungere un controllo di navigazione sulla vista (<i>DBNavigator</i>)</h3><br><p>Procediamo adesso inserendo sulla form un oggetto di tipo <i>DBNavigator
+</i>.</p>
+<img src='img/image078.gif'>
+<p>Questo controllo fornisce all’utente finale la capacità di muoversi all’interno
+del recodset semplicemente cliccando sui bottoni (<i>First row</i> –<i>Previous
+page</i> – <i>Previous row</i> – <i>Next row</i> - <i>Next page</i> - <i>Last
+row</i>)</p>
+<p>Proprietà obbligatoria: la <i>View</i>. Impostiamo la proprietà <i>View</i>
+del <i>DBNavigator</i> selezionando la view “customer_types”</p>
+<img src='img/image080.gif'>
+
+<br />
+<h3>Aggiungere dei pulsanti di comando</h3><br><p>Per scatenare le azioni sul recordset che abbiamo definito nella precedente fase
+dobbiamo inserire sulla form 3 controlli di tipo <i>Button</i>.</p>
+<img src='img/image082.gif'>
+<p>Dopo aver posizionato l’oggetto <i>Button</i> sul form “Customer types” procedere
+con la definizione delle proprietà al momento indispensabili:</p>
+<ul>
+<li><i>Caption</i></li>
+<li><i>Action</i></li>
+</ul>
+<p>La proprietà <i>Caption</i> contiene il testo che comparirà sul pulsante; la proprietà
+<i>action</i>, invece, il nome dell’azione che sarà invocata al click sul pulsante.</p>
+<h4>Esempio: attribuzione delle proprietà <i>Caption</i> e <i>Action</i> al pulsante
+“Elimina”</h4>
+<img src='img/image084.gif'>
+<p>Ripetere l’operazione per gli altri due pulsanti: “Nuovo” e “Salva” in modo da ottenere
+il seguente risultato:</p>
+<img src='img/image086.gif'>
+
+
+
+<br />
+<h3>Salvataggio del programma e pubblicazione</h3><br><p>Adesso il programma è terminato: dobbiamo salvarlo e pubblicarlo prima che sia
+possibile inserirlo in un menu.</p>
+<h4>Salvataggio modifiche dal <i>Design form</i></h4>
+<p>Uscire dal <i>Design form</i> tramite il pulsante di chiusura del form <img
+src='img/image088.gif'> e alla richiesta di salvataggio confermare.</p>
+<h4>Pubblicazione del programma</h4>
+<p>Dal menu <i>CVS</i> scegliere la voce <i>Check-in</i> (<kbd>F12</kbd>).</p>
+</blockquote></blockquote><br />
+<h2>0.8<a name='node_55'> &nbsp; </a>Select, calculated, criteri di range e variabili</h2><br><blockquote><fieldset>CAMPI CALCOLATI (CALCULATED), EXPRESSION, LINK, RANGE</fieldset>
+<p>Questo capitolo approfondisce le conoscenze del programmatore
+circa la costruzione delle view che è stata solamente accennata nei
+precedenti capitoli.</p>
+<br /><h4>Obiettivi</h4>
+<p>Al termine di questo capitolo il programmatore sarà in grado di:</p>
+<ul>
+<li>Definire le tabelle implicate nella query</li>
+<li>Creare campi calcolati attribuendo expression di valorizzazione</li>
+<li>Filtrare il recordset in base ai parametri di range</li>
+<li>Utilizzare le funzioni di aggregazione (<i>SUM</i>, <i>MAX</i>,
+       <i>MIN</i>, <i>AVG</i>)</li>
+<li>Utilizzare gli eventi della view</li>
+</ul>
+
+<br /><h4>Introduzione</h4>
+<p>La creazione di una view in o2architect ha come unico scopo
+quello di definire un <em>dataview</em> con il quale il programma
+(tramite le action) o l’utente finale (tramite le form) potranno
+interagire per raggiungere l’obiettivo funzionale.</p>
+
+<p>Ogni programma o2 può contenere una o più view.</p>
+
+<p>Ogni view può essere composta da campi di tabelle diverse e
+residenti su database anche fra loro eterogenei.</p>
+
+<p>Per affrontare in modo efficace gli argomenti di questo capitolo ci
+poniamo come obiettivo quello di realizzare un programma di
+consultazione e ricerca dei clienti, definendo un’ interfaccia di tipo
+<em>line</em> e una serie di campi che l’utente potrà utilizzare per
+ricercare alcuni valori all’interno della view.</p>
+<br />
+<h3>0.8.1<a name='node_58'> &nbsp; </a><i>Tables in view</i></h3><br><blockquote><p>Creiamo un nuovo programma denominato “customers” e al suo interno
+una view denominata appunto “customers”.</p>
+
+<p>Definiamo adesso le tabelle delle view.</p>
+
+<p>Nell'area della view indicata come <i>Tables in view</i> vengono dichiarate
+le tabelle necessarie per la costruzione della query.</p>
+
+<p>Nel nostro caso dobbiamo costruire una query che riporti i valori dalla
+tabella “customers”, quindi dobbiamo aggiungere la tabella “customers” e
+dichiararla <i>Main table</i> della view.</p>
+
+<blockquote><b>Ogni view o2 richiede sempre una e solo una tabella
+dichiarata come <i>Main table</i> o come <i>View</i></b>. (Per quanto
+riguarda il level <i>View</i> tratteremo l'argomento più avanti nel corso).
+</blockquote>
+
+<p>Le altre tabelle che eventualmente servano alla definizione della view
+devono obbligatoriamente essere dichiarate di level <i>Link</i>.</p>
+
+<p>Le link consentono di estendere il recordset nel numero di colonne,
+agganciando al recordset principale anche le select derivanti da altre tabelle,
+ma non estendono mai il recordset nel numero di record ritornati. Possono
+tuttavia ridurlo se applicati dei criteri di range.</p>
+
+<p>Vedremo meglio le link più avanti nel corso.</p>
+
+<p>Aggiungiamo al corpo della view le select necessarie (tutte) in modo da
+ottenere il seguente risultato:</p>
+
+<img src='img/image094.gif'>
+</blockquote><br />
+<h3>0.8.2<a name='node_59'> &nbsp; </a>I campi calcolati (calculated)</h3><br><blockquote><p>Supponiamo di voler definire una colonna nel recordset contenente
+la concatenazione di stringa dei campi che compongono l’indirizzo, per
+visualizzarli come fossero un unico campo sul database.</p>
+<ol>
+<li>Aggiungere alle nostre select una nuova riga (<kbd>F4</kbd>)</li>
+<li><kbd>F5</kbd> (<i>zoom</i>) dalla colonna <i>Type</i> e scegliamo
+       <i>Calculated</i></li>
+<li>Digitare il nome del campo nella colonna <i>Alias</i> (stringa senza spazi
+       e di contenuto univoco all’interno della view)</li>
+<li><kbd>F5</kbd> (<i>zoom</i>) dalla colonna <i>Init</i> per selezionare
+       l’espressione di calcolo (dal repository delle expression)</li>
+</ol></blockquote><br />
+<h3>0.8.3<a name='node_60'> &nbsp; </a>Le espressioni (expression)</h3><br><blockquote><p>E’ doveroso, arrivati a questo punto del corso, prima di proseguire,
+esprimere per la prima volta il concetto di expression del programma.</p>
+
+<p>All’interno di ogni programma è possibile definire infinite espressioni
+(simili alle funzioni di qualsiasi linguaggio di programmazione). Ogni espressione
+è composta da:</p>
+<ol>
+<li>Un indice univoco (<i>id</i>) con il quale sarà indicata e utilizzata</li>
+<li>Un campo testo (illimitato nel numero di caratteri) denominato <i>Script</i>
+       (facoltativo)</li>
+<li>Un campo testo (limitato a 255 caratteri) denominato <i>Return</i> e che
+       esprime il valore che l'espressione dovrà ritornare</li>
+</ol>
+
+<p>Il <i>Return</i> di una espressione può essere una costante o il risultato di
+espressioni valorizzate nello <i>Script</i>, utilizzando funzioni e i valori delle
+variabili del programma. Ovviamente tali valori saranno determinati durante
+l’esecuzione del programma dal modulo o2Runtime.</p>
+
+<p>Ecco alcuni esempi di expression:</p>
+
+<img src='img/image096.gif'>
+<ol>
+<li>La prima ritornerà sempre la stringa “Costante alfanumerica”</li>
+<li>La seconda ritornerà sempre il valore 100</li>
+<li>La terza ritornerà il valore del campo “address” all’interno della view
+       “customers” del record selezionato in quel momento</li>
+</ol>
+
+<p>Fatta questa premessa dobbiamo creare una nuova expression che riporti la
+concatenazione di stringa tra i campi che compongono l’indirizzo del cliente. Per
+fare questo:</p>
+<ol>
+<li>Dalla scelta <i>Expression</i> creare una nuova riga (<kbd>F4</kbd>)</li>
+ <li><kbd>F5</kbd> (<i>zoom</i>) dalla colonna <i>Return</i> per accedere
+       all’area di <i>Script</i></li>
+<li><kbd>F5</kbd> (<i>zoom</i>) dallo script per accedere agli oggetti o2
+       disponibili (campi, proprietà dell’applicazione, ecc.)</li>
+<li>Scrivere un’espressione come quella sottostante per farsi ritornare il valore
+       dei campi "address" e "city" concatenati</li>
+</ol>
+
+<img src='img/image098.gif'>
+
+<blockquote><b>Attenzione. Lo <i>Script</i> e il <i>Return</i> delle espressioni
+o2 deve essere sintassi <em>PHP</em> (per informazioni sul linguaggio <em>
+PHP</em> visitare il sito <a href='http://www.php.net'>www.php.net</a>). Questo significa che all’interno delle espressioni o2 possono essere utilizzate liberamente
+le funzioni che il linguaggio <em>PHP</em> mette a disposizione.</b></blockquote>
+
+<p>Dopo la definizione della suddetta expression la nostra view si presenterà nel
+seguente formato:</p>
+
+<img src='img/image100.gif'>
+
+<p>Il riferimento “1” nella colonna <i>Init</i> richiama l’expression con id “1”
+appena creata.</p>
+</blockquote><br />
+<h3>0.8.4<a name='node_61'> &nbsp; </a>Criteri di range (<i>Min</i>, <i>Max</i>, <i>Not</i>, <i>Like</i>)</h3><br><blockquote><p>Il programmatore può definire una espressione per ogni criterio di range
+su ognuno dei campi selezionati all’interno della view al fine di filtrare il
+recordset.</p>
+
+<p>Le espressioni di range nelle colonne di <i>Range</i> sono l’unico modo
+per definire i criteri di filtro all’interno del dataview completo. Le colonne di
+<i>Range</i> sono quattro:</p>
+<ol>
+<li><i>Min</i> - valore minimo accettato per il campo</li>
+<li><i>Max</i> - valore massimo accettato campo</li>
+<li><i>Not</i> - valore che NON deve essere accettato per il campo</li>
+<li><i>Like</i> - valori che deve essere contenuto nel campo</li>
+</ol>
+
+<p>Ogni riga di select all’interno della View permette l’inserimento nelle celle
+<i>Min</i>, <i>Max</i>, <i>Not</i> e <i>Like</i>, posizionandosi sulla riga,
+quindi sul campo, che vogliamo filtrare e premendo <kbd>F5</kbd>
+(<i>zoom</i>) dalla colonna <i>Min</i> per selezionare l’espressione di filtro.
+</p>
+
+<p>Se, a titolo di esempio, volessimo che il nostro programma lavorasse solamente
+con clienti che abbiano un codice ("id") compreso tra il valore "10" e il valore "30"
+dovremmo:</p>
+<ol>
+<li><kbd>F5</kbd> (<i>zoom</i>) dalla colonna <i>Min</i> della riga dell’"id"</li>
+<li>Creare una nuova expression (<kbd>F4</kbd>)</li>
+<li>Digitare "10" nella colonna <i>Result</i> e selezionare l’expression</li>
+<li>Spostarsi nella colonna <i>Max</i></li>
+<li><kbd>F5</kbd> (<i>zoom</i>) dalla colonna <i>Max</i> della riga dell’"id"</li>
+<li>Creare una nuova expression (<kbd>F4</kbd>)</li>
+<li>Digitare "30" nella colonna <i>Result</i> e selezionare l’expression</li>
+</ol>
+
+<img src='img/image102.gif'></blockquote><br />
+<h3>0.8.5<a name='node_62'> &nbsp; </a>Variabili del programma</h3><br><blockquote><p>Appare evidente che i filtri visti fino ad ora risolvano solo una parte del
+problema, cioé quella dei filtri definiti dal programmatore. In molti casi, però,
+il programmatore non può definire a priori i valori di range, ma può definire dei
+criteri utilizzando le variabili del programma (<i>variables</i>) che, in fase
+esecutiva, assumeranno dei valori (sia impostati dall’utente finale che dalle
+action stesse del programma).</p>
+
+<p>Ecco un esempio del risultato da ottenere:</p>
+
+<img src='img/image104.gif'>
+
+<p>Oltre ai campi delle view, il programmatore può definire, all’interno di ogni
+programma, tutte le variabili locali che ritiene necessarie. Queste variabili sono
+utilizzabili solo all’interno del programma in cui vengono definite.</p>
+
+<p>Dal <i>Navigator</i> selezionare <i>Variables</i></p>
+
+<img src='img/image106.gif'>
+
+<p>Per definire una nuova variabile:</p>
+<ol>
+<li>Accedere alla tabella e creare una nuova riga (<kbd>F4</kbd>)</li>
+<li>Digitare il nome nella colonna <i>Alias</i></li>
+<li><kbd>F5</kbd> (<i>zoom</i>) dalla colonna <i>Model</i> per selezionare
+       il modello</li>
+</ol>
+
+<p>Procedere adesso autonomamente a definire le variabili che metteremo a
+disposizione dell’utente finale per la ricerca dei clienti, ad esempio:</p>
+
+<img src='img/image108.gif'>
+
+<p>Una volta definito le variabili procedere con la creazione delle espressioni da
+utilizzare nelle colonne di range della view. Al termine, la nostra view su "customers"
+si presenterà nel seguente modo:</p>
+
+<img src='img/image110.gif'>
+
+<p>E questo sarà l’elenco delle expression:</p>
+
+<img src='img/image112.gif'>
+</blockquote><br />
+<h3>0.8.6<a name='node_63'> &nbsp; </a>Creazione della form (di tipo <em>line</em>)</h3><br><blockquote><p>Creiamo adesso l’interfaccia utente. Come già precedentemente visto,
+accedere all’area <i>Forms</i> dal <i>Navigator</i>.</p>
+<ol>
+<li>Creare una nuova riga nella tabella delle form (<kbd>F4</kbd>)</li>
+<li>Digitare il titolo nella colonna <i>Title</i></li>
+<li>Premere il pulsante <i>Design</i> per accedere all'interfaccia di
+       <i>Design form</i></li>
+</ol>
+
+<p>Posizionare i controlli sulla form, in particolare utilizzare il controllo
+<img src='img/image114.gif'> (<i>Table control</i>)  per impostare i record
+in forma tabellare. Inserendo il controllo <i>table</i> la procedura richiederà
+a quale view associarlo (proprietà obbligatoria).</p>
+
+<p>Il controllo <i>table</i> è un controllo in grado di contenere altri controlli,
+quindi aggiungere i controlli <i>edit</i> all’interno della tabella e associarli ai
+rispettivi campi della view.</p>
+
+<img src='img/image116.gif'>
+
+<p>Porre attenzione ai campi all’interno del controllo <i>table</i>. Oltre alla
+proprietà <i>Field</i> è necessario impostare anche la proprietà <i>Parent
+Options</i> che in questo caso raccoglie le proprietà della colonna della tabella.
+</p>
+
+<img src='img/image118.gif'>
+
+<p>Per ogni campo all’interno della tabella è necessario definire, attraverso la
+proprietà <i>Parent options</i>:</p>
+<ol>
+<li>La riga in cui verrà visualizzato (<i>Line</i>)</li>
+<li>Da quale colonna a quale colonna (<i>From column</i> – <i>To column</i>)
+       </li>
+<li>L’intestazione di colonna (<i>Label</i>)</li>
+</ol>
+
+<p>Gli altri campi sono facoltativi e saranno trattati nei capitoli successivi.</p>
+
+
+
+</blockquote></blockquote><br />
+<h2>0.9<a name='node_64'> &nbsp; </a>Relazione <em>uno-a-uno</em> - le link</h2><br><blockquote><fieldset>ESPRESSIONI DI JOIN, LINK, MAIN TABLE</fieldset>
+<p>Questo capitolo introduce il programmatore all’uso delle tabelle di <i>Link
+level</i>, che consentono la creazione di una connessione <em>uno-a-uno</em>
+tra tabelle di database.</p>
+<br /><h4>Obiettivi</h4>
+<p>Al termine di questo capitolo sarai in grado di:</p>
+<ul>
+<li>Capire il funzionamento di view con più tabelle tra loro in relazione semplice
+       <em>uno-a-uno</em></li>
+<li>Comprendere il meccanismo di ricalcolo dei dati di tabelle di <i>link level</i>
+       </li>
+<li>Filtrare una view per un campo di una tabella di <i>link level</i></li>
+</ul>
+
+
+ </blockquote><br />
+<h2>0.10<a name='node_66'> &nbsp; </a>I programmi di selezione</h2><br><blockquote><fieldset>CALL E GOTO PROGRAM, LOCATE, PARAMETRI, RETURN PARAMETER, TABELLA DI SELEZIONE</fieldset>
+<p>Questo capitolo introduce l’utilizzo di programmi di selezione, funzioni che
+abilitano l’utente finale a scegliere valori da una lista.</p>
+<br /><h4>Obiettivi</h4>
+<p>Al termine di questo capitolo sarai in grado di:</p>
+<ul>
+<li>Create una tabella di scelta</li>
+<li>Passare e ricevere parametri tra programmi</li>
+<li>Capire il concetto di programma di selezione</li>
+<li>Posizionarsi su un record della view senza filtrarla (<kbd>Locate</kbd>)</li>
+</ul>
+
+<br /><h4>Introduzione</h4>
+<p>Un’esigenza comune a molte procedure è quella far interagire più programmi
+(cioè unità funzionali distinte) e di scambiare tra loro informazioni. In questo
+capitolo vedremo come invocare l’esecuzione di un programma dall’interno di un
+altro e come scambiare parametri tra loro. In particolare vedremo come realizzare
+un programma che consenta di selezionare un valore da un elenco e di restituirlo al
+programma chiamante, allo scopo di valorizzare un campo <em>a scelta
+obbligatoria</em>.<p>
+
+<p>A tale scopo utilizzeremo il programma di consultazione e ricerca dei clienti
+come programma di selezione per recuperare un "codice cliente".</p>
+<br />
+<h3>0.10.1<a name='node_69'> &nbsp; </a>I parametri in entrata</h3><br><blockquote><p>Ogni programma che voglia ricevere informazioni da altri programmi deve
+mettersi nella condizione di accettarle. Ciò viene fatto definendo il numero e il
+tipo (<i>data models</i>) di informazioni accettate nell’elenco dei parametri
+del programma: tali informazioni resteranno disponibili al programma chiamato
+per tutto il tempo della sua esecuzione.</p>
+
+<p>Dal <i>Navigator</i> selezionare <i>Parameters</i>:</p>
+
+<img src='img/image120.gif'>
+
+<p>Per definire un nuovo parametro:</p>
+<ol>
+<li>Accedere alla tabella e creare una nuova riga (<kbd>F4</kbd>)</li>
+<li>Digitare un numero progressivo di <i>Id</i> per il parametro</li>
+<li>Digitare un nome significativo</li>
+<li><kbd>F5</kbd> (<i>zoom</i>) dalla colonna <i>Model</i> per selezionare
+       il modello</li>
+</ol>
+
+</blockquote><br />
+<h3>0.10.2<a name='node_70'> &nbsp; </a>Il ritorno dei parametri</h3><br><blockquote><p>Il ritorno dei parametri è implicito: ovvero, dopo la conclusione del programma
+chiamato, il chiamante si troverà i parametri passati <em>by reference</em>
+(vedremo in dettaglio il significato quando parleremo del programma chiamante)
+come valorizzati dal programma chiamato. La valorizzazione dei parametri avviene
+tramite l’istruziune di <i>return parameter</i>.</p>
+
+<p>Dall’elenco delle azioni creare una nuova azione di nome "return" che contenga
+un’istruzione di <i>return parameter</i>:</p>
+
+<img src='img/image122.gif'>
+
+<p>Premendo <kbd>F5</kbd> su <i>Arguments</i> accedere alle espressioni e
+inserire il riferimento al "Codice cliente" della vista "customers".</p>
+<p>Aggiungere un’istruzione di <i>Close program</i> all’azione "return" per
+terminare il programma e ritornare l’esecuzione al programma chiamante. In questo
+modo, all’esecuzione dell’azione "return", il parametro "Customer_id" verrà
+valorizzato con il valore corrente di "Codice cliente", a seconda della selezione
+operata dall’utente sull’interfaccia del programma, e il programma di selezione verrà terminato.</p>
+<p>Adesso manca solo di dare la possibilità all’utilizzatore di operare la selezione:</p>
+
+<img src='img/image124.gif'>
+
+<p>Per questo aggiungere un pulsante sulla form a associargli la nostra nuova
+azione di "return".</p>
+
+</blockquote><br />
+<h3>0.10.3<a name='node_71'> &nbsp; </a>Il passaggio di parametri</h3><br><blockquote><p>Creiamo un programma (di nome "caller") che contenga una sola variabile
+(di <i>alias</i> "selected_customer") di tipo "customer_id" e che mostri la
+variabile ed un pulsante per chiamare un’azione di nome "selection". Per i vari
+passaggi rimandiamo ai capitoli precedenti.</p>
+
+<img src='img/image126.gif'>
+
+<p>A questo punto definiamo la nostra azione "selection" aggiungendo una
+chiamata al programma "customer" e passando la nostra variabile
+"selected_customer" come parametro.</p>
+
+<img src='img/image128.gif'>
+
+<p>L’istruzione <i>call program</i> prevede di selezionare il programma da
+chiamare e poi, premendo <kbd>F5</kbd> sulla cella <i>Arguments</i>,
+presenta l’interfaccia dei parametri in uscita. I parametri possono essere passati
+in due modi:</p>
+<ol>
+<li><em>by reference</em> - (Tramite il pulsante <i>Variable</i>) La variabile
+       o il campo della vista da passare viene selezionato dall’elenco dei campi del
+       programma. Al termine del programma chiamato il valore del campo potrà
+       risultare variato.</li>
+<li><em>by expression</em> - (Tramite il pulsante <i>Expression</i>) Il valore
+       risultante dall’espressione sarà passato e reso disponibile al programma
+       chiamato come valore ma nessuna azione di ritorno è attesa o possibile.</li>
+</ol>
+<p>Nel nostro caso passeremo la variabile "selected_customer" come riferimento
+(<em> by reference</em>) per consentire il recupero del valore selezionato.</p>
+
+
+</blockquote><br />
+<h3>0.10.4<a name='node_72'> &nbsp; </a><i>Call program</i> e <i>Goto program</i></h3><br><blockquote><p><i>Call program</i> e <i>Goto program</i> servono entrambe per chiamare
+un altro programma ma con una sostanziale differenza:</p>
+
+<p>La <i>Call program</i> mette in attesa il programma chiamante (la cui eventuale
+interfaccia rimane inattiva sullo sfondo) ed esegue il programma chiamato fino alla
+sua conclusione. Al termine del chiamato (che esso preveda o no interazioni con
+l’operatore) il programma chiamante riprenderà la propria esecuzione, disponendo
+degli eventuali parametri valorizzati (esecuzione <em>modale</em>).</p>
+
+<p>La <i>Goto program</i> passa l’esecuzione ad altro programma (oppure
+sposta l’indirizzo web del browser all’url indicato) terminando in maniera
+irreversibile l’esecuzione del programma chiamante. Ovviamente l’utilizzo dei
+parametri <em>by reference</em> per una <i>Goto program</i> non può avere
+alcun intento di recupero valore.</p></blockquote><br />
+<h3>0.10.5<a name='node_73'> &nbsp; </a>L’istruzione di <i>locate</i></h3><br><blockquote><p>Se, ad esempio, volessimo ottenere questo effetto: quando il campo
+"selected_customer" del programma chiamante ha già un valore, posizionare
+la selezione del programma chiamato sul record che descrive tale valore.
+Ovvero: se inseriamo il valore "3" nel campo e premiamo il pulsante di selezione
+del "Codice cliente", vogliamo che il programma "customer" si apra mostrando il
+record con "id" = "3" come riga corrente.</p>
+
+<p>Questo comportamento lo si ottiene tramite l’istruzione <i>recordset locate</i>:
+l’istruzione accetta come parametri i valori di ricerca per ogni campo della tabella
+principale e rende corrente il primo record che soddisfi tali valori. Nel caso che nessun
+record li soddisfi, la vista si posiziona sul primo record del recordset.</p>
+
+<p><b>Nota bene</b> che l’istruzione di <i>locate</i> semplicemente posiziona
+la vista sul record richiesto, senza operare alcuna variazione né di range né di
+ordinamento per il recordset!</p>
+
+<p>Nell’elenco delle azioni creare una nuova azione di nome "locate" e contenente
+un’istruzione di <i>recordset locate</i> sulla vista "customers". Nell’elenco delle
+espressioni di locate per campo (<kbd>F5</kbd> sulla cella <i>Arguments</i>)
+inserire un’espressione in corrispondenza del campo id che contenga il riferimento
+al parametro in entrata "1 - Customer_id".</p>
+
+<img src='img/image130.gif'>
+
+<p>Ma quando eseguire la nostra azione? Abbiamo detto che vogliamo che il
+programma si apra <em>già posizionato</em> sul giusto record, quindi vogliamo
+che l’azione "locate" sia eseguita ogni volta che chiamiamo il programma
+"customers", prima di presentare l’interfaccia all’utente.</p>
+
+<p>Per questo dobbiamo indicare la nostra azione come <i>Initial action</i> del
+programma corrente (per i dettagli vedere la sezione relativa agli eventi). Come
+condizione di esecuzione della nostra istruzione di locate mettiamo una expression
+che risolva in "true" se il parametro arriva valorizzato, cioè diverso da "0". Questo
+impedirà l’esecuzione dell’istruzione quando tale condizione non si verifichi, cioè
+quando il programma verrà invocato da menu e quindi senza alcun parametro in
+entrata.</p>
+</blockquote><br /><h4>Riepilogo</h4>
+<p>In questo capitolo abbiamo creato un programma di selezione di record in
+una tabella, che accetti un parametro in entrata e lo valorizzi alla pressione di
+un pulsante. Abbiamo poi creato un secondo programma che chiami il primo
+passando una propria variabile come parametro e ne riceva il valore ritornato.
+In fine abbiamo visto come posizionare la vista uno specifico record, senza variare
+i criteri di range e ordinamento per il recordset.</p>
+
+<p>La <i>Call program</i> attende l’esecuzione del programma chiamato, dopo
+di che riprende l’esecuzione del chiamante, mentre la <i>Goto program</i> non
+prevede ritorno dal programma chiamato.</p>
+
+<p>I parametri in uscita possono essere passati come variabili o come espressioni
+per recuperare o meno i valori di ritorno.</p>
+
+<p>I valori dei parametri in entrata sono disponibili al programma come i valori
+delle normali variabili e campi delle viste.</p>
+
+<p>L’istruzione di <i>locate</i> accetta un’espressione per ogni campo per il quale
+si voglia indicare un criterio di posizionamento.</p>
+
+</blockquote><br />
+<h2>0.11<a name='node_75'> &nbsp; </a>Relazione <em>uno-a-molti</em></h2><br><blockquote><fieldset>RANGE, UPDATE</fieldset>
+<p>In questo capitolo apprenderai il concetto di relazione
+<em>uno-a-molti</em></p>
+
+<p>Imparerai a implementare view e form che presentano dati di tabelle fra loro
+collegate da una relazione di dipendenza di tipo <em>uno-a-molti</em>.</p>
+
+<br /><h4>Obiettivi</h4>
+<p>Al termine del capitolo sarai in grado di:</p>
+<ul>
+<li>Legare due o più view tra di loro tramite le espressioni di <i>range</i></li>
+<li>Definire form con più di un controllo <i>DBNavigator</i> e con più di un
+       controllo <i>DBTable</i></li>
+<li>Mantenere l’integrità dei dati attraverso le istruzioni di <i>update</i> dei
+       campi di collegamento in fase di inserimento</li>
+</ul>
+</blockquote><br />
+<h2>0.12<a name='node_77'> &nbsp; </a>Gli eventi</h2><br><blockquote><fieldset>EVENTI APPLICAZIONE, EVENTI DEI CONTROLLI, EVENTI DI PROGRAMMA, EVENTI DI VIEW</fieldset>
+<p>In questo capitolo vedremo i vari eventi disponibili in o2 e come utilizzarli.</p>
+<br /><h4>Obiettivi</h4>
+<p>Al completamento di questo capitolo sarai in grado di:</p>
+<ul>
+<li>Individuare ogni tipo di evento</li>
+<li>Applicare il meccanismo degli eventi alla logica dei programmi</li>
+<li>Scegliere gli eventi in base alle necessità</li>
+</ul>
+
+<br /><h4>Introduzione</h4>
+<p>Gli eventi sono tutti quei momenti in cui l’o2runtime può passare il controllo
+ad un’azione o ad un programma indicati dal programmatore ed hanno due scopi:
+</p>
+<ol>
+<li>Permettere al programmatore di intervenire all’interno di procedure
+       automatizzate (come gli eventi di view di <i>Read new row</i> e <i>Leaving
+       modified row</i>)</li>
+<li>Permettere al programmatore di indicare le azioni da eseguire a fronte di
+       certi comportamenti dell’operatore (come gli eventi di action per i pulsanti)
+       </li>
+</ol>
+<p>Gli eventi si dividono in 4 categorie in dipendenza degli oggetti su cui sono
+definiti e del tipo di esecuzione che possono invocare.</p>
+<br />
+<h3>0.12.1<a name='node_80'> &nbsp; </a>Gli eventi di applicazione</h3><br><blockquote><p>Gli eventi di applicazione servono a controllare momenti esecutivi
+indipendenti dal programma chiamato e comuni a tutta l’appliazione e sono
+due:</p>
+
+<img src='img/image132.gif'>
+
+<ol>
+<li><i>Start program</i>
+       <p>Lo <i>Start program</i> serve ad indicare il programma da eseguire
+       all’entrata nell’applicazione, cioè immediatamente dopo la funzione di login
+       di convalida dell’utente di scrittura della sessione.</p>
+      <p>Tale programma può essere un programma batch di servizio di ambiente,
+      utile a vari scopi: impostare variabili di ambiente, impostare i menu di
+      applicazione, recuperare informazioni dell’utente e scrivere log e statistiche;
+      oppure può essere un programma con interfaccia che dia al via alle esecuzioni
+      in assenza di menu, mostri menu personalizzati, mostri e costituisca la
+      <em>home page</em> del sito, richieda o notifichi informazioni all’utente e
+      quanto altro si voglia eseguire sempre ed una sola volta ad ogni accesso al
+      proprio sito.</p></li>
+<li><i>On request program</i>
+       <p>L’<i>On request program</i>, invece, deve essere rigorosamente batch
+       per un logico motivo: la sua esecuzione viene invocata ad ogni
+       <em>request</em> da parte dell’utente e, quindi, anche durante le normali
+       interazioni richieste dagli altri programmi.</p>
+       <p>L’utilizzo di questo evento è da prendersi in considerazione in casi molto
+       particolari, ad esempio, qualora si vogliano fare controlli sullo stato della
+       sessione o per risolvere esigenze specifiche di gestione della comunicazione
+       <em>http</em>.</p></li>
+</ol>
+
+
+ </blockquote><br />
+<h3>0.12.2<a name='node_81'> &nbsp; </a>Gli eventi di programma</h3><br><blockquote><p>Ad oggi l’o2 prevede un solo evento di programma e cioè la <i>initial
+action</i>.</p>
+<p>La <i>initial action</i> è l’azione eseguita automaticamente dal
+programma ogni volta che viene chiamato ed è possibile impostarla
+dall’omonimo campo nella pagina di <i>Program properties</i> del
+programma.</p>
+
+<img src='img/image134.gif'>
+
+<p>Come abbiamo visto, tramite questo evento è possibile impostare una
+vista del programma su specifici valori di ricerca ma risulta molto utile anche
+per effettuare controlli e valorizzare variabili all’entrata in un programma con
+interfaccia.</p>
+
+<p>Indispensabile l’utilizzo della <i>initial action</i> per i programmi batch:
+non mostrando alcuna interfaccia all’utente, tali programmi rimangono in
+esecuzione per la durata della loro gerarchia esecutiva, il cui primo passo è
+<em>sempre</em> la <i>initial action</i>, in assenza della quale non eseguono
+alcuna azione.</p>
+</blockquote><br />
+<h3>0.12.3<a name='node_82'> &nbsp; </a>Gli eventi di view</h3><br><blockquote><p>Agli eventi di view è possibile collegare 2 azioni del programma che
+contiene la vista, tramite la pagina di <i>View properties</i>:</p>
+
+<img src='img/image136.gif'>
+<ol>
+<li><i>Action on read new row</i>
+       <p>Questa action verrà invocata ogni volta che, ad opera dell’utente o delle
+       logiche esecutive delle azioni, verrà impostata la selezione del record corrente
+       per la vista, prima di eseguire qualunque azione scatenata dai controlli e prima
+       di comporre la form da mostrare all’operatore.</p>
+       <p>Questo evento risulta particolarmente utile per sincronizzare il contesto
+       visualizzato con i record selezionati nelle viste e per mostrare decodifiche dei
+       dati del recordset. Ad esempio, con questo evento, si possono opportunamente
+       valorizzare variabili locali a fronte di valori letti dal record corrente.</p></li>
+<li><i>Action on leaving modified row</i>
+       <p>L’azione qui indicata sarà automaticamente eseguita ogni volta che si tenterà
+       di impostare la selezione per la vista, abbandonando un record modificato e non
+       scritto su database.</p>
+       <p>Questo evento è pensato per automatizzare le procedure di salvataggio delle
+       modifiche: inserendo un’azione che esegua un’istruzione di <i>record postrow</i>,
+       si otterrà l’effetto di salvare le modifiche apportate dall’operatore, senza che egli
+       lo richieda, ad ogni tentativo di cambio del record corrente.</p>
+      <p>Un altro utilizzo può essere quello di assicurare ad una vista la corretta forma
+      dei dati da salvare, prima di scriverli su database, indipendentemente dalle azioni
+      che ne provocheranno le modifiche.</p></li>
+</ol>
+</blockquote><br />
+<h3>0.12.4<a name='node_83'> &nbsp; </a>Gli eventi di interfaccia</h3><br><blockquote><p>Gli eventi di interfaccia sono di numero e di forma più varia e servono ad
+indicare le azioni di programma da eseguire a fronte delle varie funzionalità
+offerte dai controlli di interazione con l’utente.</p>
+
+<h4>Il controllo <i>window</i></h4>
+<blockquote>
+<p>Prevede un solo evento di <i>Close click action</i>, la cui azione viene
+indicata nella pagina di proprietà della form:</p>
+
+<img src='img/image140.gif'>
+
+<p>L’azione qui indicata verrà eseguita quando l’operatore clicca sulla crocetta
+di chiusura della finestra e può essere utile per eseguire azioni all’uscita dal
+programma o per impostare criteri di visibilità per le finestre.</p>
+</blockquote>
+
+<h4>I controlli associati a campi (<i>Edit control</i>, <i>List/combo box</i>,
+<i>Check box</i>, <i>Text area</i> e <i>Multi page</i>)</h4>
+<blockquote>
+<p>Implementano tutti un evento di <i>on change</i>, controllabile tramite 2
+proprietà della finestra <i>Object inspector</i>, presente durante la sessione
+di editing della form.</p>
+
+<img src='img/image142.gif'>
+
+<p>La proprietà <i>Action</i> indica l’azione da eseguire a fronte di una
+modifica al valore del controllo: l’azione verrà eseguita al prossimo ritorno al
+server.</p>
+
+<p>La proprietà <i>Submit on change</i> permette di indicare un’espressione
+che, se valutata a "true", forza il ritorno al server quando si abbandoni il controllo
+dopo averlo modificato. Il comportamento, guidato da un <em>javascript</em>,
+è lo stesso che se l’operatore premesse un pulsante di <em>submit</em> ogni
+qualvolta abbia apportato modifiche al controllo: questo permette di aggiornare le
+viste e di eseguire l’azione indicata nella proprietà <i>Action</i> del controllo ad
+ogni modifica del valore.</p>
+
+<p>L’uso delle due proprietà permette di utilizzare gli eventi di <i>on change</i>
+dei controlli associati a campi, in modo da far reagire in maniera dinamiche e
+tempestiva il contesto del programma alle eventuali variazioni di valore dei campi
+e delle variabili che si utilizzano: particolarmente utile si dimostra nella validazione
+dei valori inseriti e nell’aggiornamento delle link, delle viste dipendenti e delle viste
+in base a campi di selezione.</p>
+</blockquote>
+
+<h4>I controlli <i>button</i> e <i>image</i></h4>
+<blockquote>
+<p>Implementano l’evento di <em>click</em>, che prevede (proprietà
+<i>Action</i> dell’<i>Object inspector</i>) l’indicazione di un’azione da eseguire
+quando l’operatore prema il pulsante sinistro del mouse su tali controlli.</p>
+
+<img src='img/image142.gif'>
+
+<p>L’utilizzo di questo evento è semplice da capire e costituisce la base
+dell’interazione con pulsanti e aree grafiche cliccabili: permette di implementare
+facilmente menu di comandi personalizzati e gli effetti interattivi più frequenti di
+ogni applicazione.</p>
+</blockquote>
+</blockquote></blockquote><br />
+<h2>0.13<a name='node_84'> &nbsp; </a>Le azioni</h2><br><blockquote><fieldset>CONDIZIONI, ISTRUZIONI, LOOP ON VIEW, OPERAZIONI</fieldset>
+<p>Questo capitolo completa il meccanismo di sviluppo ad eventi.</p>
+<p>Vedremo come o2runtime verifichi gli eventi e scateni le azioni.</p>
+<br /><h4>Obiettivi</h4>
+<p>Al termine del capitolo il programmatore sarà in grado di:</p>
+<ul>
+<li>Definire un’azione</li>
+<li>Conoscere il significato di tutti gli operatori o2</li>
+<li>Condizionare l’esecuzione delle operazioni</li>
+<li>Eseguire azioni per tutti i record di una view</li>
+</ul>
+
+
+ <br /><h4>Introduzione</h4>
+<p>Le azioni costituiscono la base del modello esecutivo di o2architecture.</p>
+<p>Un’azione è costituita da un numero arbitrario di istruzioni (operations).</p>
+<p>Le azioni possono invocare l’esecuzione di altre azioni o di programmi e legarsi
+fra loro in catene esecutive che, con la presenza di programmi dotati di interfaccia,
+possono estendersi a più interazioni client-server.</p>
+
+<p><b>Ogni catena esecutiva inizia con il verificarsi di un evento</b> (vedi capitolo
+relativo).</p>
+
+<p>Il programmatore non deve preoccuparsi della natura degli eventi e delle azioni
+che andrà a mettere in relazione, poiché l’o2runtime si occuperà di creare le condizioni
+necessarie all’eseguibilità di ogni istruzione richiesta, rendendo disponibili viste sui
+dati e informazioni provenienti dal client in un unico contesto.</p>
+<br />
+<h3>0.13.1<a name='node_87'> &nbsp; </a>Le istruzioni</h3><br><blockquote><p>Ogni azione è costituita da un numero variabile di istruzioni, righe della tabella
+<i>Operations</i>.</p>
+
+<p>Nella tabella <i>Operations</i> usare i seguenti comandi:</p>
+
+<ul>
+<li><kbd>F4</kbd> per creare una nuova riga</li>
+<li><kbd>F3</kbd> per cancellare una riga</li>
+<li><kbd>F5</kbd> per accedere alle interfacce specifiche nelle celle
+       <i>Object</i>, <i>Arguments</i> e <i>Condition</i></li>
+<li><img src='img/image146.gif' /> Il pulsante <i>Move</i> per spostare il blocco
+       di righe da <i>From row</i>
+       a <i>To row</i>, dalla loro posizione nell’elenco delle istruzioni alla posizione
+      del cursore.</li>
+</ul>
+
+<p>Ogni istruzione inizia con l’indicazione di un operatore esecutivo: premere
+<kbd>SPACE</kbd> o una lettera sulla cella <i>Operator</i> per aprire il combo
+box di scelta dell’operatore.</p>
+
+<p>Si accede alle interfacce specifiche di ogni istruzione premendo <kbd>F5</kbd>
+sulle celle <i>Object</i> e <i>Arguments</i>: al momento della creazione di una
+nuova istruzione le interfacce vengono presentate automaticamente allo sviluppatore.
+Vedere, di seguito, il dettaglio degli operatori.</p>
+
+<p>Se verrà indicata un’espressione nella cella <i>Condizion</i> (<kbd>F5</kbd>
+per inserire o selezionare dalla lista delle espressioni) per un’istruzione, tale istruzione
+verrà eseguita solo se l’espressione sarà valutata a "true". La valutazione
+dell’espressione verrà fatta al momento dell’esecuzione dell’istruzione e nel contesto
+derivante dalle altre istruzioni. Questo significa che non necessariamente blocchi di
+istruzioni con la stessa espressione di <i>Condition</i> verranno eseguiti in blocco.
+</p></blockquote><br />
+<h3>0.13.2<a name='node_88'> &nbsp; </a>Gli operatori</h3><br><blockquote><p>Gli operatori costituiscono i verbi o metodi dei processi esecutivi. La
+complessità e la portata delle operazioni svolte da ogni istruzione, così come
+l’interfaccia presentata al programmatore, variano a seconda dell’operatore
+selezionato. Vediamo, quindi, i singoli operatori nel dettaglio:</p>
+
+<img src='img/image148.gif' />
+
+<br />
+<h3>0.13.2.1<a name='node_89'> &nbsp; </a><i>Call program</i></h3><br><blockquote><p>L’operatore <i>Call program</i> sospende l’attuale catena esecutiva per
+passare il controllo ad un altro programma: l’esecuzione dell’azione corrente
+verrà ripresa al termine dell’esecuzione del programma chiamato.</p>
+
+<p>Se il programma chiamato è di tipo <em>batch</em> (cioè privo di interfacce
+che richiedano l’interattività dell’operatore) l’esecuzione dell’azione corrente verrà
+ripresa prima di ritornare al client, dopo aver esaurito la catena esecutiva scatenata
+dalla sua <i>Initial action</i>.</p>
+
+<p>Se, invece, il programma chiamato è dotato di interfaccia, eseguita e conclusa
+la <i>Initial action</i>, la catena esecutiva si arresterà sulla presentazione client
+dell’interfaccia e l’esecuzione dell’azione corrente riprenderà solo dopo che
+l’operatore avrà chiuso il programma chiamato.</p>
+
+<p>L’istruzione <i>Call program</i> presenterà due interfacce: la prima è l’elenco
+dei programmi disponibili nell’applicazione da cui scegliere il programma da chiamare;
+la seconda è l’interfaccia di definizione dei paratetri.</p>
+
+<p>Per ulteriori dettagli su questo operatore e sulle tecniche di passaggio di parametri
+vedi sezione su <i>Call program</i> e passaggio dei parametri.</p>
+
+</blockquote><br />
+<h3>0.13.2.2<a name='node_90'> &nbsp; </a><i>Close program</i></h3><br><blockquote><p>L’operatore <i>Close program</i> non richiede parametri e serve a terminare
+l’esecuzione del programma corrente, interrompendo l’attuale catena esecutiva e
+chiudendo tutte le finestre eventualmente aperte.</p>
+
+<p><b>Nota bene</b>: le istruzioni eventualmente presenti nell’azione, successive
+all’istruzione di <i>Close program</i>, qualora la <i>condition</i> per questa
+istruzione venga valutata a "true", non saranno eseguite!</p>
+</blockquote><br />
+<h3>0.13.2.3<a name='node_91'> &nbsp; </a><i>Debugger</i></h3><br><blockquote><p>L’operatore <i>Debugger</i> non richiede parametri e serve ad eseguire il
+programma di <em>debugging</em>. Questo operatore si comporta come una
+normale istruzione di <i>Call program</i> al programma "debugger", il quale
+mostrerà all’operatore/sviluppatore una complessa interfaccia, dalla quale sarà
+possibile recuperare informazioni su ogni elemento dell’applicazione, delle viste e
+dei programmi coinvolti nell’attuale catena esecutiva.</p>
+
+<p><b>Nota bene</b>: l’operatore <i>Debugger</i> sarà eseguito solo se l’utente
+è loggato con credenziali di sviluppatore, altrimenti l’istruzione non avrà alcun
+effetto.</p></blockquote><br />
+<h3>0.13.2.4<a name='node_92'> &nbsp; </a><i>Execute action</i></h3><br><blockquote><p>Questo operatore consente di trasferire il controllo ad un’altra azione del
+programma in esecuzione, sospendendo l’esecuzione dell’azione corrente fino
+al termine dell’azione chiamata. L’operatore <i>Execute action</i>, in oltre,
+consente di reiterare l’esecuzione di un’azione in base a due diversi criterî:</p>
+<ol>
+<li>per ogni record di una vista fino all’esaurimento di tutto il recordset</li>
+<li>fino alla valutazione a "true" di un’espressione</li>
+</ol>
+
+<img src='img/image150.gif' />
+
+<p>I parametri richiesti sono:</p>
+<ul>
+<li>L’azione da eseguire, da selezionere dall’elenco delle azioni definite per il
+       programma.</li>
+<li>La condizione di fine loop (<i>End action</i>), un’espressione che, valutata
+       ad ogni giro del loop, interrompe l’esecuzione se ritorna un valore "true".
+       <b>Attenzione</b>: se nessuna condizione di fine viene inserita la condizione
+       è automaticamente impostata a "true", il che significa che l’azione verrà
+       eseguita una sola volta!</li>
+<li>La vista su cui eseguire il loop (<i>Loop on view</i>) e la direzione
+       (<i>Direction</i>).</li>
+</ul>
+<p>Quando una vista viene specificata (premendo <kbd>F5</kbd> sul campo
+<i>Loop on view</i> si accede all’elenco e alla selezione delle viste disponibili)
+o2runtime svolgerà le seguenti operazioni:</p>
+<ol>
+<li>La vista selezionata verrà posizionata sul primo (<i>Direction</i> =
+       "ascending") o sull’ultimo (<i>Direction</i> = "Descending") record del
+       recordset.</li>
+<li>Ad ogni giro del loop verrà valutata la condizione di fine e, fino al suo verificarsi,
+       il puntatore di selezione della vista verrà fatto avanzare (o retrocedere) fino
+       al totale esaurimento del recordset.</li>
+<li>Ad ogni giro del loop verrà eseguita l’azione indicata.</li>
+</ol>
+
+<p>Al verificarsi della condizione di <i>End action</i> o all’esaurirsi del recordset
+l’istruzione di <i>Execute action</i> sarà terminata.</p>
+
+<p><b>Nota bene</b>: è importante che le condizioni indicate si risolvano sempre
+in un esito, cioè non creino loop infiniti. Ad esempio: un’istruzione di <i>Execute
+action</i> senza indicazione di view e con condizione di fine che valuti sempre a
+"false" creerà un loop infinito, così come un’azione che, reiterata su una vista fino
+al suo esaurimento, ogni volta ne ripristini il puntatore di selezione.</p>
+</blockquote><br />
+<h3>0.13.2.5<a name='node_93'> &nbsp; </a><i>Goto</i></h3><br><blockquote><p>L’istruzione <i>Goto</i> termina in maniera irreversibile l’attuale catena
+esecutiva e chiude tutti i programmi eventualmente aperti. Il controllo viene
+passato ad un nuovo programma (dalla cui <i>Initial action</i> partirà la nuova
+catena esecutiva) o ad un indirizzo web (url) che solitamente condurrà l’operatore
+fuori dalla sessione o2.</p>
+
+<p>L’interfaccia chiederà di selezionare tra i due possibili esiti (<i>Program</i>
+o <i>Url</i>).</p>
+
+<p>Nel caso di <i>Url</i> sarà possibile inserire nella cella <i>Arguments</i>
+un’espressione il cui risultato sarà usato come indirizzo web, così come lo si
+scriverebbe nella barra degli indirizzi di un browser.</p>
+
+<p>Nel caso di <i>Program</i> sarà possibile scegliere il programma fra quelli
+definiti nell’applicazione o inserire un’espressione, il cui risultato sarà interpretato
+come nome del programma da eseguire. Sarà possibile passare parametri al
+programma chiamato ma senza attenderne ritorno.</p>
+</blockquote><br />
+<h3>0.13.2.6<a name='node_94'> &nbsp; </a><i>Input/output</i></h3><br><blockquote><p>L’istruzione <i>Input/Output</i> permette di produrre file <em>XML</em>
+a partire dai dati delle viste.</p>
+</blockquote><br />
+<h3>0.13.2.7<a name='node_95'> &nbsp; </a><i>Message</i></h3><br><blockquote><p>L’operatore <i>Message</i> permette di visualizzare un messaggio al client.
+Il messaggio può essere di due tipi, fra cui l’interfaccia chiederà di scegliere:</p>
+<ol>
+<li><i>Message box</i>: il messaggio sarà comunicato al client come
+       <code>alert</code> di <em>javascript</em>, cioè una finestra modale con
+       un solo pulsante di <i>Ok</i> e con il testo del messaggio. Se più messaggi
+       verranno inviati al client in una stessa sessione esecutiva del server, verranno
+       visualizzati uno di seguito all’altro, nell’ordine in cui sono stati invocati.</li>
+<li><i>Status bar</i>: il testo del messaggio comparirà nella barra di stato (se
+       visibile) della form attiva. Nel caso che più messaggi di questo tipo vengano
+       inviati al client, soltanto l’ultimo sarà visibile all’operatore.</li>
+</ol>
+<p>Il messaggio è la stringa risultante dall’espressione indicata in
+<i>Arguments</i>.</p>
+</blockquote><br />
+<h3>0.13.2.8<a name='node_96'> &nbsp; </a><i>Print</i></h3><br><blockquote><p>Produce un file <em>PDF</em>, a partire da una serie di file <em>XML</em>
+prodotti dalle istruzioni di <i>Input/output</i>.</p>
+</blockquote><br />
+<h3>0.13.2.9<a name='node_97'> &nbsp; </a><i>Recordset</i></h3><br><blockquote><p>L’operatore <i>Recordset</i> rende disponibili una serie di funzionalità sulle
+viste del programma.</p>
+<img src='img/image152.gif' />
+
+<p>Vediamole in dettaglio:</p>
+<ul>
+<li><i>First</i>: posiziona la vista sul primo record del recordset e con il
+                  puntatore di selezione a zero (primo record della vista).</li>
+<li><i>Previous page</i>: mantiene il puntatore di selezione inalterato e sposta
+                          la vista indietro, di un numero di record uguale alle
+                          righe richieste per la vista o, se non ci sono, si
+                          comporta come <i>First</i>.</li>
+<li><i>Previous row</i>: sposta il puntatore di selezione della vista sul record
+                         precedente oppure, se quello attuale è il primo della
+                         vista, si comporta come <i>Previous page</i> e poi sposta
+                         il puntatore di selezione all’ultimo record della
+                         vista.</li>
+<li><i>Next row</i>: sposta il puntatore di selezione della vista sul record
+                     successivo oppure, se quello attuale è l’ultimo della vista,
+                     si comporta come <i>Next page</i> e poi sposta il puntatore
+                     di selezione al primo record della vista.</li>
+<li><i>Next page</i>: mantiene il puntatore di selezione inalterato e sposta la
+                      vista avanti, di un numero di record uguale alle righe
+                      richieste per la vista o, se non ci sono, si comporta come
+                      <i>Last</i>.</li>
+<li><i>Last</i>: posiziona la vista sull’ultimo record del recordset e con il
+                 puntatore di selezione uguale al numero di righe richieste per
+                 la vista – 1 (ultimo record della vista).</li>
+<li><i>Locate</i>: posiziona la vista sul primo record che soddisfi i criteri.</li>
+<li><i>Prepare insert</i>: pone la vista in stato di inserimento, cioè su un
+                           record puramente virtuale, con i campi tutti
+                           valorizzati al proprio default; nel caso che a questa
+                           operazione non segua un’operazione di <i>Postrow</i>,
+                           il record virtuale andrà perduto al primo spostamento
+                           del puntatore di selezione della vista.</li>
+<li><i>Post row</i>: se il record corrente ha subito modifiche, scrive tali
+                     modifiche su database. Prima di eseguire la scrittura viene
+                     fatto il seguente controllo sui valori dei segmenti di chiave:
+    <ul>
+        <li>Se viene modificata la chiave e la nuova chiave non esiste, al record
+            viene modificata la chiave.</li>
+        <li>Se viene modificata la chiave e la nuova chiave già esiste, si risolve
+            in errore di <i>chiave duplicata</i>.</li>
+        <li>Se si è in inserimento e la nuova chiave non esiste, il record viene
+            inserito.</li>
+        <li>Se si è inserimento e la nuova chiave già esiste, si risolve
+            in errore di <i>chiave duplicata</i>.</li>
+    </ul></li>
+<li><i>Delete row</i>: cancella fisicamente il record corrente dal database.</li>
+<li><i>Undo</i>: annulla le eventuali modifiche apportate al record corrente e
+                 valorizza ogni campo all’ultimo valore letto dal database.</li>
+<li><i>Refresh</i>: rilegge la vista attuale dal database, caricandone le
+                    eventuali modifiche apportate da altri programmi o
+                    operatori.</li>
+</ul></blockquote><br />
+<h3>0.13.2.10<a name='node_98'> &nbsp; </a><i>Remark</i></h3><br><blockquote><p>L’operatore <i>Remark</i> consente di inserire un commento fra le varie
+istruzioni di un’azione, al fine di inserire note per la manutenzione, ottenere aspetti
+grafici che aiutino la lettura e quant’altro serva allo sviluppatore: questa istruzione
+non ha alcun effetto di runtime. Per accedere al testo della nota premere
+<kbd>F5</kbd> sulla cella <i>Object</i>.</p>
+</blockquote><br />
+<h3>0.13.2.11<a name='node_99'> &nbsp; </a><i>Return parameter</i></h3><br><blockquote><p>Valorizza un parametro del programma, in modo da restituire un valore al
+programma chiamante: a tal fine il parametro deve essere passato <em>by
+reference</em> (vedi sezione sul passaggio di parametri).</p>
+
+<p><kbd>F5</kbd> sulla cella <i>Object</i> per selezionare il parametro dall’elenco
+dei parametri definiti e <kbd>F5</kbd> sulla cella <i>Arguments</i> per impostare
+l’espressione di valore.</p>
+</blockquote><br />
+<h3>0.13.2.12<a name='node_100'> &nbsp; </a><i>Set menu</i></h3><br><blockquote><p>Imposta il menu selezionato dall’elenco (<kbd>F5</kbd> sulla cella <i>Object</i>)
+come menu di applicazione, ovvero lo rende visibile come barra dei menu, mentre ogni
+suo sottomenu sarà accessibile come menu a tendina.</p>
+</blockquote><br />
+<h3>0.13.2.13<a name='node_101'> &nbsp; </a><i>Update</i></h3><br><blockquote><p>Le istruzioni di <i>Update</i> costituiscono in o2 il modo di assegnare un
+valore ad un campo o ad una variabile. A seguito di un’istruzione <i>Update</i>
+il campo indicato (<kbd>F5</kbd> sulla cella <i>Object</i>) prenderà il valore
+ritornato dall’espressione di valore (<kbd>F5</kbd> sulla cella <i>Arguments</i>).
+</p>
+
+<p><b>Nota bene</b>: non lasciarsi ingannare dal nome dell’operatore. Se si
+esegue un’istruzione di <i>Update</i> sul campo di una vista, la modifica non sarà
+comunicata al database (e quindi non sarà scritta in effettiva su disco) fino alla
+successiva istruzione di <i>Recordset Postrow</i>. Prima di allora l’esecuzione si
+può interrompere (<i>Close program</i> o <i>Goto</i>) oppure può cambiare il
+puntatore di selezione della vista o intervenire azioni di <i>Recordset Undo</i>: in
+ognuno di questi, e in altri casi, le modifiche apportate ai campi con le istruzioni
+<i>Update</i> non verranno riportate su database.</p>
+</blockquote><br />
+<h3>0.13.2.14<a name='node_102'> &nbsp; </a><i>Execute script</i></h3><br><blockquote><p>L’istruzione <i>Execute script</i> accetta come solo parametro
+(<kbd>F5</kbd> sulla cella <i>Arguments</i>) un’espressione da valutare.
+Il valore di ritorno dell’espressione viene ignorato ma la sua valutazione
+costituisce il metodo di base per l’esecuzione di <em>script PHP</em>.</p>
+
+<p>Quindi, solitamente, l’espressione avrà una forma del tipo:</p>
+
+<img src='img/image154.gif' />
+</blockquote></blockquote></blockquote><br />
+<h2>0.14<a name='node_103'> &nbsp; </a>L'editor delle form</h2><br><blockquote><fieldset>CONTROL PALETTE, CONTROL PROPERTIES, CONTROL TREE, OBJECT INSPECTOR, TAB ORDER</fieldset>
+<p>Questo capitolo ti insegna come disegnare le Form in o2architect.</p><br /><h4>Obiettivi</h4>
+<p>Al termine del capitolo il programmatore sarà in grado di:</p>
+<ul>
+<li>Posizionare i controlli sulle form</li>
+<li>Usare l’<i>Object inspector</i></li>
+<li>Velocizzare il design utilizzando i comandi del menu contestuale</li>
+<li>Modificare le proprietà dei controlli</li>
+<li>Disegnare sia programmi di tipo <em>screen</em> che di tipo <em>line</em>
+      </li>
+</ul>
+
+</blockquote><br />
+<h2>0.15<a name='node_105'> &nbsp; </a>Export verso <em>XML</em></h2><br><blockquote><fieldset>I/O FILE, I/O OPERATOR, PROTOCOL</fieldset>
+<p>Questo capitolo pone le basi per la generazione di report in o2architect.
+Infatti il primo step per una generazione di un report <em>PDF</em> in
+o2architect consiste nella produzione di archivi di tipo <em>XML</em>.</p>
+
+<p>Questi archivi verranno successivamente confezionati tramite l’istruzione
+<i>Print</i> e inviati all’applicazione o2reporter (argomento trattato
+successivamente).</p>
+<br /><h4>Obiettivi</h4>
+<p>Al termine del capitolo il programmatore sarà in grado di:</p>
+<ul>
+<li>Definire i file nel repository <i>I/O</i></li>
+<li>Definire i protocolli di trasmissione <em>XML</em></li>
+<li>Utilizzare l’operatore <i>I/O</i> per esportare il set di dati</li>
+</ul>
+
+
+
+<br /><h4>Introduzione</h4>
+<p>Il linguaggio <em>XML</em> (<em>eXtensible Markup Language</em>)
+è un linguaggio di markup aperto e basato su testo che fornisce informazioni di
+tipo strutturale e semantico relative ai dati veri e propri. Questi "dati sui dati",
+o metadati, offrono un contesto aggiuntivo all’applicazione che utilizza i dati e
+consentono un nuovo livello di gestione e manipolazione delle informazioni basate
+su web.</p>
+
+<p>Attualmente è considerato lo strumento ideale per lo scambio di informazioni
+fra sistemi informativi eterogenei. I dati memorizzati in un file <em>XML</em>
+rispettano una struttura definita all’interno del file stesso e di semplice interpretazione.
+In questo capitolo vedremo come esportare i dati disponibili in un programma o2
+verso uno o più file <em>XML</em>.</p>
+
+<p>Per produrre un file <em>XML</em> con o2architect è opportuno seguire 3
+fasi:</p>
+<ol>
+<li>Definire nell’area <i>I/O</i> del programma i file <em>XML</em> che saranno
+       generati, indicandone un alias e un’espressione che ne definisca il nome fisico di
+       memorizzazione</li>
+<li>Definire i <i>Protocols</i> e per ogni <i>protocol</i> l’elenco dei campi che si
+       intende esportare sotto lo stesso nome di protocollo.</li>
+<li>Utilizzare l’operatore <i>I/O</i> all’interno delle action al fine di esportare i
+       valori correnti del set di dati definito nel <i>Protocol</i> accodandoli al file
+       <em>XML</em> specificato come <i>I/O</i></li>
+</ol>
+
+<p>In questo capitolo vedremo come realizzare un programma che generi un file
+<em>XML</em> contenente l’anagrafica dei clienti.</p>
+<br />
+<h3>0.15.1<a name='node_108'> &nbsp; </a>Definizione di <i>I/O</i></h3><br><blockquote><p>Dopo aver definito la view e i relativi campi necessari allo scopo passiamo
+alla definizione della risorsa <i>I/O</i>.</p>
+<p>Dal menu di navigazione all’interno del programma scegliere la voce <i>I/O
+Files</i> per accedere all’elenco delle risorse <em>input/output</em> disponibili
+per il programma.</p>
+
+<img src='img/image156.gif' />
+
+<ol>
+<li>Creare una nuova voce in elenco (<kbd>F4</kbd>)</li>
+<li>Digitare il nome della risorsa (testo senza spazi o caratteri speciali)</li>
+<li>Selezionare l’espressione che ne definisce il nome fisico (nel nostro caso
+       "customers.xml")</li>
+</ol>
+<p>Il file sarà prodotto a partire dalla directory <var>tmp</var> dell’utente
+corrente: <var>[app_root]/users/[user_name]/tmp/</var></p>
+</blockquote><br />
+<h3>0.15.2<a name='node_109'> &nbsp; </a>Definizione del <i>Protocol</i></h3><br><blockquote><p>Definire un protocollo significa raggruppare sotto lo stesso nome un elenco di
+campi che intendiamo esportare.</p>
+<p>Dal menu di navigazione accedere alla voce <i>Protocols</i> e premere <kbd>ENTER</kbd>. Si accede all’area <i>Protocols</i> del programma: nella parte
+alta una griglia con i nomi dei protocolli; in basso, per ogni protocollo, l’elenco dei
+campi con il relativo alias <em>XML</em> che saranno oggetto di esportazione.
+La colonna <i>Models</i> permette di definire un modello di dato per l'esportazione
+diverso dal modello definito per il campo; è necessario solo in caso di esportazione di un campo di tipo <i>calculated</i>, che come forse il lettore avrà notato è l’unica
+variabile che non comporta una definizione di <i>model</i>.</p>
+
+<img src='img/image158.gif' /></blockquote><br />
+<h3>0.15.3<a name='node_110'> &nbsp; </a>Utilizzo dell’operatore <i>I/O</i></h3><br><blockquote><p>Dopo aver definito <i>I/O files</i> e <i>Protocols</i> l’accodamento dei
+valori nel file <em>XML</em> viene eseguito da o2runtime quando incontra
+un’istruzione di <i>I/O</i> definita all’interno di una action.</p>
+
+<p>Definiamo una action ("esporta_riga") che esporterà i valori correnti del
+protocollo e all’interno inseriamo un’istruzione di <i>I/O</i>.</p>
+
+<img src='img/image160.gif' />
+
+<p>L’istruzione di <i>I/O</i> presenta 3 opzioni:</p>
+<ol>
+<li><i>Type</i>: identifica il tipo di esportazione e può assumere due valori:
+       <ol>
+       <li><i>Definition</i>: saranno accodati al file <em>XML</em> i dati di
+              definizione del protocollo, quindi nome dei campi e tipologia</li>
+       <li><i>Line</i>: saranno accodati i valori dei campi del protocollo (in questo
+              caso la prima volta o2runtime esporta anche la definizione della struttura)
+              </li>
+       </ol></li>
+<li><i>Output protocol</i>: selezionare dall’elenco dei <i>Protocols</i> del
+       programma il protocollo che si intende esportare</li>
+<li><i>I/O file</i>: selezionare dall’elenco degli <i>I/O files</i> del programma
+       la risorsa di <em>output</em> su cui si intende accodare i dati</li>
+</ol>
+
+<p>Adesso non rimane altro che invocare l’esecuzione della action "esporta_riga"
+per ogni record della view "customers". Per fare questo è necessario creare un’altra
+action (ad esempio "esporta") che richiami la action "esporta_riga" tramite
+l’istruzione <i>Execute action</i>, utilizzando l’opzione <i>Loop on View</i></p>
+
+<img src='img/image162.gif' />
+
+<p>In o2architect l’istruzione <i>Execute action</i> è l’unico metodo che il
+programmatore ha per invocare l’esecuzione di un’azione in modo ciclico (loop).
+Ricordarsi di inserire una expression = "false" come espressione di fine azione
+(<i>End action</i>) in modo che l’azione "esporta_riga" venga ripetuta per tutti
+i record della view "customers".</p>
+<p>Mandare in esecuzione l’azione “esporta” utilizzando un qualsiasi evento
+preposto e il file <em>XML</em> “customers.xml” sarà generato nella directory
+temporanea dell’utente loggato.</p>
+</blockquote></blockquote><br />
+<h2>0.16<a name='node_111'> &nbsp; </a>Generazione di report <em>PDF</em> da file <em>XML</em></h2><br><blockquote><fieldset>INDEXES FIELD, MASTER FIELD, O2REPORTER, PRINT, TEMPLATE</fieldset>
+<p>Questo capitolo ha come scopo quello di abilitare il programmatore alla
+produzione di report in formato <em>PDF</em>. Questi report hanno come fonte
+dati un set di file <em>XML</em> e come <em>template</em> un documento
+prodotto dal reporter (o2Reporter).</p>
+<br /><h4>Obiettivi</h4>
+<p>Al termine di queso capitolo il programmatore sarà in grado di:</p>
+<ul>
+<li>Creare un <em>template</em> con o2reporter</li>
+<li>Produrre dei report in formato <em>PDF</em></li>
+</ul>
+
+<br /><h4>Introduzione</h4>
+<p>In questo capitolo vedremo come si collegano le risorse <em>XML</em>
+a o2reporter per la generazione automatica di un file <em>PDF</em> partendo
+da un <em>template</em>.</p>
+
+<p>Per quanto riguarda le funzionalità di o2reporter si rimanda alla specifica
+documentazione.</p>
+
+
+<br />
+<h3>0.16.1<a name='node_114'> &nbsp; </a>L'operatore <i>Print</i></h3><br><blockquote><p>Dopo aver realizzato i programmi per l’esportazione dati verso file
+<em>XML</em> è possibile utilizzare o2reporter come generatore di report.
+</p>
+
+<p>o2reporter è un generatore di report molto semplice che utilizza le risorse
+<em>XML</em> come dataset, aiuta il programmatore nella definizione di
+<em>template</em> di stampa e, se invocato dall’istruzione <i>Print</i>,
+produce direttamente un file <em>PDF</em> come risultato del report.</p>
+
+<p>Riprendiamo il programma visto nel precedente capitolo, e torniamo alla action “esporta”; dopo l’istruzione <i>Execute action</i> inseriamo una nuova riga
+selezionando l’operatore <i>Print</i>.</p>
+
+<p>Dopo aver selezionato l’operatore <i>Print</i> apparirà una finestra <i>Print information</i>, richiedendo di definire:</p>
+<ol>
+<li>Un’espressione per definire il nome del <em>template</em> che sarà utilizzato
+       (file di tipo <var>frf</var>). I template si trovano nella directory dei modelli
+       (<var>[app_root]/models/</var>).</li>
+<li>Un’espressione per definire il nome del file <em>PDF</em> che sarà prodotto
+       nella directory temporanea dell’utente collegato</li>
+<li>Un elenco di risorse (file <em>XML</em>) implicate nel report con eventuali
+       parametri per il collegamento fra risorse (<i>Parent</i>, <i>Master fields</i>,
+       <i>Index fields</i>).</li>
+</ol>
+
+<img src='img/image164.gif' />
+
+<p>Nel nostro esercizio selezioniamo solamente la risorsa “customers” dal treeview
+di sinistra e premendo il pulsante <i>Include</i> otteniamo:</p>
+
+<img src='img/image166.gif' />
+
+<p>Dalla colonna <i>Test file</i> premere il pulsante di scelta e selezionare il file
+<em>XML</em> generato con l’export. Definire il file di test è necessario per
+accedere alla definizione grafica del <em>template</em> tramite o2reporter.</p>
+
+<p>Premere il pulsante <i>Design</i> in basso a destra accedendo così a
+o2reporter.</p>
+
+<img src='img/image168.gif' />
+
+<p>Dopo aver realizzato il <em>template</em> salvare il file
+(<var>nometemplate.frf</var>) nella directory dei modelli, esattamente in
+<var>[app_root]/models/</var>.</p>
+<p>Adesso, rieseguendo il progrmma nella directory <var>tmp</var> dell’utente,
+comparirà il file <em>PDF</em>.</p>
+
+<img src='img/image170.gif' /><br />
+<img src='img/image172.gif' />
+</blockquote></blockquote><br />
+<h2>0.17<a name='node_115'> &nbsp; </a>Il <em>CSS</em> dell'applicazione</h2><br><blockquote><fieldset>CLASSE CSS, FILE CSS</fieldset>
+<p>Questo capitolo ha come scopo quello di consentire al programmatore di
+intervenire sui vari aspetti grafici di un’applicazione. In particolare si vedrà come
+utilizzare e gestire il file di <em>CSS</em> che sovrintende alla renderizzazione
+delle interfacce.</p>
+<br /><h4>Obiettivi</h4>
+<p>Al termine di questo capitolo il programmatore sarà in grado di:</p>
+<ul>
+<li>Specificare una classe di <em>CSS</em> per le proprietà di un controllo.</li>
+<li>Modificare o sostituire la libreria <em>CSS</em> collegata all’applicazione.</li>
+</ul>
+
+<br /><h4>Introduzione</h4>
+<p>Non è negli scopi di questo capitolo voler costituire una documentazione
+sull’uso dei <em>CSS</em> (<em>Cascading Style Sheets</em>): qui
+assumeremo una conoscenza elementare dell’<em>HTML</em> e del possibile
+uso di librerie esterne di definizione grafica (file <em>CSS</em>).</p>
+
+<p>A questo aggiungeremo solo che o2, per una maggiore flessibilità e efficacia,
+non prevede, sui controlli, proprietà specifiche per tutte quelle caratteristiche
+grafiche che non abbiano una rilevanza funzionale. Ovvero non troverete
+nell’interfaccia alcun luogo dove specificare il colore del bordo di un controllo o
+l’immagine di sfondo della finestra. Una classe di stile può riassumere in sé tutte
+le caratteristiche desiderate e consentite dai <em>CSS</em>: o2 utilizza una
+classe di stile per ogni elemento grafico che sia possibile variare.</p>
+<br />
+<h3>0.17.1<a name='node_118'> &nbsp; </a>Il file <em>CSS</em> dell’applicazione</h3><br><blockquote><p>Il file <em>CSS</em> dell’applicazione è un file che raccoglie una serie di
+definizioni grafiche, ognuna col proprio nome (classi di stile). Variando il file
+<em>CSS</em> dell’applicazione è possibile sostituire in blocco le definizioni
+grafiche corrispondenti ad ogni nome, ottenendo così lo stesso effetto di variare
+il tema in <em>Windows</em> o in <em>KDE</em>.</p>
+
+<img src='img/image174.gif' />
+
+<p>Nella pagina delle proprietà dell’applicazione trovate il campo dove indicare
+il nome del file <em>CSS</em>. o2runtime controllerà nelle seguenti cartelle la
+presenza del file indicato:</p>
+<ol>
+<li><var>file://[app_root]/htdocs/css/</var> (cioè
+       <var>http://[app_alias]/css/</var>)</li>
+<li><var>file://[o2_root]/css/</var> (cioè
+       <var>http://[o2_alias]/css/</var>)</li>
+</ol>
+
+<p>Nel caso in cui il file non venga trovato o nessun file di <em>CSS</em> venga
+specificato, o2runtime provvederà ad utilizzare il <em>CSS</em> di default fornito
+con la distribuzione (<var>/[o2_root]/css/default.css</var>).</p>
+
+<p>La variazione del file di <em>CSS</em> sarà visibile al client solo all’apertura
+della prossima sezione, ovvero dopo il prossimo login.</p>
+</blockquote><br />
+<h3>0.17.2<a name='node_119'> &nbsp; </a>La grafica dei controlli</h3><br><blockquote><p>I controlli, sulla base della loro rappresentazione <em>HTML</em>, si
+dividono in due categorie:</p>
+<ol>
+<li>semplici</li>
+<li>composti</li>
+</ol>
+
+<p>Si dicono semplici tutti quei controlli ai quali (come al combo box, all’edit field
+o all’immagine) in <em>HTML</em> corrisponde uno specifico e singolo tag, mentre
+indicheremo come composti quei controlli che (come la tabella, il navigatore o la
+finestra) vengono assemblati dall’o2runtime utilizzando e giustapponendo più tag
+<em>HTML</em>.</p>
+
+<p>A tutti gli elementi semplici è associata un’unica classe di stile, mentre gli
+elementi composti prevedono più classi di stile per i singoli tag costituenti.</p>
+
+<p>Le classi di stile associate alla window si trovano nella pagina delle proprietà
+della form.</p>
+
+<img src='img/image176.gif' />
+
+<p>Le classi di stile dei controlli si trovano nella finestra delle proprietà <i>Object
+Inspector</i> dei singoli controlli, nella sessione di edit della form.</p>
+
+<img src='img/image178.gif' />
+
+<p>Premendo <kbd>F5</kbd> sui campi destinati alle classi di stile, l’interfaccia
+cercherà il file di <em>CSS</em> collegato all’applicazione (se non sarà in grado
+di identificarlo chiederà al programmatore di indicarlo su file system) e mostrerà
+l’elenco delle classi di stile presenti sul file e che non inizino con l’identificativo
+“o2_” (vedi oltre i default). In alto una finestra di preview mostra le caratteristiche
+della classe e permette di selezionare una voce da associare al controllo.</p>
+
+<p>In questo modo è possibile associare ad un controllo (o ad una parte del
+controllo, per i controlli complessi) un alias di renderizzazione, che poi verrà risolto
+dall’o2runtime utilizzando il file di <em>CSS</em> specificato per l’applicazione.
+</p>
+<br />
+<h3>Le classi <em>CSS</em> di default</h3><br><p>Qualora nessuna classe di stile venga specificata per un controllo o per
+una sua proprietà, l’o2 utilizzerà una classe di default specifica e la cui
+definizione è contenuta nel file <var>default.css</var> della distribuzione.</p>
+
+<p>Per alcune proprietà grafiche dell’applicazione (come, ad esempio, i menu o
+lo sfondo della finestra del browser) non è possibile specificare la classe di stile
+ma è comunque possibile modificare la classe di default associata.</p>
+
+<p>Le classi il cui nome termina con i suffissi “_focus”, “_hover” e “_dis” vengono
+composte automaticamente dall’o2runtime a partire dal nome della classe associata,
+al fine di ottenere certi effetti grafici con particolari significati funzionali:</p>
+
+<ul>
+<li>"_focus"
+      <p>La classe viene sostituita alla classe di base nei controlli associati a campo
+      quando il cursore di inserimento (<em>caret</em>) si posiziona sul controllo.
+      </li>
+<li>"_hover"
+      <p>La classe viene sostituita alla classe di base nei controlli cliccabili quando
+      il puntatore del mouse passa sopra il controllo.</li>
+<li>"_dis"
+      <p>La classe viene sostituita alla classe di base per i controlli non abilitati alla
+      modifica o inattivi.</li>
+</ul>
+
+<p>Se, ad esempio, voglio utilizzare una classe di nome “importo” per un certo
+controllo edit, dovrò provvedere a creare nel file <em>CSS</em> dell’applicazione
+anche le rispettive classi “importo_focus” e “importo_dis”, che sovrintenderanno
+alla renderizzazione del controllo nei casi, rispettivamente, che il controllo diventi
+il controllo attivo o che il controllo sia disabilitato alla modifica.</p><br /><p>Ecco un elenco delle classi previste per i singoli controlli, con l’indicazione
+del tag <em>HTML</em> a cui si applicano, il nome della classe di default e una
+breve descrizione:</p>
+
+<table>
+ <tr>
+  <th>Controllo</th>
+  <th>Propriet&agrave;</th>
+  <th>Default</th>
+  <th>Tag HTML</th>
+  <th width='60%'>Descrizione</th>
+ </tr>
+
+ <tr>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+  <td>o2_sfondo</td>
+  <td><code>&lt;body</code>&gt;</td>
+  <td>Aspetto generale e sfondo della finestra del browser</td>
+ </tr>
+
+ <tr>
+  <td colspan="1" rowspan="5">Menu</td>
+  <td colspan="1" rowspan="5"> &nbsp; </td>
+  <td>o2_barraMenu</td>
+  <td><code>&lt;table</code>&gt;</td>
+  <td>Barra dei menu di livello 0</td>
+ </tr>
+
+ <tr>
+  <td>o2_sottoMenu</td>
+  <td><code>&lt;table</code>&gt;</td>
+  <td>Menu a tendina di livello 0</td>
+ </tr>
+
+ <tr>
+  <td>o2_voceMenu</td>
+  <td><code>&lt;td</code>&gt;</td>
+  <td>Ogni voce di menu quando non attiva</td>
+ </tr>
+
+ <tr>
+  <td>o2_voceMenuAttiva</td>
+  <td><code>&lt;td</code>&gt;</td>
+  <td>Ogni voce di menu quando attiva</td>
+ </tr>
+
+ <tr>
+  <td>o2_spacerMenu</td>
+  <td><code>&lt;hr</code>&gt;</td>
+  <td>Separatore orizzontale</td>
+ </tr>
+
+ <tr>
+  <td colspan="1" rowspan="10">Form</td>
+  <td>Form</td>
+  <td>o2_form_window</td>
+  <td><code>&lt;div</code>&gt;</td>
+  <td>Ingombro totale della finestra</td>
+ </tr>
+
+ <tr>
+
+  <td>Document button</td>
+  <td>o2_form_doc</td>
+  <td><code>&lt;td</code>&gt;</td>
+  <td>Angolo in alto a sinistra della finestra</td>
+ </tr>
+
+ <tr>
+
+  <td>Minimize button</td>
+  <td>o2_form_close</td>
+  <td><code>&lt;td</code>&gt;</td>
+  <td>Pulsante di minimizzazione della finestra (a sinistra della crocetta di chiusura,
+      quando la finestra &egrave; massimizzata)</td>
+ </tr>
+
+ <tr>
+
+  <td>Maximize button</td>
+  <td>o2_form_open</td>
+  <td><code>&lt;td</code>&gt;</td>
+  <td>Pulsante di ripristino della finestra (a sinistra della crocetta di chiusura, quando
+      la finestra &egrave; minimizzata)</td>
+ </tr>
+
+ <tr>
+
+  <td>Close form button</td>
+  <td>o2_form_exit</td>
+  <td><code>&lt;td</code>&gt;</td>
+  <td>Angolo in alto a destra della finestra (crocetta di chiusura)</td>
+ </tr>
+
+ <tr>
+
+  <td>Resize form button</td>
+  <td>o2_form_resize</td>
+  <td><code>&lt;td</code>&gt;</td>
+  <td>Angolo in basso a destra della finestra, quando la barra di stato &egrave; visibile.
+      Contiene il pulsante di <i>resize</i> della form</td>
+ </tr>
+
+ <tr>
+
+  <td>Title on active form</td>
+  <td>o2_form_title</td>
+  <td><code>&lt;table</code>&gt;</td>
+  <td>Barra del titolo per le finestre attive</td>
+ </tr>
+
+ <tr>
+
+  <td>Title on inactive form</td>
+  <td>o2_form_title_no</td>
+  <td><code>&lt;table</code>&gt;</td>
+  <td>Barra del titolo per le finestre inattive</td>
+ </tr>
+
+ <tr>
+
+  <td>Body</td>
+  <td>o2_form_body</td>
+  <td><code>&lt;div</code>&gt; / <code>&lt;iframe</code>&gt;</td>
+  <td>Spazio interno della finestra</td>
+ </tr>
+
+ <tr>
+
+  <td>Status bar</td>
+  <td>o2_form_status</td>
+  <td><code>&lt;table</code>&gt;</td>
+  <td>Barra di stato</td>
+ </tr>
+
+ <tr>
+  <td colspan="1" rowspan="11">Table</td>
+  <td>CssDiv</td>
+  <td>o2_tab_space</td>
+  <td><code>&lt;div</code>&gt;</td>
+  <td>Ingombro esterno stanziato della tabella (come da design)</td>
+ </tr>
+
+ <tr>
+
+  <td>CssTab</td>
+  <td>o2_tab_tab</td>
+  <td><code>&lt;table</code>&gt;</td>
+  <td>Ingombro esterno effettivo della tabella (a seconda del numero di righe
+      presenti)</td>
+ </tr>
+
+ <tr>
+
+  <td>Css Header (controllo)</td>
+  <td>o2_tab_testa</td>
+  <td><code>&lt;th</code>&gt;</td>
+  <td>Barra dei titoli di colonna. Questa classe &egrave; controllabile anche dal campo
+      <i>Css Header</i> delle <i>Parent Options</i> del controllo in tabella</td>
+ </tr>
+
+ <tr>
+
+  <td>CssBody (form) / Css Line (controllo)</td>
+  <td>o2_tab_corpo</td>
+  <td><code>&lt;td</code>&gt;</td>
+  <td>Cella del corpo della tabella per le righe diverse dal record corrente.
+      Questa classe &egrave; controllabile anche dal campo <i>Css Line</i> delle <i>Parent
+      Options</i> del controllo in tabella</td>
+ </tr>
+
+ <tr>
+
+  <td>CssCurrentLine (form) / Css Line (controllo)</td>
+  <td>o2_tab_sele</td>
+  <td><code>&lt;td</code>&gt;</td>
+  <td>Cella del corpo della tabella per la sola riga del record corrente. Questa classe
+      &egrave; controllabile anche dal campo <i>Css Line</i> delle <i>Parent Options</i> del
+      controllo in tabella</td>
+ </tr>
+
+ <tr>
+
+  <td>CssLine</td>
+  <td>o2_tab_riga</td>
+  <td><code>&lt;tr</code>&gt;</td>
+  <td>Righe dispari del corpo</td>
+ </tr>
+
+ <tr>
+
+  <td>CssAlternate</td>
+  <td>o2_tab_alt</td>
+  <td><code>&lt;tr</code>&gt;</td>
+  <td>Righe pari del corpo</td>
+ </tr>
+
+ <tr>
+
+  <td>CssMouseOverLine</td>
+  <td>o2_tab_point</td>
+  <td><code>&lt;tr</code>&gt;</td>
+  <td>Riga, non del record corrente, quando vi si posizioni sopra il puntatore del
+      mouse</td>
+ </tr>
+
+ <tr>
+
+  <td colspan="1" rowspan="3"> &nbsp; </td>
+  <td>o2_tab_sort</td>
+  <td><code>&lt;span</code>&gt;</td>
+  <td>Pulsante a fianco del titolo che indica la possibilit&agrave; di sorting per la
+      colonna</td>
+ </tr>
+
+ <tr>
+
+
+  <td>o2_tab_sorta</td>
+  <td><code>&lt;span</code>&gt;</td>
+  <td>Pulsante a fianco del titolo quando la colonna &egrave; gi&agrave; segmento ascendente di
+      sorting</td>
+ </tr>
+
+ <tr>
+  <td>o2_tab_sortd</td>
+  <td><code>&lt;span</code>&gt;</td>
+  <td>Pulsante a fianco del titolo quando la colonna &egrave; gi&agrave; segmento discendente di
+      sorting</td>
+ </tr>
+
+ <tr>
+  <td colspan="1" rowspan="9">Navigator orizzontale (o2_ctrl_nav_) e verticale (o2_ctrl_navv_)</td>
+  <td>CssSpace</td>
+  <td>o2_ctrl_nav_space / o2_ctrl_navv_space</td>
+  <td><code>&lt;table</code>&gt;</td>
+  <td>Ingombro totale del navigatore</td>
+ </tr>
+
+ <tr>
+
+  <td>CssSlide</td>
+  <td>o2_ctrl_nav_i / o2_ctrl_navv_i</td>
+  <td><code>&lt;td</code>&gt;</td>
+  <td>Barra scorrevole che indica la parte visibile</td>
+ </tr>
+
+ <tr>
+
+  <td>CssNavBar</td>
+  <td>o2_ctrl_nav_e / o2_ctrl_navv_e</td>
+  <td><code>&lt;td</code>&gt;</td>
+  <td>Slitta del navigatore in cui scorre la barra e che rappresenta la totalit&agrave;
+      del recordset</td>
+ </tr>
+
+ <tr>
+
+  <td>CssFirst</td>
+  <td>o2_ctrl_nav_first / o2_ctrl_navv_first</td>
+  <td><code>&lt;div</code>&gt;</td>
+  <td>Pulsante di <em>Vai a primo record</em></td>
+ </tr>
+
+ <tr>
+
+  <td>CssPrevPage</td>
+  <td>o2_ctrl_nav_prevpg / o2_ctrl_navv_prevpg</td>
+  <td><code>&lt;div</code>&gt;</td>
+  <td>Pulsante di <em>Vai a pagina precedente</em></td>
+ </tr>
+
+ <tr>
+
+  <td>CssPrev</td>
+  <td>o2_ctrl_nav_prev / o2_ctrl_navv_prev</td>
+  <td><code>&lt;div</code>&gt;</td>
+  <td>Pulsante di <em>Vai a record precedente</em></td>
+ </tr>
+
+ <tr>
+
+  <td>CssNext</td>
+  <td>o2_ctrl_nav_next / o2_ctrl_navv_next</td>
+  <td><code>&lt;div</code>&gt;</td>
+  <td>Pulsante di <em>Vai a record successivo</em></td>
+ </tr>
+
+ <tr>
+
+  <td>CssNextPage</td>
+  <td>o2_ctrl_nav_nextpg / o2_ctrl_navv_nextpg</td>
+  <td><code>&lt;div</code>&gt;</td>
+  <td>Pulsante di <em>Vai a pagina successiva</em></td>
+ </tr>
+
+ <tr>
+
+  <td>CssLast</td>
+  <td>o2_ctrl_nav_last / o2_ctrl_navv_last</td>
+  <td><code>&lt;div</code>&gt;</td>
+  <td>Pulsante di <em>Vai a ultimo record</em></td>
+ </tr>
+
+ <tr>
+  <td>Text label</td>
+  <td>Css class</td>
+  <td>o2_ctrl_label</td>
+  <td><code>&lt;div</code>&gt;</td>
+  <td>Etichette di testo</td>
+ </tr>
+
+ <tr>
+  <td>Separator</td>
+  <td>Css class</td>
+  <td>o2_ctrl_separatore</td>
+  <td><code>&lt;hr</code>&gt;</td>
+  <td>Separatore orizzontale</td>
+ </tr>
+
+ <tr>
+  <td colspan="1" rowspan="3">Edit field</td>
+  <td>Css class</td>
+  <td>o2_ctrl_edit</td>
+  <td><code>&lt;input type=&#8217;text&#8217;</code>&gt;</td>
+  <td>Campo di edit quando modificabile e non &egrave; il controllo su cui &egrave; il
+      cursore</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_edit_focus</td>
+  <td><code>&lt;input type=&#8217;text&#8217;</code>&gt;</td>
+  <td>Campo di edit quando modificabile ed &egrave; il controllo su cui &egrave; il
+      cursore</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_edit_dis</td>
+  <td><code>&lt;input type=&#8217;text&#8217;</code>&gt;</td>
+  <td>Campo di edit quando non modificabile</td>
+ </tr>
+
+ <tr>
+  <td colspan="1" rowspan="3">Text area</td>
+  <td>Css class</td>
+  <td>o2_ctrl_text</td>
+  <td><code>&lt;textarea</code>&gt;</td>
+  <td>Multiline edit area quando modificabile e non &egrave; il controllo su cui &egrave;
+      il cursore</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_text_focus</td>
+  <td><code>&lt;textarea</code>&gt;</td>
+  <td>Multiline edit area quando modificabile ed &egrave; il controllo su cui &egrave; il
+      cursore</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_text_dis</td>
+  <td><code>&lt;textarea</code>&gt;</td>
+  <td>Multiline edit area quando non modificabile</td>
+ </tr>
+
+ <tr>
+  <td colspan="1" rowspan="2">List/combo box</td>
+  <td>Css class</td>
+  <td>o2_ctrl_listcombo</td>
+  <td><code>&lt;select</code>&gt;</td>
+  <td>List/combo box quando non &egrave; il controllo su cui &egrave; il cursore</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_listcombo_focus</td>
+  <td><code>&lt;select</code>&gt;</td>
+  <td>List/combo box quando &egrave; il controllo su cui &egrave; il cursore</td>
+ </tr>
+
+ <tr>
+  <td colspan="1" rowspan="3">Button (standard button) &nbsp;  &nbsp; </td>
+  <td>Css class</td>
+  <td>o2_ctrl_button</td>
+  <td><code>&lt;input type =&#8217;button&#8217;</code>&gt;</td>
+  <td>Bottone quando abilitato e non vi &egrave; sopra il puntatore del mouse</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_button:hover</td>
+  <td><code>&lt;input type =&#8217;button&#8217;</code>&gt;</td>
+  <td>Bottone quando abilitato e vi &egrave; sopra il puntatore del mouse</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_button_dis</td>
+  <td><code>&lt;input type =&#8217;button&#8217;</code>&gt;</td>
+  <td>Bottone quando non &egrave; abilitato</td>
+ </tr>
+
+ <tr>
+  <td colspan="1" rowspan="3">Link (href style button)</td>
+  <td>Css class</td>
+  <td>o2_ctrl_ref</td>
+  <td><code>&lt;span</code>&gt;</td>
+  <td>Link ipertestuale attivo e quando non vi &egrave; sopra il puntatore del
+      mouse</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_ref_hover</td>
+  <td><code>&lt;span</code>&gt;</td>
+  <td>Link ipertestuale attivo e quando vi &egrave; sopra il puntatore del
+      mouse</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_ref_dis</td>
+  <td><code>&lt;span</code>&gt;</td>
+  <td>Link ipertestuale non attivo</td>
+ </tr>
+
+ <tr>
+  <td colspan="1" rowspan="2">File upload &nbsp; </td>
+  <td>Css class</td>
+  <td>o2_ctrl_file</td>
+  <td><code>&lt;input type=&#8217;file&#8217;</code>&gt;</td>
+  <td>Controllo di file upload quando non &egrave; il controllo su cui &egrave;
+      il cursore</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_file_focus</td>
+  <td><code>&lt;input type=&#8217;file&#8217;</code>&gt;</td>
+  <td>Controllo di file upload quando &egrave; il controllo su cui &egrave; il
+      cursore</td>
+ </tr>
+
+ <tr>
+  <td colspan="1" rowspan="5">Multipage &nbsp;  &nbsp;  &nbsp;  &nbsp; </td>
+  <td>Css class</td>
+  <td>o2_ctrl_multi_out</td>
+  <td><code>&lt;table</code>&gt;</td>
+  <td>Ingombro totale esterno del controllo</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_multi_in</td>
+  <td><code>&lt;div</code>&gt;</td>
+  <td>Spazio disponibile interno del controllo</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_multi_on</td>
+  <td><code>&lt;input type =&#8217;button&#8217;</code>&gt;</td>
+  <td>Pulsante della pagina non attivabile (pagina corrente)</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_multi_off</td>
+  <td><code>&lt;input type =&#8217;button&#8217;</code>&gt;</td>
+  <td>Pulsanti delle pagine attivabili (non pagina corrente) quando non vi &egrave;
+      sopra il puntatore del mouse</td>
+ </tr>
+
+ <tr>
+  <td>Css class</td>
+  <td>o2_ctrl_multi_off:hover</td>
+  <td><code>&lt;input type =&#8217;button&#8217;</code>&gt;</td>
+  <td>Pulsanti delle pagine attivabili (non pagina corrente) quando vi &egrave; sopra
+      il puntatore del mouse</td>
+ </tr>
+
+</table>
+
+</blockquote><br />
+<h3>0.17.3<a name='node_122'> &nbsp; </a>La modifica delle classi di stile</h3><br><blockquote><p>A questo punto apparirà evidente che, per variare il modo in cui
+o2runtime rappresenta graficamente un controllo o una sua parte, al
+programmatore si offrono tre distinte possibilità:</p>
+<ol>
+<li>Associare al controllo una classe diversa da quella di default
+       <p>Serve a differenziare un certo controllo, in una sua specifica istanza,
+       in una specifica form, da tutti gli altri controlli dello stesso tipo. Questo
+       modo di intervenire risulta particolarmente utile per risolvere peculiarità
+       grafiche contingenti (come, ad esempio, per differenziare una certa colonna
+       in una tabella o per evidenziare un titolo o una informazione in una specifica
+       form) ma richiede che lo sviluppatore intervenga direttamente sul controllo
+       da modificare.</p></li>
+<li>Variare nel file <em>CSS</em> dell’applicazione la classe di default
+       <p>Questo secondo metodo, invece, serve a fondare uno standard di
+       riferimento per tutta l’applicazione e ad avvicinare tutti i controlli di una
+       stessa categoria alle preferenze grafiche e funzionali dello sviluppatore.
+       Questo tipo di intervento può essere molto utile per definire uno standard
+       grafico collettivo in una situazione di sviluppo in equipe o per intervenire
+       “in un colpo solo” su tutti i controlli di una stessa categoria, per variarne le
+       caratteristiche senza dover rintracciare e modificare ogni programma che ne
+       faccia uso.</p>
+       <p><b>ATTENZIONE</b>: la definizione generale dell’aspetto per i singoli
+       controlli è un problema che dovrebbe essere preso in considerazione prima
+       di intraprendere lo sviluppo dei programmi, in quanto la definizione successiva
+       di certe caratteristiche (ad esempio di dimensione, di bordi o di overflow)
+       potrebbe costringere gli sviluppatori a correggere posizioni e spaziature per
+       i controlli già inseriti nelle form.</p></li>
+<li>Variare il file di <em>CSS</em> associato all’applicazione
+       <p>Questa terza ed ultima possibilità consiste nell’indicare per l’applicazione
+       un diverso file <em>CSS</em> o nel sovrascrivere il file indicato per
+       l’applicazione con un diverso file. In questi due casi (entrambi facilmente
+       realizzabili anche senza l’ausilio dell’interfaccia di sviluppo) si avrà come
+       risultato, al successivo login, la variazione di tutte le caratteristiche grafiche
+       dell’applicazione: questo metodo può essere particolarmente utile per creare
+       veri e propri temi o skin, cioè set preconfezionati di definizioni grafiche,
+       intercambiabili per le proprie interfacce.</p></li>
+</ol>
+</blockquote><br />
+<h3>0.17.4<a name='node_123'> &nbsp; </a>Note e consigli</h3><br><blockquote><p>Per chi abbia una minima familiarità con l’uso dei <em>CSS</em> non
+sarà difficile immaginare quali difficoltà si possano celare dietro la modifica
+delle classi; per tutti gli altri vogliamo farne una rapida rassegna:</p>
+<ul>
+<li>Le caratteristiche supportate dai <em>CSS</em> variano a seconda del
+       tag <em>HTML</em> a cui verrà associata la classe. Un esempio banale:
+       inutile cercare di specificare il colore di sfondo di un separatore orizzontale.
+       </li>
+<li>Gli standard dei <em>CSS</em> sono attualmente materia di evoluzione e
+       possono quindi variare da versione a versione.</li>
+<li>Nonostante la presenza di uno standard nominalmente accettato le differenze
+       di renderizzazione di certe caratteristiche di stile possono variare (anche
+       sensibilmente) da browser a browser. Il file <em>CSS</em> fornito con la
+       distribuzione mira, in primo luogo, ad eliminare queste differenze (o comunque
+       a diminuirne l’impatto funzionale).</li>
+<li>Uno stesso risultato grafico si può, a volte, raggiungere con percorsi di stile
+       diversi: spesso, però, ognuno di essi comporta effetti collaterali diversi e può
+       interagire in maniera diversa con le altre caratteristiche del controllo.</li>
+</ul>
+<br />
+<h4>Consigli operativi</h4>
+<ul>
+<li>Provare ogni modifica alle classi di stile su più browser, e comunque su tutti
+       quelli che si intende supportare.</li>
+<li>Partire da una copia del file <em>CSS</em> della distribuzione per creare
+       nuovi file e da una delle classi del file della distribuzione per creare nuove
+       classi, variando, ad ogni prova, pochi elementi facilmente rintracciabili.</li>
+<li>Verificare a runtime, su differenti browser, la posizione e l’ingombro delle
+       form e dei controlli editati con l’interfaccia: certi elementi hanno, in sviluppo,
+       dimensioni e caratteristiche standard che possono variare sensibilmente con
+       la definizione di stile.</li>
+<li>Evitare il proliferare di classi simili: rendono più complessa e incerta la scelta
+       in sviluppo e non offrono standard di riferimento all’operatore finale.</li>
+<li>Con i <em>CSS</em> è possibile ottenere praticamente qualunque effetto
+       voluto: quindi evitare di ricorre ad espedienti di sovrapposizioni o
+       mascheramenti di controlli con altri controlli, perché rendono difficoltoso
+       rintracciare e manutenere i controlli in sviluppo.</li>
+</ul>
+</blockquote></blockquote><br />
+<h2>0.18<a name='node_124'> &nbsp; </a>Distribuire l’applicazione</h2><br><blockquote><fieldset>DBREPOSITORY.INC, O2RUNTIME</fieldset>
+<p>Questo capitolo conclude il corso e guida il programmatore alla distribuzione
+dell’applicazione realizzata.</p>
+<br /><h4>Obiettivi</h4>
+<p>Dopo questo capitolo il programmatore sarà in grado di:</p>
+<ul>
+<li>Consegnare i file necessari ad un'applicazione o2</li>
+<li>Variare i file di configurazione per installare l’applicazione nell’ambiente
+       finale</li>
+</ul>
+
+</blockquote><br />
+<h2>0.19<a name='node_127'> &nbsp; </a>Functions reference</h2><br><blockquote>Le funzioni di o2 sono di varia natura e possono essere usate per differenti scopi:
+<ol>
+<li><i>Informative</i>
+    <p>Ritornano informazioni riguardo ad oggetti e strutture di sistema, come,
+       ad esempio, il contenuto dei <i>repository</i>, il <i>menu</i> impostato,
+       informazioni di <i>filesystem</i> o le posizioni delle form. Le informazioni
+       sono spesso riportate in forma di <i>array</i>.</p></li>
+<li><i>Esecutive</i>
+    <p>Agiscono sulle caratteristiche dell'applicazione, modificandone il
+       comportamento, oppure eseguono comandi di sistema. Possono essere usate per
+       creare o eliminare tabelle di database, per agire sul <i>filesystem</i>,
+       oppure per inviare un messaggio di posta elettronica.</p></li>
+<li><i>Per la manipolazione dei dati</i>
+    <p>Ritornano forme specifiche dei valori passati: ad esempio, <i>script
+       javascript</i> per l'esecuzione di comandi, valori formattati secondo un
+       certo <i>data model</i>, oppure valori futuri o passati di data e ora.
+       </p></li>
+</ol>
+<p>Le funzioni possono essere usate all'interno di qualuque <i>expression</i> e
+   verranno eseguite al momento della valutazione dell'espressione in cui sono
+   contenute.</p>
+<p>L'elenco delle funzioni è qui suddiviso secondo l'<i>oggetto</i> a cui tali
+   funzioni si riferiscono.</p><br />
+<h3>0.19.1<a name='node_130'> &nbsp; </a>Funzioni di runtime</h3><br><blockquote><p>Questo gruppo di funzioni si riferisce all'o2runtime in uso per l'applicazione e ritorna informative dipendenti dalla modalità di installazione della runtime e dalle
+impostazioni contenute nel file di configurazione <var>o2/o2.ini</var>.</p><br />
+<h3>0.19.1.1<a name='node_139'> &nbsp; </a>o2rnt_alias()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2rnt_alias()</code></p>
+<p><i>Parameters:</i> La funzione non prevede parametri</p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il <i>virtual host</i> di o2runtime, così come configurato per il
+   webserver, ovvero l'indirizzo HTTP della webroot di runtime, cioé della directory
+   <code>/o2/htdocs/</code>.</p>
+<p>La stringa ritornata sarà della forma <code>http://www.someweb.com/o2/</code></p>
+
+
+<fieldset><a href='node_127.html#node_140'>o2rnt_root()</a></fieldset></blockquote><br />
+<h3>0.19.1.2<a name='node_140'> &nbsp; </a>o2rnt_root()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2rnt_root()</code></p>
+<p><i>Parameters:</i> La funzione non prevede parametri</p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna la directory root di o2runtime, ovvero il path completo della directory
+   <code>/o2/</code>.</p>
+<p>La stringa ritornata sarà della forma <code>/somepath/o2/</code></p><fieldset><a href='node_127.html#node_139'>o2rnt_alias()</a>, <a href='node_127.html#node_141'>o2rnt_dirthreads()</a>, <a href='node_127.html#node_142'>o2rnt_dircss()</a></fieldset></blockquote><br />
+<h3>0.19.1.3<a name='node_141'> &nbsp; </a>o2rnt_dirthreads()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2rnt_dirthreads()</code></p>
+<p><i>Parameters:</i> La funzione non prevede parametri</p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna la directory in cui vengono salvati i file di processo per le runtime in esecuzione, ovvero il path completo della directory <code>/o2/threads/</code>.</p>
+<p>La stringa ritornata sarà della forma <code>/somepath/o2/threads/</code></p><fieldset><a href='node_127.html#node_140'>o2rnt_root()</a></fieldset></blockquote><br />
+<h3>0.19.1.4<a name='node_142'> &nbsp; </a>o2rnt_dircss()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2rnt_dircss()</code></p>
+<p><i>Parameters:</i> La funzione non prevede parametri</p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna la directory in cui sono contenuti i css della runtime, ovvero il path
+   completo della directory <code>/o2/htdocs/css/</code>.</p>
+<p>La stringa ritornata sarà della forma <code>/somepath/o2/htdocs/css/</code></p><fieldset><a href='node_127.html#node_139'>o2rnt_alias()</a>, <a href='node_127.html#node_140'>o2rnt_root()</a></fieldset></blockquote></blockquote><br />
+<h3>0.19.2<a name='node_128'> &nbsp; </a>Funzioni di applicazione</h3><br><blockquote><p>Questo gruppo di funzioni si riferisce all'applicazione e ritorna informative
+   dipendenti dalla modalità di installazione, dal contenuto dei repository e dalle
+   impostazioni contenute nel file di configurazione <var>[app]/[app].ini</var>.</p><br />
+<h3>0.19.2.1<a name='node_143'> &nbsp; </a>o2app_alias()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2app_alias()</code></p>
+<p><i>Parameters:</i> La funzione non prevede parametri</p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il <i>virtual host</i> di applicazione, così come configurato per il
+   webserver, ovvero l'indirizzo HTTP della webroot di applicazione, cioé della
+   directory <code>/[app]/htdocs/</code>.</p>
+<p>La stringa ritornata sarà della forma <code>http://www.someweb.com/app/</code></p>
+</blockquote><br />
+<h3>0.19.2.2<a name='node_144'> &nbsp; </a>o2app_createtables()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2app_createtables()</code></p>
+<p><i>Parameters:</i> La funzione non prevede parametri</p>
+<p><i>Returns:</i> <code>void</code></p>
+<p>Crea tute le tabelle di database definite per la l'applicazione, cioé nel
+   <i>tables repository</i>, che già non esistano.</p>
+<p>La creazione delle tabelle viene automaticamente eseguita ad ogni accesso di un
+   utente all'applicazione</p>
+</blockquote><br />
+<h3>0.19.2.3<a name='node_145'> &nbsp; </a>o2app_css()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2app_css()</code></p>
+<p><i>Parameters:</i> La funzione non prevede parametri</p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il nome del file di CSS (<em>Cascading Style Sheet</em>) attualmente in
+   uso per l'applicazione.</p>
+</blockquote><br />
+<h3>0.19.2.4<a name='node_146'> &nbsp; </a>o2app_databases()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2app_databases()</code></p>
+<p><i>Parameters:</i> La funzione non prevede parametri</p>
+<p><i>Returns:</i> <code>array</code></p>
+<p>Ritorna l'elenco dei nomi dei database definiti per l'applicazione, ovvero
+   contenuti nel <i>servers & databases repository</i> (default
+   <var>[app_root]/prgs/db_repository.inc</var>), in forma di array con indici
+   numerici.</p>
+ <h4>Sample</h4>
+   <code>Array<br/>
+(<br />
+&nbsp; [0] => default<br/>
+&nbsp; [1] => mysql_local<br/>
+&nbsp; [2] => mydata<br/>
+)</code></blockquote><br />
+<h3>0.19.2.5<a name='node_147'> &nbsp; </a>o2app_developer()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2app_developer()</code></p>
+<p><i>Parameters:</i> La funzione non prevede parametri</p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il nome del developer attualmente loggato all'applicazione oppure "" se
+   nessuno sviluppatore è stato indicato.</p></blockquote><br />
+<h3>0.19.2.6<a name='node_185'> &nbsp; </a>o2app_dir_css()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2app_dir_css()</code></p>
+<p><i>Parameters:</i> La funzione non prevede parametri</p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il path completo alla cartella contenente i CSS (<em>Cascading Style Sheet</em>) dell'applicazione.</p><fieldset><a href='node_127.html#node_170'>o2dir_list()</a></fieldset></blockquote><br />
+<h3>0.19.2.7<a name='node_186'> &nbsp; </a>o2app_dir_cvsprgs()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2app_dir_cvsprgs()</code></p>
+<p><i>Parameters:</i> La funzione non prevede parametri</p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il path completo all'attuale cartella di CVS (<i>Team development</i>), contenente i programmi e i <i>repository</i> attualmente in <i>check out</i> per lo sviluppatore indicato alla runtime.</p><fieldset><a href='node_127.html#node_147'>o2app_developer()</a>, <a href='node_127.html#node_170'>o2dir_list()</a></fieldset></blockquote></blockquote><br />
+<h3>0.19.3<a name='node_129'> &nbsp; </a>Funzioni di utente</h3><br><blockquote><p>Questo gruppo di funzioni si riferisce alle credenziali possedute dall'utente
+   attualmente loggato, cioé passato come parametro <code>o2user</code> alla prima
+   request all'applicazione. Se nessun utente è stato indicato o se l'utente
+   richiesto non è stato validato, le credenziali adottate dal sistema saranno
+   quelle dell'utente "default".</p><br />
+<h3>0.19.3.1<a name='node_154'> &nbsp; </a>o2user_has()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2user_has($right_code)</code></p>
+ <p><i>Parameters:</i></p><ul>
+                         <li><i>$right_code</i> nome del <i>right</i> di cui si
+                             vuole controllare il possesso</li>
+                     </ul>
+<p><i>Returns:</i> <code>boolean</code></p>
+<p>Ritorna "true" se l'utente correntemente loggato possiede il diritto
+   <i>$right_code</i>, altrimenti "false".</p>
+<p>La funzione <code>o2user_has()</code> può risultare particolarmente utile per
+   condizionare l'esecuzione di comandi o per condizionare visibilità e
+   modificabilità di controlli, in modo da limiterne l'uso ai soli possessori di
+   un certo diritto.</p>
+<fieldset><a href='node_127.html#node_156'>o2user_rights()</a></fieldset></blockquote><br />
+<h3>0.19.3.2<a name='node_155'> &nbsp; </a>o2user_is()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2user_is($role_name)</code></p>
+ <p><i>Parameters:</i></p><ul>
+                         <li><i>$role_name</i> nome del <i>role</i> a cui si
+                             vuole controllare l'appartenenza</li>
+                     </ul>
+<p><i>Returns:</i> <code>boolean</code></p>
+<p>Ritorna "true" se l'utente correntemente loggato riveste il ruolo (appartiene
+   al gruppo) <i>$role_name</i>, altrimenti "false".</p>
+<p>La funzione <code>o2user_is()</code> può risultare particolarmente utile per
+   condizionare l'esecuzione di comandi o per condizionare visibilità e
+   modificabilità di controlli, in modo da limiterne l'uso ai soli appertenenti ad
+   un certo ruolo (gruppo).</p>
+<fieldset><a href='node_127.html#node_157'>o2user_roles()</a></fieldset></blockquote><br />
+<h3>0.19.3.3<a name='node_156'> &nbsp; </a>o2user_rights()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2user_rights()</code></p>
+<p><i>Parameters:</i> La funzione non prevede parametri</p>
+<p><i>Returns:</i> <code>array</code></p>
+<p>Ritorna, in forma di <i>array</i> con indici numerici, l'elenco dei <i>rights</i>
+   posseduti dall'utente loggato.</p><fieldset><a href='node_127.html#node_154'>o2user_has()</a></fieldset></blockquote><br />
+<h3>0.19.3.4<a name='node_157'> &nbsp; </a>o2user_roles()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2user_roles()</code></p>
+<p><i>Parameters:</i> La funzione non prevede parametri</p>
+<p><i>Returns:</i> <code>array</code></p>
+<p>Ritorna, in forma di <i>array</i> con indici numerici, l'elenco dei <i>roles</i>
+   rivestiti dall'utente loggato, ovvero dei gruppi a cui appartiene.</p><fieldset><a href='node_127.html#node_157'>o2user_roles()</a></fieldset></blockquote></blockquote><br />
+<h3>0.19.4<a name='node_131'> &nbsp; </a>Funzioni di filesystem</h3><br><blockquote><br />
+<h3>0.19.4.1<a name='node_168'> &nbsp; </a>o2dir_create()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2dir_create($dir_path)</code></p>
+<p><i>Parameters:</i><p><ul>
+                         <li><i>$dir_path</i> path della directory (comprensivo di
+                             "/" oppure "\" finale) che si vuole creare</li>
+                     </ul>
+<p><i>Returns:</i> <code>boolean</code></p>
+<p>Crea la directory <i>$dir_path</i> su filesystem, se l'application server possiede le credenziali necessarie. Ritorna "true" se la creazione ha esito positivo.</p>
+<h4>ATTENZIONE!</h4>
+   Deve esistere la directory <var>[<i>$dir_path</i>]/..</var>.
+<fieldset><a href='node_127.html#node_169'>o2dir_delete()</a>, <a href='node_127.html#node_176'>o2file_exists()</a></fieldset></blockquote><br />
+<h3>0.19.4.2<a name='node_169'> &nbsp; </a>o2dir_delete()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2dir_delete($dir_path)</code></p>
+ <p><i>Parameters:</i></p><ul>
+                         <li><i>$dir_path</i> path della directory (comprensivo di
+                             "/" oppure "\" finale) che si vuole eliminare</li>
+                     </ul>
+<p><i>Returns:</i> <code>boolean</code></p>
+<p>Elimina la directory <i>$dir_path</i> su filesystem, tutti i file eventualmente
+   contenuti e tutte le sottocartelle, se l'application server possiede le
+   credenziali necessarie. Ritorna "true" se l'eliminazione ha esito positivo.</p><fieldset><a href='node_127.html#node_168'>o2dir_create()</a>, <a href='node_127.html#node_170'>o2dir_list()</a>, <a href='node_127.html#node_176'>o2file_exists()</a></fieldset></blockquote><br />
+<h3>0.19.4.3<a name='node_170'> &nbsp; </a>o2dir_list()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2dir_list($dir_path, [$file_match="*"])</code></p>
+ <p><i>Parameters:</i></p><ul>
+                         <li><i>$dir_path</i> path della directory (comprensivo di
+                             "/" oppure "\" finale) di cui si richiede il
+                             contenuto</li>
+                         <li><i>$file_match</i> (optional) espressione regolare di
+                             filesystem (<em>CMD</em> o <em>SHELL</em> wild-card
+                             expression) per il filtraggio dei file (default "*",
+                             <i>tutti i file</i>)</li>
+                     </ul>
+<p><i>Returns:</i> <code>array</code></p>
+<p>Ritorna il contenuto della directory <i>$dir_path</i> su filesystem, in accordo
+   con l'espressione <i>$file_match</i> eventualmente passata, come array con
+   indice numerico. I valori contenuti nei singoli elementi dell'array
+   corrispondono al path completo dei file e delle cartelle contenute.</p>
+<h4>Sample</h4>
+   <code>$list_local = o2dir_list(o2app_dir_home());</code><br>
+   Assumendo che la home dell'applicazione sia la directory
+   <var>/o2app/myapp/</var>, <i>$list_local</i> potrebbe avere la seguente
+   forma:<br>
+   <code>Array</code><br>
+   <code>(</code><br>
+   &nbsp; <code>[0] => /o2app/myapp/data</code><br>
+   &nbsp; <code>[1] => /o2app/myapp/doc</code><br>
+   &nbsp; <code>[2] => /o2app/myapp/htdocs</code><br>
+   &nbsp; <code>[3] => /o2app/myapp/logs</code><br>
+   &nbsp; <code>[4] => /o2app/myapp/models</code><br>
+   &nbsp; <code>[5] => /o2app/myapp/myapp.ini</code><br>
+   &nbsp; <code>[6] => /o2app/myapp/prgs</code><br>
+   &nbsp; <code>[7] => /o2app/myapp/users</code><br>
+   <code>)</code><br>
+<fieldset><a href='node_127.html#node_169'>o2dir_delete()</a>, <a href='node_127.html#node_176'>o2file_exists()</a></fieldset></blockquote><br />
+<h3>0.19.4.4<a name='node_171'> &nbsp; </a>o2file_basename()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2file_basename($file_path)</code></p>
+ <p><i>Parameters:</i></p><ul>
+                         <li><i>$file_path</i> path del file di cui si richiede
+                             l'informativa</li>
+                     </ul>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il solo nome, privo di path ed estensione, del file <i>$file_path</i>.</p>
+<h4>Sample</h4>
+   <code>$name_local = o2file_basename("c:\programmi\php5\php.exe");</code><br>
+   <i>$name_local</i> conterrà la stringa "php".<fieldset><a href='node_127.html#node_175'>o2file_dir()</a>, <a href='node_127.html#node_177'>o2file_ext()</a>, <a href='node_127.html#node_178'>o2file_fullname()</a>, <a href='node_127.html#node_180'>o2file_rename()</a></fieldset></blockquote><br />
+<h3>0.19.4.5<a name='node_172'> &nbsp; </a>o2file_copy()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2file_copy($file_path, $new_file)</code></p>
+ <p><i>Parameters:</i></p><ul>
+                         <li><i>$file_path</i> path del file sorgente che si
+                             intende copiare</li>
+                         <li><i>$new_file</i> path del file destinazione su cui si
+                             intende copiare</li>
+                     </ul>
+<p><i>Returns:</i> <code>boolean</code></p>
+<p>Copia il file <i>$file_path</i> sul file <i>$new_file</i>, sovrascrivendolo se
+   già esistente.</p>
+<p><h4>ATTENZIONE!</h4>
+   Il file <i>$file_path</i> e la directory <var>[<i>$new_file</i>]/..</var>
+   devono esistere.</p><fieldset><a href='node_127.html#node_174'>o2file_delete()</a>, <a href='node_127.html#node_176'>o2file_exists()</a>, <a href='node_127.html#node_180'>o2file_rename()</a></fieldset></blockquote><br />
+<h3>0.19.4.6<a name='node_173'> &nbsp; </a>o2file_date()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2file_date($file_path)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$file_path</i> path del file di cui si richiede
+                             l'informativa</li>
+                     </ul></p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna la data di ultima modifica del file <i>$file_path</i> nella forma
+   <code>YYYYMMDD</code>.</p>
+<p><h4>Sample</h4>
+   <code>$date_local = o2file_date("c:\programmi\php5\php.exe");</code><br>
+   <i>$date_local</i> conterrà la stringa "20060816".</p><fieldset><a href='node_127.html#node_176'>o2file_exists()</a>, <a href='node_127.html#node_181'>o2file_size()</a>, <a href='node_127.html#node_182'>o2file_time()</a></fieldset></blockquote><br />
+<h3>0.19.4.7<a name='node_174'> &nbsp; </a>o2file_delete()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2file_delete($file_path)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$file_path</i> path del file che si vuole
+                             eliminare</li>
+                     </ul></p>
+<p><i>Returns:</i> <code>boolean</code></p>
+<p>Elimina il file <i>$file_path</i> su filesystem, se l'application server possiede
+   le credenziali necessarie. Ritorna "true" se l'eliminazione ha esito positivo.</p><fieldset><a href='node_127.html#node_172'>o2file_copy()</a>, <a href='node_127.html#node_176'>o2file_exists()</a>, <a href='node_127.html#node_180'>o2file_rename()</a></fieldset></blockquote><br />
+<h3>0.19.4.8<a name='node_175'> &nbsp; </a>o2file_dir()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2file_dir($file_path)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$file_path</i> path del file di cui si richiede
+                             l'informativa</li>
+                     </ul></p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il solo path del file <i>$file_path</i>.</p>
+<p><h4>Sample</h4>
+   <code>$dir_local = o2file_dir("c:\programmi\php5\php.exe");</code><br>
+   <i>$dir_local</i> conterrà la stringa "c:\programmi\php5\".</p><fieldset><a href='node_127.html#node_169'>o2dir_delete()</a>, <a href='node_127.html#node_170'>o2dir_list()</a>, <a href='node_127.html#node_171'>o2file_basename()</a>, <a href='node_127.html#node_177'>o2file_ext()</a>, <a href='node_127.html#node_178'>o2file_fullname()</a></fieldset></blockquote><br />
+<h3>0.19.4.9<a name='node_176'> &nbsp; </a>o2file_exists()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2file_exists($file_path)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$file_path</i> path del file di cui si vuole
+                             controllare l'esistenza</li>
+                     </ul></p>
+<p><i>Returns:</i> <code>boolean</code></p>
+<p>Verifica se esiste il file <i>$file_path</i> su filesystem e ritorna "true" se
+   esiste, altrimenti "false".</p><fieldset><a href='node_127.html#node_168'>o2dir_create()</a>, <a href='node_127.html#node_170'>o2dir_list()</a>, <a href='node_127.html#node_172'>o2file_copy()</a>, <a href='node_127.html#node_174'>o2file_delete()</a></fieldset></blockquote><br />
+<h3>0.19.4.10<a name='node_177'> &nbsp; </a>o2file_ext()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2file_ext($file_path)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$file_path</i> path del file di cui si richiede
+                             l'informativa</li>
+                     </ul></p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna la sola estensione (la stringa a destra dell'ultimo "." contenuto nel
+   nome) del file <i>$file_path</i>.</p>
+<p><h4>Sample</h4>
+   <code>$ext_local = o2file_ext("c:\programmi\php5\php.exe");</code><br>
+   <i>$ext_local</i> conterrà la stringa "exe".</p><fieldset><a href='node_127.html#node_171'>o2file_basename()</a>, <a href='node_127.html#node_175'>o2file_dir()</a>, <a href='node_127.html#node_178'>o2file_fullname()</a>, <a href='node_127.html#node_179'>o2file_ico()</a></fieldset></blockquote><br />
+<h3>0.19.4.11<a name='node_178'> &nbsp; </a>o2file_fullname()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2file_fullname($file_path)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$file_path</i> path del file di cui si richiede
+                             l'informativa</li>
+                     </ul></p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il nome completo, con path esplicito e ben formato, del file
+   <i>$file_path</i>.</p>
+<p><h4>Sample</h4>
+   <code>$file_local = o2file_fullname("c:\programmi\php5\php.exe");</code><br>
+   <i>$file_local</i> conterrà la stringa "c:\programmi\php5\php.exe".</p><fieldset><a href='node_127.html#node_171'>o2file_basename()</a>, <a href='node_127.html#node_175'>o2file_dir()</a>, <a href='node_127.html#node_176'>o2file_exists()</a>, <a href='node_127.html#node_177'>o2file_ext()</a></fieldset></blockquote><br />
+<h3>0.19.4.12<a name='node_179'> &nbsp; </a>o2file_ico()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2file_ico($file_path, [$large=false])</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$file_path</i> path del file per il quale si
+                             richiede l'icona</li>
+                         <li><i>$large</i> (optional) valore logico (default "false")
+                             usato per richiedere icone in formato 256x256 px anziché
+                             16x16 px</li>
+                     </ul></p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il puntamento web all'immagine icona appropriata per la tipologia di
+   file di <i>$file_path</i>, cercando di ricavare la tipologia dal MIME-TYPE del
+   file (quando possibile) o dalla sua estensione. Se viene passato a "true" il
+   secondo parametro <i>$large</i> verrà ritornato il puntamento all'icona in
+   formato <em>PNG</em> 256x256 px, altrimenti il puntamento all'icona <em>PNG</em>
+   16x16 px.</p>
+<p><h4>Sample</h4>
+   <code>$ico_local = o2file_ico("c:\programmi\php5\php.exe");</code><br>
+   <i>$ico_local</i> conterrà la stringa "/o2/img/fs/exe.png".</p><fieldset><a href='node_127.html#node_177'>o2file_ext()</a>, <a href='node_127.html#node_183'>o2file_type()</a></fieldset></blockquote><br />
+<h3>0.19.4.13<a name='node_180'> &nbsp; </a>o2file_rename()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2file_rename($file_path, $new_name)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$file_path</i> path del file sorgente che si
+                             intende rinomiare</li>
+                         <li><i>$new_name</i> path del file destinazione con cui
+                             si intende rinominare</li>
+                     </ul></p>
+<p><i>Returns:</i> <code>boolean</code></p>
+<p>Rinomina il file <i>$file_path</i> col nome file <i>$new_name</i>,
+   sovrascrivendolo se già esistente.</p>
+<p><h4>ATTENZIONE!</h4>
+   Il file <i>$file_path</i> e la directory <var>[<i>$new_name</i>]/..</var>
+   devono esistere.</p><fieldset><a href='node_127.html#node_172'>o2file_copy()</a>, <a href='node_127.html#node_176'>o2file_exists()</a>, <a href='node_127.html#node_180'>o2file_rename()</a></fieldset></blockquote><br />
+<h3>0.19.4.14<a name='node_181'> &nbsp; </a>o2file_size()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2file_size($file_path)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$file_path</i> path del file di cui si richiede
+                             l'informativa</li>
+                     </ul></p>
+<p><i>Returns:</i> <code>integer</code></p>
+<p>Ritorna la dimensione in byte del file <i>$file_path</i>.</p>
+<p><h4>Sample</h4>
+   <code>$size_local = o2file_size("c:\programmi\php5\php.exe");</code><br>
+   <i>$size_local</i> conterrà il valore "28725".</p><fieldset><a href='node_127.html#node_173'>o2file_date()</a>, <a href='node_127.html#node_176'>o2file_exists()</a>, <a href='node_127.html#node_182'>o2file_time()</a></fieldset></blockquote><br />
+<h3>0.19.4.15<a name='node_182'> &nbsp; </a>o2file_time()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2file_time($file_path)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$file_path</i> path del file di cui si richiede
+                             l'informativa</li>
+                     </ul></p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna l'ora di ultima modifica del file <i>$file_path</i> nella forma
+   <code>HHMMSS</code>.</p>
+<p><h4>Sample</h4>
+   <code>$time_local = o2file_time("c:\programmi\php5\php.exe");</code><br>
+   <i>$time_local</i> conterrà la stringa "003422".</p><fieldset><a href='node_127.html#node_173'>o2file_date()</a>, <a href='node_127.html#node_176'>o2file_exists()</a>, <a href='node_127.html#node_181'>o2file_size()</a></fieldset></blockquote><br />
+<h3>0.19.4.16<a name='node_183'> &nbsp; </a>o2file_type()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2file_type($file_path)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$file_path</i> path del file di cui si richiede
+                             l'informativa</li>
+                     </ul></p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna "D" se il file <i>$file_path</i> è una directory, altrimenti "F".</p>
+<p><h4>Sample</h4>
+   <code>$ype_local = o2file_type("c:\programmi\php5\php.exe");</code><br>
+   <i>$type_local</i> conterrà la stringa "F".</p><fieldset><a href='node_127.html#node_169'>o2dir_delete()</a>, <a href='node_127.html#node_174'>o2file_delete()</a>, <a href='node_127.html#node_176'>o2file_exists()</a>, <a href='node_127.html#node_177'>o2file_ext()</a></fieldset></blockquote></blockquote><br />
+<h3>0.19.5<a name='node_132'> &nbsp; </a>Funzioni di database server</h3><br><blockquote><p>Questo gruppo di funzioni riguarda i due elementi di base della connettività:
+   i server e i database su essi definiti, come definiti dal contenuto del
+   <i>servers & databases repository</i> (default
+   <var>[app_root]/prgs/db_repository.inc</var>).</p>
+<br />
+<h3>0.19.5.1<a name='node_167'> &nbsp; </a>o2dbs_commit()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2db_commit($server_name)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$server_name</i> nome del server su cui si sta
+                             eseguendo il COMMIT</li>
+                     </ul>
+<p><i>Returns:</i> <code>boolean</code></p>
+<p>Esegue il COMMIT <em>SQL</em> delle transazioni avviate sul server
+   <i>$server_name</i>. Una nuova transazione verrà automaticamente avviata alla
+   prossima richiesta di esecuzione per il server. Ritorna "true" se il COMMIT è
+   stato eseguito con successo.</p><fieldset><a href='node_127.html#node_159'>o2dbs_exe()</a>, <a href='node_127.html#node_165'>o2db_server()</a></fieldset></blockquote><br />
+<h3>0.19.5.2<a name='node_158'> &nbsp; </a>o2dbs_engine()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2dbs_engine($server_name)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$server_name</i> nome del database server di cui si
+                             sta richiedendo l'informativa</li>
+                     </ul>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il tipo di motore <em>SQL</em> ("sqlite", "mysql", "mssql", "postgres", "oracle", ...) per il server <i>$server_name</i>, così come definito alla voce <i>Engine</i> della definizione dei <i>Server</i>.</p>
+<fieldset><a href='node_127.html#node_160'>o2dbs_name()</a>, <a href='node_127.html#node_161'>o2dbs_password()</a>, <a href='node_127.html#node_162'>o2dbs_user()</a></fieldset></blockquote><br />
+<h3>0.19.5.3<a name='node_159'> &nbsp; </a>o2dbs_exe()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2dbs_exe($server_name, $sql_cmd)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$server_name</i> nome del database server su cui si
+                             sta richiedendo l'esecuzione</li>
+                         <li><i>$sql_cmd</i> comando <em>SQL</em> da eseguire sul
+                             server</li>
+                     </ul>
+<p><i>Returns:</i> <code>boolean</code></p>
+<p>Esegue il comando <em>SQL</em> <i>$sql_cmd</i> direttamente sul server
+   <i>$server_name</i> e ritorna "true" se eseguito correttamente.</p>
+<h4>ATTENZIONE!</h4>
+   Questa funzione può compromettere la portabilità dell'applicazione, in quanto la
+   sintassi del comando <i>$sql_cmd</i> può variare da una tipologia di server ad
+   un'altra. Si sconsiglia l'uso di questa funzione, a favore delle normali tecniche
+   o2 di accesso e gestione delle connettività.
+<fieldset><a href='node_127.html#node_158'>o2dbs_engine()</a>, <a href='node_127.html#node_165'>o2db_server()</a>, <a href='node_127.html#node_167'>o2dbs_commit()</a></fieldset></blockquote><br />
+<h3>0.19.5.4<a name='node_160'> &nbsp; </a>o2dbs_name()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2dbs_name($server_name)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$server_name</i> nome del database server di cui si
+                             sta richiedendo l'informativa</li>
+                     </ul>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il nome host o l'indirizzo IP del server <i>$server_name</i>, così come
+   definito alla voce <i>Physical name</i> della definizione dei <i>Server</i>.</p>
+<fieldset><a href='node_127.html#node_158'>o2dbs_engine()</a>, <a href='node_127.html#node_161'>o2dbs_password()</a>, <a href='node_127.html#node_162'>o2dbs_user()</a></fieldset></blockquote><br />
+<h3>0.19.5.5<a name='node_161'> &nbsp; </a>o2dbs_password()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2dbs_password($server_name)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$server_name</i> nome del database server di cui si
+                             sta richiedendo l'informativa</li>
+                     </ul>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna la password indicata per l'utente di accesso al server
+   <i>$server_name</i>, così come definita alla voce <i>Password</i> della
+   definizione dei <i>Server</i>.</p><fieldset><a href='node_127.html#node_158'>o2dbs_engine()</a>, <a href='node_127.html#node_160'>o2dbs_name()</a>, <a href='node_127.html#node_162'>o2dbs_user()</a></fieldset></blockquote><br />
+<h3>0.19.5.6<a name='node_162'> &nbsp; </a>o2dbs_user()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2dbs_user($server_name)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$server_name</i> nome del database server di cui si
+                             sta richiedendo l'informativa</li>
+                     </ul>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il nome dell'utente di accesso al server <i>$server_name</i>, così come definito alla voce <i>User</i> della definizione dei <i>Server</i>.</p><fieldset><a href='node_127.html#node_158'>o2dbs_engine()</a>, <a href='node_127.html#node_160'>o2dbs_name()</a>, <a href='node_127.html#node_161'>o2dbs_password()</a></fieldset></blockquote><br />
+<h3>0.19.5.7<a name='node_163'> &nbsp; </a>o2db_name()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2db_name($db_name)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$db_name</i> nome del database di cui si sta
+                             richiedendo l'informativa</li>
+                     </ul>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il nome fisico del database $db_name, come definito alla colonna
+   <i>Physical name</i> della definizione dei <i>Database</i>.</p>
+<fieldset><a href='node_127.html#node_164'>o2db_schema()</a>, <a href='node_127.html#node_165'>o2db_server()</a></fieldset></blockquote><br />
+<h3>0.19.5.8<a name='node_164'> &nbsp; </a>o2db_schema()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2db_schema($db_name)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$db_name</i> nome del database di cui si sta
+                             richiedendo l'informativa</li>
+                     </ul>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna lo <i>schema</i> utilizzato per l'accesso al database $db_name, come
+   definito alla colonna <i>Schema</i> della definizione dei <i>Database</i>.</p>
+<fieldset><a href='node_127.html#node_163'>o2db_name()</a>, <a href='node_127.html#node_165'>o2db_server()</a></fieldset></blockquote><br />
+<h3>0.19.5.9<a name='node_165'> &nbsp; </a>o2db_server()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2db_server($db_name)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$db_name</i> nome del database di cui si sta
+                             richiedendo l'informativa</li>
+                     </ul></p>
+<p><i>Returns:</i> <code>string</code></p>
+<p>Ritorna il nome logico (o2) del server su cui è definito il database
+   <i>$db_name</i>, come indicato nella colonna <i>Server</i> della definizione
+   dei <i>Database</i>.</p>
+<p>Il nome logico di server ritornato da questa funzione può essere passato come
+   primo parametro alle funzioni <i>o2dbs_*()</i>.</p>
+<fieldset><a href='node_127.html#node_158'>o2dbs_engine()</a>, <a href='node_127.html#node_160'>o2dbs_name()</a>, <a href='node_127.html#node_163'>o2db_name()</a>, <a href='node_127.html#node_164'>o2db_schema()</a></fieldset></blockquote><br />
+<h3>0.19.5.10<a name='node_166'> &nbsp; </a>o2db_tables()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2db_tables($db_name)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$db_name</i> nome del database di cui si sta
+                             richiedendo l'informativa</li>
+                     </ul>
+<p><i>Returns:</i> <code>array</code></p>
+<p>Ritorna l'elenco delle tabelle fisicamente esistenti sul database <i>$db_name</i>
+   in forma di array con indici numerici.</p>
+
+<fieldset><a href='node_127.html#node_158'>o2dbs_engine()</a>, <a href='node_127.html#node_163'>o2db_name()</a>, <a href='node_127.html#node_164'>o2db_schema()</a>, <a href='node_127.html#node_165'>o2db_server()</a></fieldset></blockquote></blockquote>
+<h3>0.19.6<a name='node_184'> &nbsp; </a>Funzioni di datamodel</h3><blockquote></blockquote>
+<h3>0.19.7<a name='node_133'> &nbsp; </a>Funzioni di tabelle e campi</h3><blockquote></blockquote>
+<h3>0.19.8<a name='node_134'> &nbsp; </a>Funzioni di view</h3><blockquote></blockquote><br />
+<h3>0.19.9<a name='node_135'> &nbsp; </a>Funzioni di form</h3><br><blockquote>Le funzioni contenute in questa sezione riguardano informative ed esecuzioni relative a form definite per un programma.<br />
+<h3>0.19.9.1<a name='node_153'> &nbsp; </a>o2ctrl_focus()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2form_focus($form_name, $ctrl_name)</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$form_name</i> nome della form a cui appartiene il
+                             controllo a cui si vuole dare il focus</li>
+                         <li><i>$ctrl_name</i> nome del controllo a cui si vuole
+                             dare il focus</li>
+                     </ul>
+<p><i>Returns:</i> <code>void</code></p>
+<p>Imposta il focus per il controllo <i>$ctrl_name</i> della form <i>$form_name</i>.
+   Per poter ricevere il focus il controllo deve essere visibile, altrimenti si
+   risolverà in un errore di <i>javascript</i>.</p>
+</blockquote><br />
+<h3>0.19.9.2<a name='node_149'> &nbsp; </a>o2form_height()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2form_height($form_name, [$level=0])</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$form_name</i> nome della form di cui si sta
+                             richiedendo l'informativa</li>
+                         <li><i>$level</i> (optional) il numero del livello di
+                             esecuzione (indice di programma in esecuzione) del
+                             programma a cui appartiene la form richiesta - se omesso
+                             o passato a "0" verrà utilizzato il livello di
+                             esecuzione del programma corrente</li>
+                     </ul>
+<p><i>Returns:</i> <code>integer</code></p>
+<p>Ritorna il valore dell'altezza in px della form <i>$form_name</i>.</p>
+<h4>Sample</h4>
+   <code>$h_local = o2form_height("main_win");</code><br>
+   Ritorna l'altezza della form <i>main_win</i> definita nel programma
+   corrente.<br><br>
+   <code>$h_local = o2form_height("detail", count(o2app_prg()) - 1);</code><br>
+   Ritorna l'altezza della form <i>detail</i> definita nel programma che ha chiamato
+   il programma corrente.<fieldset><a href='node_127.html#node_150'>o2form_width()</a>, <a href='node_127.html#node_151'>o2form_x()</a>, <a href='node_127.html#node_152'>o2form_y()</a></fieldset></blockquote><br />
+<h3>0.19.9.3<a name='node_150'> &nbsp; </a>o2form_width()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2form_width($form_name, [$level=0])</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$form_name</i> nome della form di cui si sta
+                             richiedendo l'informativa</li>
+                         <li><i>$level</i> (optional) il numero del livello di
+                             esecuzione (indice di programma in esecuzione) del
+                             programma a cui appartiene la form richiesta - se omesso
+                             o passato a "0" verrà utilizzato il livello di
+                             esecuzione del programma corrente</li>
+                     </ul></p>
+<p><i>Returns:</i> <code>integer</code></p>
+<p>Ritorna il valore della larghezza in px della form <i>$form_name</i>.</p>
+<p><h4>Sample</h4>
+   <code>$w_local = o2form_width("main_win");</code><br>
+   Ritorna la larghezza della form <i>main_win</i> definita nel programma
+   corrente.<br><br>
+   <code>$w_local = o2form_width("detail", count(o2app_prg()) - 1);</code><br>
+   Ritorna la larghezza della form <i>detail</i> definita nel programma che ha
+   chiamato il programma corrente.</p><fieldset><a href='node_127.html#node_149'>o2form_height()</a>, <a href='node_127.html#node_151'>o2form_x()</a>, <a href='node_127.html#node_152'>o2form_y()</a></fieldset></blockquote><br />
+<h3>0.19.9.4<a name='node_151'> &nbsp; </a>o2form_x()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2form_x($form_name, [$level=0])</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$form_name</i> nome della form di cui si sta
+                             richiedendo l'informativa</li>
+                         <li><i>$level</i> (optional) il numero del livello di
+                             esecuzione (indice di programma in esecuzione) del
+                             programma a cui appartiene la form richiesta - se omesso
+                             o passato a "0" verrà utilizzato il livello di
+                             esecuzione del programma corrente</li>
+                     </ul>
+<p><i>Returns:</i> <code>integer</code></p>
+<p>Ritorna il valore in px della coordinata orizzontale dell'angolo superiore
+   sinistro della form <i>$form_name</i>.</p>
+<h4>Sample</h4>
+   <code>$x_local = o2form_x("main_win");</code><br>
+   Ritorna la coordinata orizzontale della form <i>main_win</i> definita nel
+   programma corrente.<br><br>
+   <code>$x_local = o2form_x("detail", count(o2app_prg()) - 1);</code><br>
+   Ritorna la coordinata orizzontale della form <i>detail</i> definita nel
+   programma che ha chiamato il programma corrente.<fieldset><a href='node_127.html#node_149'>o2form_height()</a>, <a href='node_127.html#node_150'>o2form_width()</a>, <a href='node_127.html#node_152'>o2form_y()</a></fieldset></blockquote><br />
+<h3>0.19.9.5<a name='node_152'> &nbsp; </a>o2form_y()</h3><br><blockquote><p><i>Sintassi:</i> <code>o2form_y($form_name, [$level=0])</code></p>
+<p><i>Parameters:</i><ul>
+                         <li><i>$form_name</i> nome della form di cui si sta
+                             richiedendo l'informativa</li>
+                         <li><i>$level</i> (optional) il numero del livello di
+                             esecuzione (indice di programma in esecuzione) del
+                             programma a cui appartiene la form richiesta - se omesso
+                             o passato a "0" verrà utilizzato il livello di
+                             esecuzione del programma corrente</li>
+                     </ul>
+<p><i>Returns:</i> <code>integer</code></p>
+<p>Ritorna il valore in px della coordinata verticale dell'angolo superiore
+   sinistro della form <i>$form_name</i>.</p>
+<h4>Sample</h4>
+   <code>$y_local = o2form_y("main_win");</code><br>
+   Ritorna la coordinata verticale della form <i>main_win</i> definita nel
+   programma corrente.<br><br>
+   <code>$y_local = o2form_y("detail", count(o2app_prg()) - 1);</code><br>
+   Ritorna la coordinata verticale della form <i>detail</i> definita nel
+   programma che ha chiamato il programma corrente.<fieldset><a href='node_127.html#node_149'>o2form_height()</a>, <a href='node_127.html#node_150'>o2form_width()</a>, <a href='node_127.html#node_151'>o2form_x()</a></fieldset></blockquote></blockquote>
+<h3>0.19.10<a name='node_136'> &nbsp; </a>Funzioni di client browser</h3><blockquote></blockquote>
+<h3>0.19.11<a name='node_137'> &nbsp; </a>Funzioni di programma</h3><blockquote></blockquote>
+<h3>0.19.12<a name='node_148'> &nbsp; </a>Funzioni di menu</h3><blockquote></blockquote>
+<h3>0.19.13<a name='node_138'> &nbsp; </a>Funzioni miscellanee</h3><blockquote></blockquote><br /><center><br /><a href='index.html'>Content</a>
+<br /><br /><i>Corso aggiornato nel maggio 2005</i></center>
+</body>
+</html>
