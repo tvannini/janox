@@ -1,0 +1,18 @@
+<html><head><title>o2record_log</title><link rel='stylesheet' type='text/css' href='doc.css'></head><body><center><br /><small><a href='index.html#o2record_log'>Index</a></small><hr /></center><p>(view)</p><h3>o2record_log</h3><code><i></i> o2record_log(<i>string</i> $view_name, <i>string</i> $table_alias, <i>integer</i> $exe_id)</code><p>Returns an array of events happpened on a record of a view.<br />
+Each record is in the form: <br />
+ "id" => event timestamp with microseconds, <br />
+ "date" => event date, <br />
+ "time" => event time, <br />
+ "act" => event action [I|D|C|U], <br />
+ "user" => user who fired the event, <br />
+ "<...>" => record fields with values.<br />
+<br />
+Insert records contains fields values the record was created with.<br />
+<br />
+For each Update record there is a Change record with the same ID: the Change record contains the Values before modification, the Update record contains the Values after modification.<br />
+<br />
+Delete records contains the last fields Values before deleting.<br />
+Delete records matching Update records are changed to "C" for easy filtering.<br />
+<br />
+<br />
+</p><fieldset><legend>Parameters:</legend><ol><li><b>$view_name</b></li> Name of the view to get history for<li><b>$table_alias</b></li> Alias of the view table to get history for<li><b>$exe_id</b></li> Program execution ID: use 0 or nothing for current program</ol></fieldset><fieldset><legend>Related functions:</legend><p><a href="o2ctrl_log.html">o2ctrl_log</a></p></fieldset></body></html>
