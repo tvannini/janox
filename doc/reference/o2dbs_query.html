@@ -1,0 +1,11 @@
+<html><head><title>o2dbs_query</title><link rel='stylesheet' type='text/css' href='doc.css'></head><body><center><br /><small><a href='index.html#o2dbs_query'>Index</a></small><hr /></center><p>(server)</p><h3>o2dbs_query</h3><code><i>array</i> o2dbs_query(<i>string</i> $server_name, <i>string</i> $command_str)</code><p>Executes a sql query directly on database server and returns the result dataset as an array, in the form: <br />
+<br />
+ arr[0] = array(field_0 => value_0, field_1 => value_1, ...) <br />
+ arr[1] = array(field_0 => value_0, field_1 => value_1, ...) <br />
+ ...<br />
+ arr[n] = array(field_0 => value_0, field_1 => value_1, ...) <br />
+<br />
+This function is useful to execute queries for dataset retrieving. If you need to execute statements, like UPDATE, DELETE, CREATE, ecc... see o2dbs_execute() function instead.<br />
+<br />
+<br />
+</p><fieldset><legend>Parameters:</legend><ol><li><b>$server_name</b></li> <li><b>$command_str</b></li> </ol></fieldset><fieldset><legend>Related functions:</legend><p><a href="o2dbs_execute.html">o2dbs_execute</a></p><p><a href="o2dbs_engine.html">o2dbs_engine</a></p></fieldset></body></html>
