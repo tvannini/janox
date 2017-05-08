@@ -1,9 +1,0 @@
-<html><head><title>o2error_lastclear</title><link rel='stylesheet' type='text/css' href='doc.css'></head><body><center><br /><small><a href='index.html#o2error_lastclear'>Index</a></small><hr /></center><p>(prg)</p><h3>o2error_lastclear</h3><code><i></i> o2error_lastclear(<i>string</i> $name, <i>mix</i> $value)</code><p>Returns a refernce to a reference-variable <br />
-<br />
-ATTENTION: In order to get a safe reference to the variable, regardless the variable type, you must use the referenced-assign PHP syntax, in this way: <br />
-<br />
- $var = &o2refvar_get("<var-name>"); <br />
-<br />
-<br />
-</p><fieldset><legend>Parameters:</legend><ol><li><b>$name</b></li> Variable unique name<li><b>$value</b></li> Variable definition value /
-function &o2refvar_get($name) { $name = strtolower($name); $app = $_SESSION['o2_app']; return $app->istanze_prg[$app->progressivo_istanze]->reference_vars[$name]; } // ==================================== LAST ERROR ======================================= / Clears last error informations</ol></fieldset></body></html>
