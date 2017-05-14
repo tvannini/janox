@@ -3,18 +3,22 @@
  <head>
   <script>
 
-function doit() {
-var x = new XMLHttpRequest();
-x.open("GET", "https://groups.google.com/forum/feed/jxsupport/msgs/rss.xml", true);
-x.onreadystatechange = function () {
-  if (x.readyState == 4 && x.status == 200) {
-    alert(x.responseText);
-    var doc = x.responseXML;
-    // …
-    }
-  };
-x.send(null);
-}
+    function doit() {
+
+        var x = new XMLHttpRequest();
+        x.open("GET",
+               "https://groups.google.com/forum/feed/jxsupport/msgs/rss.xml",
+               true);
+        x.onreadystatechange = function () {
+            alert(x.status);
+            if (x.readyState == 4 && x.status == 200) {
+                alert(x.responseText);
+                var doc = x.responseXML;
+                // …
+                }
+            };
+        x.send(null);
+        }
 
   </script>
  <head>
