@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script type="text/javascript">
+  /*
+   https://groups.google.com/forum/feed/jxsupport/msgs/rss.xml
+   */
+  function doit() {
+  document.getElementById('forum_embed').src =
+     'https://groups.google.com/forum/embed/?place=forum/jxsupport'
+     + '&parenturl=' + encodeURIComponent(window.location.href);
+  }
+  </script>
+ <head>
+<body onload="doit()">
+ TEST
+ <iframe id="forum_embed"
+  src="javascript:void(0)"
+  scrolling="no"
+  frameborder="0"
+  width="900"
+  height="700">
+</iframe>
+</body>
+</html>
+
+
