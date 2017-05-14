@@ -10,6 +10,11 @@
      'https://groups.google.com/forum/embed/?place=forum/jxsupport'
      + '&parenturl=' + encodeURIComponent(window.location.href);
   }
+
+  function done() {
+    alert(document.getElementById('forum_embed').document.innerText);
+    }
+
   </script>
  <head>
 <body onload="doit()">
@@ -19,7 +24,8 @@
   scrolling="no"
   frameborder="0"
   width="900"
-  height="700">
+  height="700"
+  onload="done()">
 </iframe>
 </body>
 </html>
