@@ -12,7 +12,7 @@
   }
 
   function done() {
-    alert(document.getElementById('forum_embed').document.innerText);
+    document.getElementById('forum_embed').innerHTML = document.getElementById('forum_embed').contentDocument.body.innerHTML;
     }
 
   </script>
@@ -27,6 +27,7 @@
   height="700"
   onload="done()">
 </iframe>
+<div id="result"></div>
 </body>
 </html>
 
