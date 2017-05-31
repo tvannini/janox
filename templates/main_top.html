@@ -19,10 +19,86 @@
 
       <!-- Top-right: JANOX LOGO -->
       <div class="first_right">
-        <img src="images/j.png">
-        <p>Janox è un software <b>open source</b> e viene distribuito gratuitamente
-           secondo i termini della
-           <a href="http://www.gnu.org/licenses/lgpl-3.0.txt">GNU Lesser General Public License (LGPL).</a></p>
-        <h2>Janox, the full <i>cross-tech</i> development suite.</h2>
+
+        <!-- Top-right: SLIDES -->
+        <div class="slides" onmouseenter="stop();" onmouseleave="start();">
+          <div class="slide">
+                      <!-- Article -->
+                <img src="images/j.png">
+                <p>Janox è software <b>open source</b> e viene distribuito gratuitamente
+                   secondo i termini della
+                   <a href="http://www.gnu.org/licenses/lgpl-3.0.txt">GNU Lesser General Public License (LGPL).</a></p>
+                <h2><em>Janox, the full <i>cross-tech</i> development suite.</em></h2>
+          </div>
+
+          <!--$news_list-->
+
+          <div class="slide-ctrls">
+            <div class="btn-left" onclick="stopped=true;showDivs(-1)">&#10094;</div>
+            <div class="btn-right" onclick="stopped=true;showDivs()">&#10095;</div>
+            <span class="led" onclick="slideIndex=0;showDivs()"></span>
+            <span class="led" onclick="slideIndex=1;showDivs()"></span>
+            <span class="led" onclick="slideIndex=2;showDivs()"></span>
+            <span class="led" onclick="slideIndex=3;showDivs()"></span>
+          </div>
+
+        </div>
+        <script>
+
+        var slideIndex = 1;
+        var stopped    = false;
+        var timer      = null;
+        start();
+
+        function showDivs(n) {
+
+            slideIndex += n || 1;
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+                }
+            if (slideIndex < 1) {
+                slideIndex = slides.length
+                }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+            slides[slideIndex-1].style.display = "block";
+            var leds = document.getElementsByClassName("led");
+            for (i = 0; i < leds.length; i++) {
+                leds[i].className = leds[i].className.replace(" on", "");
+                }
+            leds[slideIndex - 1].className += " on";
+            if (stopped) {
+                if (timer) {
+                    clearTimeout(timer);
+                    }
+                }
+            else {
+                timer = setTimeout(showDivs, 6000);
+                }
+
+            }
+
+        function stop() {
+
+            stopped = true;
+            if (timer) {
+                clearTimeout(timer);
+                }
+
+            }
+
+        function start() {
+
+            slideIndex-= 1;
+            stopped    = false;
+            showDivs();
+
+            }
+
+        </script>
+
       </div>
       <div class="bg"></div>
