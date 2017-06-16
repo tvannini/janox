@@ -10,7 +10,7 @@ Repository](https://github.com/tvannini/jxrnt).
 If you were looking for Janox documentation you can start from
 [here](/tvannini/janox/wiki).
 
-Else visit Janox site at [www.janox.it](http://www.janox.it)
+Else visit Janox site at [www.janox.it](http://www.janox.it).
 
 
 Janox is **free** and **open source** software.
