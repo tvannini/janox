@@ -1,16 +1,17 @@
 # janox
 #### Welcome in Janox, the complete suite for WEB development.
 
+This repository is just a container for Janox [site](www.janox.it) and
+[documentation](http://www.janox.it/doc).
 
-Janox enables everyone to develop PHP and HTML5 applications, starting
-from data and from connectivity and processing pipelines.
+If you were looking for Janox runtime, please visit [JXRNT
+Repository](https://github.com/tvannini/jxrnt).
 
-Janox is a development tool thought for realizing complex data-based
-projects, like management applications, CRM and production components.
+If you were looking for Janox documentation you can start from
+[here](/tvannini/janox/wiki).
 
-Portability capabilities, development-maintenance cycle and modularity
-make Janox the best tool for concurrent development and partnership.
+Else visit [Janox site](http://www.janox.it)
+
 
 Janox is **free** and **open source** software.
 
-For more informations please visit [Janox site](http://www.janox.it)
