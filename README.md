@@ -1,4 +1,4 @@
-# janox
+# Janox
 #### Welcome in Janox, the complete suite for WEB development.
 
 This repository is just a container for Janox
