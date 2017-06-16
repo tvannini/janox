@@ -1,7 +1,8 @@
 # janox
 #### Welcome in Janox, the complete suite for WEB development.
 
-This repository is just a container for Janox [site](www.janox.it) and
+This repository is just a container for Janox
+[site](http://www.janox.it) and
 [documentation](http://www.janox.it/doc).
 
 If you were looking for Janox runtime, please visit [JXRNT
