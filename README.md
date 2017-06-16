@@ -9,7 +9,7 @@ If you were looking for Janox runtime, please visit [JXRNT
 Repository](https://github.com/tvannini/jxrnt).
 
 If you were looking for Janox documentation you can start from
-[here](/tvannini/janox/wiki).
+[here](tvannini/janox/wiki).
 
 Else visit Janox site at [www.janox.it](http://www.janox.it).
 
