@@ -12,7 +12,7 @@
       <!-- HADER -->
       <div class="header">
         <div class="logo"><a href="#"><img src="images/logo.gif" border="0" alt=""></a></div>
-        <div class="update">12.06.2017</div>
+        <div class="update">14.06.2017</div>
         <div class="clr"></div>
         <div class="menu">
           <ul>
@@ -72,6 +72,17 @@
 
                     <!-- News slide -->
           <div class="slide">
+                <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Nuovo Janox Mini WEB Server<br>
+                  <span><i>14.06.2017 | Janox news</i></span></h2>
+                <p>La versione in sviluppo 2.3.00 introduce un nuovo potente strumento: Janox Mini WEB Server.</p>
+
+<p>Se volete provare l'applicazione Demo, eseguire dei test o eseguire in maniera facile e veloce applicazioni Janox da oggi sarà possibile farlo senza aver bisogno di un WEB Server configurato: basterà avere un eseguibile PHP 5.4 o superiore.</p>
+
+<p>Per una documentazione dettagliata del nuovo strumento visita il nostro Wiki <a href="https://github.com/tvannini/janox/wiki/JXServer">Janox Mini WEB Server</a>.</p>
+          </div>
+
+          <!-- News slide -->
+          <div class="slide">
                 <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Nuovo package per le release Janox<br>
                   <span><i>04.06.2017 | Janox news</i></span></h2>
                 <p>Da oggi cambia il package di download per le release Janox.</p>
@@ -87,15 +98,6 @@
                 <p>La Community è orgogliosa di inaugurare il nuovo sito di Janox.</p>
 <p>Qui potrai trovare contenuti sempre aggiornati, i download, la documentazione, il supporto, le attività e i contatti con la nostra Community.</p>
 <p>Visita il nuovo sito su <a href="http://www.janox.it">www.janox.it</a> per rimanere in contatto con il mondo di Janox.</p>
-          </div>
-
-          <!-- News slide -->
-          <div class="slide">
-                <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Nuovo cantiere di sviluppo Janox 2.3.00<br>
-                  <span><i>15.05.2017 | Janox news</i></span></h2>
-                <p>La Community Janox è lieta di annunciare l'apertura del nuovo cantiere di sviluppo per la versione 2.3.00.</p>
-<p>La nuova versione introdurrà molte novità, a partire dal nuovo modello di interfacce dinamiche.</p>
-<p>La nuova versione di sviluppo 2.3.00 è disponibile per il download alla nostra <a href="/downloads.html">pagina</a>, ma <b>attenzione: questa release è sperimentale e non è indicata per installazioni di produzione.</b></p>
           </div>
 
 
@@ -198,24 +200,24 @@
           <span>Risorse | <a href="https://github.com/tvannini/jxrnt/commits">Pagina</a></span></h2>
 
                 <p><strong>Commit</strong><br>
+          <span>14.06.2017 | <a href="https://github.com/tvannini/jxrnt/commit/beb42ba38233fc2abd98675d4206a425c72870b9">&#xBB;</a></span><br>
+          Bypass LDAP auth when coming from "Start new session"</p>
+
+        <p><strong>Commit</strong><br>
+          <span>14.06.2017 | <a href="https://github.com/tvannini/jxrnt/commit/94cd8b43eb900e7457ac4697af36301cc22668e0">&#xBB;</a></span><br>
+          Fixed field phys-name in add-index functions</p>
+
+        <p><strong>Commit</strong><br>
+          <span>13.06.2017 | <a href="https://github.com/tvannini/jxrnt/commit/1cb1f2b73c5b209acd2b4c01741dc311b5c2eafe">&#xBB;</a></span><br>
+          Fixed variable type</p>
+
+        <p><strong>Commit</strong><br>
           <span>11.06.2017 | <a href="https://github.com/tvannini/jxrnt/commit/a8a679b55a048d7de38536ad4dc4bf80ee6b0b19">&#xBB;</a></span><br>
           Fixed bar refresh when start/stop action is sent</p>
 
         <p><strong>Commit</strong><br>
           <span>06.06.2017 | <a href="https://github.com/tvannini/jxrnt/commit/788695bac530a8c66ad8f17091884fe03587c643">&#xBB;</a></span><br>
           Fixed find PHP executable for JXServer</p>
-
-        <p><strong>Commit</strong><br>
-          <span>06.06.2017 | <a href="https://github.com/tvannini/jxrnt/commit/73404ee64eadf0dac0e0f44c5b4b3f728f93890d">&#xBB;</a></span><br>
-          First set user CSV export options to default options</p>
-
-        <p><strong>Commit</strong><br>
-          <span>06.06.2017 | <a href="https://github.com/tvannini/jxrnt/commit/a727e8cf5526e40862105a2fde67b50223e2290a">&#xBB;</a></span><br>
-          Application INI parameter base-DN string for LDAP authentication</p>
-
-        <p><strong>Commit</strong><br>
-          <span>05.06.2017 | <a href="https://github.com/tvannini/jxrnt/commit/161723d71af279d299396b72be8d84886ffd03e3">&#xBB;</a></span><br>
-          Fixed use of pkey for record update and delete</p>
 
 
         <h2>&nbsp;</h2>
@@ -255,7 +257,7 @@
         <h2 class="bg"><img src="images/bullet_topic.png" class="floated">Write once, run everywhere<br>
         <span><i>Janox può essere eseguito su qualunque macchina dove sia presente una
               installazione PHP standard, senza bisogno di librerie aggiuntive.</i></span></h2>
-        <p>Janox produce codice esecutivo PHP5 e interfacce HTML5, JavaScript e CSS3.
+        <p>Janox produce codice esecutivo PHP5-7 e interfacce HTML5, JavaScript e CSS3.
            Questo assicura una completa portabilità delle applicazioni attraverso
            piattaforme e tecnologie, in totale trasparenza.</p>
         <p>La potente astrazione di database e la vasta gamma di gateway disponibili
