@@ -12,12 +12,13 @@
       <!-- HADER -->
       <div class="header">
         <div class="logo"><a href="#"><img src="images/logo.gif" border="0" alt=""></a></div>
-        <div class="update">19.06.2017</div>
+        <div class="update">23.06.2017</div>
         <div class="clr"></div>
         <div class="menu">
           <ul>
             <li><a href="/index.html" class="active"><span>Home</span></a></li>
             <li><a href="/arch.html" class=""><span>Architettura</span></a></li>
+            <li><a href="/news.html" class=""><span>News</span></a></li>
             <li><a href="/download.html" class=""><span>Download</span></a></li>
             <li><a href="/doc.html" class=""><span>Documentazione</span></a></li>
             <li><a href="/support.html" class=""><span>Assistenza</span></a></li>
@@ -61,7 +62,7 @@
 
         <!-- Top-right: SLIDES -->
         <div class="slides" onmouseenter="stop();" onmouseleave="start();">
-          <div class="slide">
+          <div class="slide" onclick="location.href='/news.html'">
                       <!-- Article -->
                 <img src="images/j.png">
                 <p>Janox è software <b>open source</b> e viene distribuito gratuitamente
@@ -71,7 +72,7 @@
           </div>
 
                     <!-- News slide -->
-          <div class="slide">
+          <div class="slide" onclick="location.href='/news.html'">
                 <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Nuovo Janox Mini WEB Server<br>
                   <span><i>14.06.2017 | Janox news</i></span></h2>
                 <p>La versione in sviluppo 2.3.00 introduce un nuovo potente strumento: Janox Mini WEB Server.</p>
@@ -82,7 +83,7 @@
           </div>
 
           <!-- News slide -->
-          <div class="slide">
+          <div class="slide" onclick="location.href='/news.html'">
                 <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Nuovo package per le release Janox<br>
                   <span><i>04.06.2017 | Janox news</i></span></h2>
                 <p>Da oggi cambia il package di download per le release Janox.</p>
@@ -92,7 +93,7 @@
           </div>
 
           <!-- News slide -->
-          <div class="slide">
+          <div class="slide" onclick="location.href='/news.html'">
                 <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Il nuovo sito di Janox<br>
                   <span><i>17.05.2017 | Janox news</i></span></h2>
                 <p>La Community è orgogliosa di inaugurare il nuovo sito di Janox.</p>
@@ -200,6 +201,10 @@
           <span>Risorse | <a href="https://github.com/tvannini/jxrnt/commits">Pagina</a></span></h2>
 
                 <p><strong>Commit</strong><br>
+          <span>19.06.2017 | <a href="https://github.com/tvannini/jxrnt/commit/8c19f6ed10203335df34409d84eea7e0d126f6e3">&#xBB;</a></span><br>
+          Fixed sysntax error in open new session LDAP</p>
+
+        <p><strong>Commit</strong><br>
           <span>17.06.2017 | <a href="https://github.com/tvannini/jxrnt/commit/7c05d37d5c5e3f0a88339c215ab6d653be226fb0">&#xBB;</a></span><br>
           Fixed missing runtime</p>
 
@@ -214,10 +219,6 @@
         <p><strong>Commit</strong><br>
           <span>14.06.2017 | <a href="https://github.com/tvannini/jxrnt/commit/94cd8b43eb900e7457ac4697af36301cc22668e0">&#xBB;</a></span><br>
           Fixed field phys-name in add-index functions</p>
-
-        <p><strong>Commit</strong><br>
-          <span>13.06.2017 | <a href="https://github.com/tvannini/jxrnt/commit/1cb1f2b73c5b209acd2b4c01741dc311b5c2eafe">&#xBB;</a></span><br>
-          Fixed variable type</p>
 
 
         <h2>&nbsp;</h2>
@@ -278,7 +279,9 @@
 
      <div class="footer">
        <div class="footer_resize">
-         <p class="leftt"><span class="copyright">&copy;</span> Copyright www.janox.it &nbsp; &nbsp; &nbsp; <a href="http://www.janox.it">Home</a> | <a href="contact.html">Contact</a> | <a href="#">RSS</a></p>
+         <p class="leftt"><span class="copyright">&copy;</span> Copyright www.janox.it &nbsp; &nbsp; &nbsp;
+                                                        <a href="http://www.janox.it">Home</a> | <a href="contact.html">Contact</a> |
+                                                        <a href="http://www.janox.it/news.html">RSS</a></p>
          <p class="right">Janox is distributed under the terms of the <a href="http://www.gnu.org/licenses/lgpl-3.0.txt">GNU Lesser General Public License (LGPL)</a></p>
          <div class="clr"></div>
        </div>
