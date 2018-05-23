@@ -1,0 +1,19 @@
+<html><head><title>o2view_fetch</title><link rel='stylesheet' type='text/css' href='jxdoc.css'></head><body><center><br><small><a href='index.html#o2view_fetch'>Index</a></small><hr></center><p>(view)</p><h3>o2view_fetch</h3><code><i>array</i> o2view_fetch(<i>string</i> $view_name)</code><p>Creates a query statement and executes records fetching on it.<br />
+<br />
+This function allows fetching records one-by-one from a Janox view and returns each one as an array, in the form: <br />
+<br />
+ array('FIELD_NAME1' => $vield_value1, <br />
+ 'FIELD_NAME2' => $vield_value2, <br />
+ ..., <br />
+ 'FIELD_NAMEn' => $vield_valueN) <br />
+<br />
+This function can be used in this way: <br />
+<br />
+ while($record = o2view_fetch($view_name)) { <br />
+ $field = $record['FIELD']; <br />
+ } <br />
+<br />
+NOTE: If you unexpectedly stop fetching or you need to reset fetching, consider using o2view_fetch_free() to reset the statement.<br />
+<br />
+<br />
+</p><fieldset><legend>Parameters:</legend><ol><li><b>$view_name</b></li> </ol></fieldset><fieldset><legend>Related functions:</legend><p><a href="o2view_fetch_free.html">o2view_fetch_free</a></p><p><a href="o2view_get_query.html">o2view_get_query</a></p></fieldset></body></html>
