@@ -9,8 +9,9 @@ If returned value is an array, indexed subvalues can be retrieved passing indexe
 you can get "value" directly by calling: <br />
  o2val("view", "field", 1, "c") <br />
 <br />
-If returned value is a Date or Time format, single parts of the value can be retrieved passing a single, key-unsensitive letter as supplementary parameter: <br />
-"y"=Year, "m"=Month, "d"=Day, "h"=Hours, "i"=Minutes and "s"=Seconds.<br />
+If returned value is a Date or Time format, single parts of the value can be retrieved passing a single letter as supplementary parameter: <br />
+"y"=Year(2 digits), "Y"=Year(4 digits), "m"=Month, "d"=Day, "h"=Hours, "i"=Minutes and "s"=Seconds.<br />
+Excepted "y/Y" paramter for year, all other letters are key-unsensitive.<br />
 For example if you have: <br />
  o2val("view", "field") = (Date)"20130531" (31/05/2013) <br />
 you can get the month value directly by calling: <br />
