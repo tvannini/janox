@@ -1,0 +1,10 @@
+<html><head><title>o2user_pwd_expires</title><link rel='stylesheet' type='text/css' href='jxdoc.css'></head><body><center><br><small><a href='index.html#o2user_pwd_expires'>Index</a></small><hr></center><p>(user)</p><h3>o2user_pwd_expires</h3><code><i>integer</i> o2user_pwd_expires(<i>string</i> $user)</code><p>Returns number of days before user password expiring.<br />
+<br />
+Function can return a negative value, if password already expired.<br />
+If no expiration time is set for application or if password never expires for requested user, then function returns (strict) FALSE.<br />
+If "last password change" date is not set or flag "force password change" is set for user, then function returns 0 (zero).<br />
+<br />
+If no any user will be passed as parameter then currently logged user will be used.<br />
+<br />
+<br />
+</p><fieldset><legend>Parameters:</legend><ol><li><b>$user</b></li> User to be check password of</ol></fieldset><fieldset><legend>Related functions:</legend><p><a href="o2user_is.html">o2user_is</a></p><p><a href="o2user_has.html">o2user_has</a></p></fieldset></body></html>
