@@ -1,7 +1,9 @@
-<html><head><title>o2job_queue</title><link rel='stylesheet' type='text/css' href='jxdoc.css'></head><body><center><br><small><a href='index.html#o2job_queue'>Index</a></small><hr></center><p>(jobs)</p><h3>o2job_queue</h3><code><i>integer</i> o2job_queue(<i>string</i> $job_name, <i>array</i> $params)</code><p>Queue for execution job with passed name.<br />
+<html><head><title>o2job_queue</title><link rel='stylesheet' type='text/css' href='jxdoc.css'></head><body><center><br><small><a href='index.html#o2job_queue'>Index</a></small><hr></center><p>(jobs)</p><h3>o2job_queue</h3><code><i>integer</i> o2job_queue(<i>string</i> $job_name, <i>array</i> $params, <i>string</i> $host)</code><p>Queue for execution job with passed name.<br />
 Job is queued for execution but a dedicated batch process is NOT started: some other logic (scheduler) will take care of executing it later.<br />
 A list of parameters (by name) can be provided: list will override parameters passed to program called by job.<br />
+If a host name is provided then execution is assigned directly to that host, regardless of services logics.<br />
+NOTE: If no host name is provided execution can be assigned to local host by application settings: see "jobs_use_local_host" parameter in application settings.<br />
 If job exists then new job execution ID is returned, else FALSE.<br />
 <br />
 <br />
-</p><fieldset><legend>Parameters:</legend><ol><li><b>$job_name</b></li> Job name to look for<li><b>$params</b></li> List of overriding parameters passed to program</ol></fieldset><fieldset><legend>Related functions:</legend><p><a href="o2job_create.html">o2job_create</a></p><p><a href="o2job_run.html">o2job_run</a></p><p><a href="o2job_get_by_name.html">o2job_get_by_name</a></p><p><a href="o2job_is_running.html">o2job_is_running</a></p></fieldset></body></html>
+</p><fieldset><legend>Parameters:</legend><ol><li><b>$job_name</b></li> Job name to look for<li><b>$params</b></li> List of overriding parameters passed to program<li><b>$host</b></li> Host name to override assigned host/service</ol></fieldset><fieldset><legend>Related functions:</legend><p><a href="o2job_create.html">o2job_create</a></p><p><a href="o2job_get_by_name.html">o2job_get_by_name</a></p><p><a href="o2job_run.html">o2job_run</a></p><p><a href="o2job_is_running.html">o2job_is_running</a></p></fieldset></body></html>
