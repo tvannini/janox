@@ -2,6 +2,7 @@
 Job is queued for execution but a dedicated batch process is NOT started: some other logic (scheduler) will take care of executing it later.<br />
 A list of parameters (by name) can be provided: list will override parameters passed to program called by job.<br />
 If a host name is provided then execution is assigned directly to that host, regardless of services logics.<br />
+If "" (star) is passed for host parameter then job is queued for all active hosts.<br />
 NOTE: If no host name is provided execution can be assigned to local host by application settings: see "jobs_use_local_host" parameter in application settings.<br />
 If job exists then new job execution ID is returned, else FALSE.<br />
 <br />

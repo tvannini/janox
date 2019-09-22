@@ -1,9 +1,4 @@
-<html><head><title>o2_path</title><link rel='stylesheet' type='text/css' href='jxdoc.css'></head><body><center><br><small><a href='index.html#o2_path'>Index</a></small><hr></center><p>(misc)</p><h3>o2_path</h3><code><i>string</i> o2_path(<i>string</i> $local_file, <i>integer</i> $mode)</code><p>In HTML disposes requested file for download and returns the url leading to it.<br />
-<br />
-Second parameter $mode is effective in HTML context only. It can take one of three values: <br />
- = 1 File is forced to download by headers; <br />
- = 2 File is always disposed by Transitional File System (TRN) <br />
- = 0 (or any other value) file is delivered as a Stream Resource or TRN depending on application .INI parameter "trn_deliver".<br />
+<html><head><title>o2_path</title><link rel='stylesheet' type='text/css' href='jxdoc.css'></head><body><center><br><small><a href='index.html#o2_path'>Index</a></small><hr></center><p>(misc)</p><h3>o2_path</h3><code><i>string</i> o2_path(<i>string</i> $local_file, <i>integer</i> $force_download)</code><p>In HTML disposes requested file for download and returns the url leading to it.<br />
 <br />
 <br />
-</p><fieldset><legend>Parameters:</legend><ol><li><b>$local_file</b></li> Local path to file to deliver<li><b>$mode</b></li> 1=Force download; 2=Force TRN; else default</ol></fieldset></body></html>
+</p><fieldset><legend>Parameters:</legend><ol><li><b>$local_file</b></li> Local path to file to deliver<li><b>$force_download</b></li> TRUE=Force download, FALSE=Can be used on-line (PDF)</ol></fieldset></body></html>
