@@ -12,7 +12,7 @@
       <!-- HADER -->
       <div class="header">
         <div class="logo"><a href="#"><img src="images/logo.gif" border="0" alt=""></a></div>
-        <div class="update">21.11.2019</div>
+        <div class="update">09.12.2019</div>
         <div class="clr"></div>
         <div class="menu">
           <ul>
@@ -73,6 +73,17 @@
 
                     <!-- News slide -->
           <div class="slide" onclick="location.href='/news.html'">
+                <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Recordset snapshot<br>
+                  <span><i>09.12.2019 | Janox news</i></span></h2>
+                <p>Lo <i>snapshot</i> di recordset permette di spostare l'intero dataset intercettato da una vista su database SQLite <i>session</i>.</p>
+
+<blockquote>Il database SQLite <i>session</i> lavora "in memory" per la singola esecuzione di server, ma assicura la persistenza necessaria all'esecuzione di successive interazioni client.</blockquote>
+
+<p>Alla fine di una sessione di <i>snapshot</i> sarà possibile, programmaticamente, sincronizzare i dati modificati con il database originale o scartare l'intero set di modifiche, in un'unica transazione, senza ricorrere a tabelle temporanee.</p>
+          </div>
+
+          <!-- News slide -->
+          <div class="slide" onclick="location.href='/news.html'">
                 <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Consolidamento release 2.6.00 e nuova versione 2.6.01<br>
                   <span><i>18.11.2019 | Janox news</i></span></h2>
                 <p>La Community Janox è lieta di annunciare il consolidamento della versione 2.6.00 e l'apertura del cantiere di sviluppo per la nuova versione 2.6.01.</p>
@@ -91,17 +102,6 @@
 <p>La versione 2.5.00 è stabile ed ampiamente testata ed è consigliata anche per installazioni di produzione.</p>
 
 <p>La nuova versione di sviluppo 2.6 è disponibile per il download alla nostra <a href="/download.html">pagina</a>, ma <b>attenzione: questa release è sperimentale e non è indicata per installazioni di produzione.</b></p>
-          </div>
-
-          <!-- News slide -->
-          <div class="slide" onclick="location.href='/news.html'">
-                <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Consolidamento release 2.4.01 e nuova versione 2.5<br>
-                  <span><i>03.06.2019 | Janox news</i></span></h2>
-                <p>La Community Janox è lieta di annunciare il consolidamento della versione 2.4.01 e l'apertura del cantiere di sviluppo per la nuova versione 2.5.</p>
-
-<p>La versione 2.4.01 è stabile ed ampiamente testata ed è consigliata anche per installazioni di produzione.</p>
-
-<p>La nuova versione di sviluppo 2.5 è disponibile per il download alla nostra <a href="/download.html">pagina</a>, ma <b>attenzione: questa release è sperimentale e non è indicata per installazioni di produzione.</b></p>
           </div>
 
 
@@ -189,7 +189,7 @@
           Questa è la release stabile più recente, quindi la release di
           riferimento per ogni esigenza di produzione.</p>
         <p><strong>Development release: 2.6.01</strong><br>
-          <span>21.11.2019 | <a href="https://drive.google.com/open?id=1WV-0hQ7Pyjfiwt8ADOUWJ23D3VijxTgm">janox-2.6.01.tar.gz</a></span><br>
+          <span>09.12.2019 | <a href="https://drive.google.com/open?id=1xrDtnzwPoqI9aw6KYhXuDFARG2n9qgwu">janox-2.6.01.tar.gz</a></span><br>
           Questa release è sperimentale: non deve essere usata in ambienti di
           produzione ed è dedicata alle sole attività di sviluppo.</p>
         <h2>&nbsp;</h2>
@@ -205,6 +205,14 @@
           <span>Risorse | <a href="https://github.com/tvannini/jxob/commits">Open Builder</a></span></h2>
 
                 <p><strong>Runtime</strong><br>
+          <span>09.12.2019 | <a href="https://github.com/tvannini/jxrnt/commit/bdecbc743b872ed82e777a97c7a8f7eda709856f">&#xBB;</a></span><br>
+          Data-model added to formulas and SQL-formulas</p>
+
+        <p><strong>Open Builder</strong><br>
+          <span>08.12.2019 | <a href="https://github.com/tvannini/jxrnt/commit/3c37b274dacfd61bc5e837a77c98926cdbe1f6c7">&#xBB;</a></span><br>
+          Data-model added to formulas and SQL-formulas</p>
+
+        <p><strong>Runtime</strong><br>
           <span>20.11.2019 | <a href="https://github.com/tvannini/jxrnt/commit/adb474c79b0d6a7d21ea142dfe87e7a3854ff793">&#xBB;</a></span><br>
           Parameter "snapshot_db" added to application settings</p>
 
@@ -215,14 +223,6 @@
         <p><strong>Open Builder</strong><br>
           <span>16.11.2019 | <a href="https://github.com/tvannini/jxrnt/commit/38c01fc339fe5c0b44b55de8824d98067e32a7f7">&#xBB;</a></span><br>
           Recordset snapshot</p>
-
-        <p><strong>Runtime</strong><br>
-          <span>28.10.2019 | <a href="https://github.com/tvannini/jxrnt/commit/3068c96fcb4fb20345bb19d99e290a1753741240">&#xBB;</a></span><br>
-          Fixed MSSQL gateway to use statements (fetch-loop), when possible</p>
-
-        <p><strong>Runtime</strong><br>
-          <span>24.10.2019 | <a href="https://github.com/tvannini/jxrnt/commit/0b2d3925fb740db65533acdc6762f4ecc1832b19">&#xBB;</a></span><br>
-          Fixed form maximized when already visible</p>
 
 
         <h2>&nbsp;</h2>
