@@ -1,4 +1,7 @@
-<html><head><title>o2view_snapshot_name</title><link rel='stylesheet' type='text/css' href='jxdoc.css'></head><body><center><br><small><a href='index.html#o2view_snapshot_name'>Index</a></small><hr></center><p>(view)</p><h3>o2view_snapshot_name</h3><code><i>string</i> o2view_snapshot_name(<i>string</i> $view_name, <i>string</i> $snapshot_name)</code><p>Returns or sets snapshot table name for the view.<br />
+<html><head><title>o2view_snapshot_name</title><link rel='stylesheet' type='text/css' href='jxdoc.css'></head><body><center><br><small><a href='index.html#o2view_snapshot_name'>Index</a></small><hr></center><p>(view)</p><h3>o2view_snapshot_name</h3><code><i>string</i> o2view_snapshot_name(<i>string</i> $view_name, <i>string</i> $snapshot_name)</code><p>ATTENTION: Use of function o2view_snapshot_name() to set snapshot name is deprecated, use parameter on Snapshot-start or Snapshot-attach instructions instead.<br />
+ Function is still valid to get actual snapshot name from view.<br />
+<br />
+Returns or sets snapshot table name for the view.<br />
 When called without $snapshot_name parameter function returns the used snapshot table name (useful in table expression for a view, to address other views snapshots).<br />
 When parameter $snapshot_name is passed then it is used as snapshot table name for the view and can be the same for different views.<br />
 <br />
