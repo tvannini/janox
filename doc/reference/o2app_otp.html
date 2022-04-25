@@ -1,0 +1,12 @@
+<html><head><title>o2app_otp</title><link rel='stylesheet' type='text/css' href='jxdoc.css'></head><body><center><br><small><a href='index.html#o2app_otp'>Index</a></small><hr></center><p>(misc)</p><h3>o2app_otp</h3><code><i>string</i> o2app_otp(<i>string</i> $user, <i>integer</i> $otp_len)</code><p>Generates a One Time Password for application user.<br />
+OTP is a time-based access code provided to user to override his standard password <br />
+and can be used only once.<br />
+Returned OTP is a string of $otp_len chars, default length is 6.<br />
+If $user is blank then OTP is generated for the currently logged user.<br />
+<br />
+OTP string can be used to access to the application by a request like this: <br />
+<br />
+ <domain>/app_name.php?user=otp_user&jxotp=otp_code <br />
+<br />
+<br />
+</p><fieldset><legend>Parameters:</legend><ol><li><b>$user</b></li> User to generate the OTP for<li><b>$otp_len</b></li> Length of the OTP token</ol></fieldset></body></html>
