@@ -12,7 +12,7 @@
       <!-- HADER -->
       <div class="header">
         <div class="logo"><a href="#"><img src="images/logo.gif" border="0" alt=""></a></div>
-        <div class="update">19.10.2023</div>
+        <div class="update">23.10.2023</div>
         <div class="clr"></div>
         <div class="menu">
           <ul>
@@ -73,6 +73,17 @@
 
                     <!-- News slide -->
           <div class="slide" onclick="location.href='/news.html'">
+                <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Proprietà "catch-action" sulle azioni<br>
+                  <span><i>19.10.2023 | Janox news</i></span></h2>
+                <p>In release di sviluppo 2.9.02 è stata introdotta la possibilità di indicare una "catch-action" sulle azioni.</p>
+
+<p>Se viene specificata una "catch-action", allora a qualunque verificarsi di errore o exception nell'azione (comprese execute-action, call-program, ecc...), il controllo verrà passato all'azione di catch, che potrà gestirli a piacimento.</p>
+
+<p>Questa modifica introduce un modello completamente nuovo di gestione di errori/eccezioni in Janox.</p>
+          </div>
+
+          <!-- News slide -->
+          <div class="slide" onclick="location.href='/news.html'">
                 <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Integrazione di Git<br>
                   <span><i>20.09.2023 | Janox news</i></span></h2>
                 <p>In release di sviluppo 2.9.02 è stata introdotta l'integrazione con il sistema di versioning Git .</p>
@@ -93,17 +104,6 @@
 <p>Se viene abilitata la proprietà "submit-on-change" il controllo viene visualizzato come Upload-Button e servirà un singolo click per selezionare ed inviare i file.</p>
 
 <p>La proprietà "on-change-action" consente di indicare un'azione per processare i file caricati al singolo click.</p>
-          </div>
-
-          <!-- News slide -->
-          <div class="slide" onclick="location.href='/news.html'">
-                <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">SAML2 Login<br>
-                  <span><i>03.07.2023 | Janox news</i></span></h2>
-                <p>In release di sviluppo 2.9.01 è stato introdotto il login su protocollo SAML2 .</p>
-
-<p>Il nuovo protocollo di login prevede l'utilizzo della validazione SAML2 da terze parti, per accedere alle applicazioni Janox.</p>
-
-<p>La funzionalità si appoggia sull'installazione e la gestione della libreria <a href="https://simplesamlphp.org/" target="_blank">SimpleSAMLPHP</a>.</p>
           </div>
 
 
@@ -191,7 +191,7 @@
           Questa è la release stabile più recente, quindi la release di
           riferimento per ogni esigenza di produzione.</p>
         <p><strong>Development release: 2.9.02</strong><br>
-          <span>19.10.2023 | <a href="https://drive.google.com/open?id=12OLErcNmfMPOlLqh_65mrSkZpVT8nnfH">janox-2.9.02.tar.gz</a></span><br>
+          <span>23.10.2023 | <a href="https://drive.google.com/open?id=1a8LhxcewoiYtLBa9t9A6KbXIgQvcuVPk">janox-2.9.02.tar.gz</a></span><br>
           Questa release è sperimentale: non deve essere usata in ambienti di
           produzione ed è dedicata alle sole attività di sviluppo.</p>
         <h2>&nbsp;</h2>
@@ -207,6 +207,10 @@
           <span>Risorse | <a href="https://github.com/tvannini/jxob/commits">Open Builder</a></span></h2>
 
                 <p><strong>Open Builder</strong><br>
+          <span>23.10.2023 | <a href="https://github.com/tvannini/jxrnt/commit/cb69b67b129a16b8b187d699921f114797ee0d69">&#xBB;</a></span><br>
+          Catch-action</p>
+
+        <p><strong>Open Builder</strong><br>
           <span>19.09.2023 | <a href="https://github.com/tvannini/jxrnt/commit/ee3cea434f6504d52d8e0455c9183e1e48e9e3b1">&#xBB;</a></span><br>
           Git integration</p>
 
@@ -221,10 +225,6 @@
         <p><strong>Runtime</strong><br>
           <span>10.07.2023 | <a href="https://github.com/tvannini/jxrnt/commit/826c3a7d5fb1be724d4c38b173f59c31ec46395b">&#xBB;</a></span><br>
           Added "action" property for upload control and new look for upload-buttons</p>
-
-        <p><strong>Runtime</strong><br>
-          <span>03.07.2023 | <a href="https://github.com/tvannini/jxrnt/commit/3ee8c1cc8aa28b4cbe25126d7799a9d326b19ba0">&#xBB;</a></span><br>
-          Enabled submit-on-change on file-upload control</p>
 
 
         <h2>&nbsp;</h2>
