@@ -12,7 +12,7 @@
       <!-- HADER -->
       <div class="header">
         <div class="logo"><a href="#"><img src="images/logo.gif" border="0" alt=""></a></div>
-        <div class="update">12.03.2024</div>
+        <div class="update">18.03.2024</div>
         <div class="clr"></div>
         <div class="menu">
           <ul>
@@ -53,7 +53,6 @@
         <p><a href="http://www.php.net" target="_blank" rel="nofollow"><img border="0" src="images/php32.png" style="width:48px;height:32px" title="www.php.net"></a>
         <a href="https://github.com/tvannini/jxrnt" target="_blank" rel="nofollow"><img border="0" src="images/github32.png" style="width:32px;height:32px" title="www.github.com"></a>
         <a href="https://groups.google.com/forum/#!forum/jxsupport" target="_blank" rel="nofollow"><img border="0" src="images/ggroups32.png" style="width:32px;height:32px" title="groups.google.com"></a>
-        <a href="https://www.linkedin.com/in/tommaso-vannini-a0855a87" target="_blank" rel="nofollow"><img border="0" src="images/linkedin32.png" style="width:32px;height:32px" title="www.linkedin.com"></a>
         <a href="mailto:info@janox.it" target="_blank" rel="nofollow"><img border="0" src="images/email32.png" style="width:32px;height:32px" title="info@janox.it"></a></p>
       </div>
 
@@ -73,6 +72,17 @@
 
                     <!-- News slide -->
           <div class="slide" onclick="location.href='/news.html'">
+                <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Rilasci su cloud AWS<br>
+                  <span><i>17.03.2024 | Janox news</i></span></h2>
+                <p>Dalle ultime release il cloud per il download delle nuove versioni di Janox è stato spostato da GDrive ad AWS (S3).</p>
+
+<p>Il passaggio si è reso necessario perché GDrive non permetteva di distribuire recenti compilazioni del JXOB, perché falliva il check di uno dei molti antivirus che usano.</p>
+
+<p>I precedenti rilasci e le cartelle storiche, per ora, restano su GDrive: quindi è consigliato utilizzare sempre la nostra pagina di <a href="/download.html">Download</a> per accedere ai rilasci.</p>
+          </div>
+
+          <!-- News slide -->
+          <div class="slide" onclick="location.href='/news.html'">
                 <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Proprietà "catch-action" sulle azioni<br>
                   <span><i>19.10.2023 | Janox news</i></span></h2>
                 <p>In release di sviluppo 2.9.02 è stata introdotta la possibilità di indicare una "catch-action" sulle azioni.</p>
@@ -91,19 +101,6 @@
 <p>Quando l'integrazione è attiva il JX Open Builder, al check-in di ogni elemento, richiederà di fornire un messaggio ed eseguirà la relativa commit su Git.</p>
 
 <p>Per attivare l'integrazione basterà abilitare il flag "Git" in "Preferences" del JX Open Builder e attivare Git nella root dell'applicazione Janox.</p>
-          </div>
-
-          <!-- News slide -->
-          <div class="slide" onclick="location.href='/news.html'">
-                <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Nuovo controllo File-Upload<br>
-                  <span><i>03.08.2023 | Janox news</i></span></h2>
-                <p>In release di sviluppo 2.9.01 è stato introdotto il nuovo modello per i controlli di tipo File-Upload, che prevede l'utilizzo delle proprietà "multiple", "submit-on-change" e "on-change-action".</p>
-
-<p>La proprietà "multiple" consente di selezionare più file per l'upload.</p>
-
-<p>Se viene abilitata la proprietà "submit-on-change" il controllo viene visualizzato come Upload-Button e servirà un singolo click per selezionare ed inviare i file.</p>
-
-<p>La proprietà "on-change-action" consente di indicare un'azione per processare i file caricati al singolo click.</p>
           </div>
 
 
@@ -191,7 +188,7 @@
           Questa è la release stabile più recente, quindi la release di
           riferimento per ogni esigenza di produzione.</p>
         <p><strong>Development release: 2.9.02</strong><br>
-          <span>12.03.2024 | <a href="https://janox.s3.eu-north-1.amazonaws.com/2024-03-12/janox-2.9.02.tar.gz">janox-2.9.02.tar.gz</a></span><br>
+          <span>18.03.2024 | <a href="https://janox.s3.eu-north-1.amazonaws.com/2024-03-18/janox-2.9.02.tar.gz">janox-2.9.02.tar.gz</a></span><br>
           Questa release è sperimentale: non deve essere usata in ambienti di
           produzione ed è dedicata alle sole attività di sviluppo.</p>
         <h2>&nbsp;</h2>
@@ -219,11 +216,11 @@
           JXTest</p>
 
         <p><strong>Open Builder</strong><br>
-          <span>23.10.2023 | <a href="https://github.com/tvannini/jxrnt/commit/cb69b67b129a16b8b187d699921f114797ee0d69">&#xBB;</a></span><br>
+          <span>23.10.2023 | <a href="https://github.com/tvannini/jxob/commit/cb69b67b129a16b8b187d699921f114797ee0d69">&#xBB;</a></span><br>
           Catch-action</p>
 
         <p><strong>Open Builder</strong><br>
-          <span>19.09.2023 | <a href="https://github.com/tvannini/jxrnt/commit/ee3cea434f6504d52d8e0455c9183e1e48e9e3b1">&#xBB;</a></span><br>
+          <span>19.09.2023 | <a href="https://github.com/tvannini/jxob/commit/ee3cea434f6504d52d8e0455c9183e1e48e9e3b1">&#xBB;</a></span><br>
           Git integration</p>
 
 
@@ -286,8 +283,7 @@
      <div class="footer">
        <div class="footer_resize">
          <p class="leftt"><span class="copyright">&copy;</span> Copyright www.janox.it &nbsp; &nbsp; &nbsp;
-                                                        <a href="http://www.janox.it">Home</a> | <a href="contact.html">Contact</a> |
-                                                        <a href="http://www.janox.it/news.html">RSS</a></p>
+                                                        <a href="http://www.janox.it">Home</a> | <a href="contact.html">Contact</a></p>
          <p class="right">Janox is distributed under the terms of the <a href="http://www.gnu.org/licenses/lgpl-3.0.txt">GNU Lesser General Public License (LGPL)</a></p>
          <div class="clr"></div>
        </div>
