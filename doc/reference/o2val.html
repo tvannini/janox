@@ -1,7 +1,7 @@
 <html><head><title>o2val</title><link rel='stylesheet' type='text/css' href='jxdoc.css'></head><body><center><br><small><a href='index.html#o2val'>Index</a></small><hr></center><p>(misc)</p><h3>o2val</h3><code><i>mix</i> o2val(<i>string</i> $view_name, <i>string</i> $field_name)</code><p>Returns current value of a field in a view, program or application variable.<br />
 When the view is a db-view it must be defined in the program where o2val() is used and the field must be a field defined in that view.<br />
 <br />
-To get a program-variable value pass "prg§_§var" as view name.<br />
+To get a program-variable value pass JX_VIRT_VIEW as view name.<br />
 To get an application (session) variable pass "_o2SESSION" as view name.<br />
 <br />
 If returned value is an array, indexed subvalues can be retrieved passing indexes as supplementary parameters. For example if you have: <br />
@@ -22,4 +22,4 @@ you can get the hours value directly by calling: <br />
  o2val("view", "field", "h") <br />
 <br />
 <br />
-</p><fieldset><legend>Parameters:</legend><ol><li><b>$view_name</b></li> Name of the db-view or "prg§_§var" or "_o2SESSION"<li><b>$field_name</b></li> Name of the field or variable</ol></fieldset><fieldset><legend>Related functions:</legend><p><a href="o2pre.html">o2pre</a></p><p><a href="o2zero.html">o2zero</a></p><p><a href="o2par.html">o2par</a></p><p><a href="o2format.html">o2format</a></p></fieldset></body></html>
+</p><fieldset><legend>Parameters:</legend><ol><li><b>$view_name</b></li> Name of the db-view or JX_VIRT_VIEW or "_o2SESSION"<li><b>$field_name</b></li> Name of the field or variable</ol></fieldset><fieldset><legend>Related functions:</legend><p><a href="o2pre.html">o2pre</a></p><p><a href="o2zero.html">o2zero</a></p><p><a href="o2par.html">o2par</a></p><p><a href="o2format.html">o2format</a></p></fieldset></body></html>
