@@ -12,7 +12,7 @@
       <!-- HADER -->
       <div class="header">
         <div class="logo"><a href="#"><img src="images/logo.gif" border="0" alt=""></a></div>
-        <div class="update">03.11.2025</div>
+        <div class="update">17.11.2025</div>
         <div class="clr"></div>
         <div class="menu">
           <ul>
@@ -72,6 +72,17 @@
 
                     <!-- News slide -->
           <div class="slide" onclick="location.href='/news.html'">
+                <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Janox Cron Server<br>
+                  <span><i>17.11.2025 | Janox news</i></span></h2>
+                <p>In release di sviluppo (3.0.01) è stato introdotto un nuovo strumento: il <b>Janox Cron Server</b>.</p>
+
+<p>Questo script si propone come strumento interno, efficace e portabile, in sostituzione della schedulazione di <i>cron</i>/<i>task</i> di sistema, per la gestione dei job schedulati e delle code di esecuzione.</p>
+
+<p><b>Janox Cron Server</b> consente di eliminare il tempo minimo di un minuto, per la presa in carico dei job <i>queued</i>.</p>
+          </div>
+
+          <!-- News slide -->
+          <div class="slide" onclick="location.href='/news.html'">
                 <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Consolidata la nuova versione Janox 3.0.0<br>
                   <span><i>06.10.2025 | Janox news</i></span></h2>
                 <p>La Community Janox è lieta di annunciare il consolidamento della versione 3.0.0 e l'apertura del cantiere di sviluppo per la nuova release 3.0.1.</p>
@@ -90,17 +101,6 @@
 <p>La versione 2.9.02 è stabile ed ampiamente testata ed è consigliata anche per installazioni di produzione.</p>
 
 <p>La nuova versione di sviluppo 3.0 è disponibile per il download alla nostra <a href="/download.html">pagina</a>, ma <b>attenzione: questa release è sperimentale e non è indicata per installazioni di produzione.</b></p>
-          </div>
-
-          <!-- News slide -->
-          <div class="slide" onclick="location.href='/news.html'">
-                <h2><img src="images/bullet_news.png" class="floated" style="width:18px;height:18px;">Encoding UTF-8<br>
-                  <span><i>18.11.2024 | Janox news</i></span></h2>
-                <p>La release di sviluppo 2.9.02 è ready per l'esecuzione di applicazioni in encoding UTF-8.</p>
-
-<p>Adesso è possibile produrre interamente l'output applicativo (UI, log, export, ecc...) con encoding UTF-8, senza dover intervenire sul codice originale dell'applicazione.</p>
-
-<p>Per attivare l'encoding UTF-8 basterà impostare ad "UTF-8" il parametro di applicazione "encoding".</p>
           </div>
 
 
@@ -188,7 +188,7 @@
           Questa è la release stabile più recente, quindi la release di
           riferimento per ogni esigenza di produzione.</p>
         <p><strong>Development release: 3.0.01</strong><br>
-          <span>03.11.2025 | <a href="https://janox.s3.eu-north-1.amazonaws.com/2025-11-03/janox-3.0.01.tar.gz">janox-3.0.01.tar.gz</a></span><br>
+          <span>17.11.2025 | <a href="https://janox.s3.eu-north-1.amazonaws.com/2025-11-17/janox-3.0.01.tar.gz">janox-3.0.01.tar.gz</a></span><br>
           Questa release è sperimentale: non deve essere usata in ambienti di
           produzione ed è dedicata alle sole attività di sviluppo.</p>
         <h2>&nbsp;</h2>
@@ -204,6 +204,10 @@
           <span>Risorse | <a href="https://github.com/tvannini/jxob/commits">Open Builder</a></span></h2>
 
                 <p><strong>Runtime</strong><br>
+          <span>17.11.2025 | <a href="https://github.com/tvannini/jxrnt/commit/ca02792bf4dba552936d3784cc6cb58829d4f0ef">&#xBB;</a></span><br>
+          JXCron: internal replacement for system cron/task</p>
+
+        <p><strong>Runtime</strong><br>
           <span>22.05.2025 | <a href="https://github.com/tvannini/jxrnt/commit/3d151ed0c59dc006873b2dbaad57ebdd41749c01">&#xBB;</a></span><br>
           Removed deprecated constant E_STRICT</p>
 
@@ -218,10 +222,6 @@
         <p><strong>Runtime</strong><br>
           <span>08.03.2025 | <a href="https://github.com/tvannini/jxrnt/commit/363db97fa2b551ba615ea567e99382e81cdba778">&#xBB;</a></span><br>
           Janox 3.0</p>
-
-        <p><strong>Runtime</strong><br>
-          <span>18.12.2024 | <a href="https://github.com/tvannini/jxrnt/commit/20b108d62639b1ceb8e3decb0d4b7329ac496c44">&#xBB;</a></span><br>
-          More fixes for PHP8.3 EXE/DEV mode</p>
 
 
         <h2>&nbsp;</h2>
